@@ -3,6 +3,14 @@
 
 body {
   font-family: "Source Sans Pro";
+  overflow-x: hidden;
+}
+
+.scroll-locked {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .absolute-link {
@@ -23,6 +31,8 @@ body {
   background: #FFFFFF;
   min-height: 62px;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main-logo {
@@ -57,6 +67,7 @@ body {
   margin-left: 35px;
   margin-right: 30px;
   flex-wrap: wrap;
+  margin-bottom: -5px;
 }
 
 .header-top-nav li + li {
@@ -90,6 +101,7 @@ body {
   line-height: 32px;
   color: #282828;
   margin-left: auto;
+  white-space: nowrap;
 }
 
 .header-top-phone:focus, .header-top-phone:hover {
@@ -123,6 +135,8 @@ body {
   min-height: 68px;
   display: flex;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .call-menu {
@@ -133,14 +147,26 @@ body {
   justify-content: center;
 }
 
+.main-logo-xs {
+  display: none;
+}
+
 .main-nav {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 24px;
   margin-right: 30px;
+  margin-bottom: -7px;
 }
 
 .main-nav li + li {
-  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 7px;
+}
+
+.main-nav li:first-child {
+  margin-right: 24px;
+  margin-bottom: 7px;
 }
 
 .main-nav a {
@@ -156,6 +182,11 @@ body {
   text-decoration-line: underline;
   color: #EF533F;
   margin-left: auto;
+  white-space: nowrap;
+}
+
+.call-xs {
+  display: none;
 }
 
 .link-personal-account {
@@ -176,6 +207,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #282828;
+  white-space: nowrap;
 }
 
 .menu-box {
@@ -188,6 +220,7 @@ body {
   max-height: calc(100% - 64px);
   overflow-y: auto;
   display: none;
+  z-index: 99;
 }
 
 .menu-box.show {
@@ -270,6 +303,10 @@ body {
   max-width: 220px;
 }
 
+.menu-box-nav li {
+  height: fit-content;
+}
+
 .menu-box-nav li + li {
   margin-top: 24px;
 }
@@ -279,11 +316,18 @@ body {
   font-size: 36px;
   line-height: 45px;
   color: #FFFFFF;
+  display: block;
+  width: fit-content;
 }
 
 .nav-xs-wrapper {
   display: flex;
   max-width: 400px;
+  margin-left: 30px;
+}
+
+.nav-xs-wrapper .nav-xs-container {
+  max-width: 50%;
 }
 
 .nav-xs-wrapper .nav-xs-container + .nav-xs-container {
@@ -310,10 +354,13 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  display: block;
+  width: fit-content;
 }
 
 .socials {
   max-width: 200px;
+  margin-left: 30px;
 }
 
 .social-media-phone {
@@ -346,10 +393,17 @@ body {
 .social-media-nav {
   margin-top: 15px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-media-nav li + li {
-  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 12px;
+}
+
+.social-media-nav li:first-child {
+  margin-right: 16px;
+  margin-bottom: 12px;
 }
 
 .socials-app {
@@ -428,6 +482,7 @@ footer {
   color: #EF533F;
   display: block;
   width: fit-content;
+  white-space: nowrap;
 }
 
 .footer-social-mail {
@@ -442,6 +497,7 @@ footer {
 
 .footer-social-nav {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -451,8 +507,12 @@ footer {
 
 .footer-nav-wrapper {
   display: flex;
-  margin-left: 135px;
+  margin-left: 115px;
   flex: 1;
+}
+
+.footer-nav-wrapper .footer-nav {
+  width: 33%;
 }
 
 .footer-nav-wrapper .footer-nav +.footer-nav {
@@ -472,6 +532,7 @@ footer {
 
 .footer-app {
   max-width: 175px;
+  min-width: 170px;
   margin-left: 50px;
 }
 
@@ -522,12 +583,12 @@ footer {
 
 .footer-bottom .right-side {
   max-width: 540px;
-  margin-left: 135px;
+  margin-left: 115px;
 }
 
 .promo {
   padding-top: 65px;
-  padding-bottom: 100px;
+  padding-bottom: 180px;
   min-height: 480px;
   display: flex;
   background-size: 590px 370px!important;
@@ -650,6 +711,10 @@ footer {
 }
 
 .slider-arrows {
+  display: none;
+}
+
+.slider-arrows.active {
   display: flex;
 }
 
@@ -677,15 +742,19 @@ footer {
 }
 
 .insurance-slider {
+  .slick-track {
+    display: flex!important;
+  }
   .slider-card {
     width: 310px;
-    height: 400px;
+    min-height: 400px;
     background: #F5F5F7;
     border-radius: 16px;
     padding: 24px;
     position: relative;
     margin: 0 12px;
     overflow: hidden;
+    height: inherit;
   }
   .slider-card-caption h6 {
     font-weight: 600;
@@ -740,6 +809,12 @@ footer {
 
 .partner-slider-item {
   margin: 0 12px;
+  position: relative;
+}
+
+.partner-slider-item img {
+  max-height: 60px;
+  width: auto;
 }
 
 .tender {
@@ -787,6 +862,7 @@ footer {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .tender-btn .btn-border {
@@ -801,11 +877,12 @@ footer {
   line-height: 24px;
   color: #282828;
   margin-left: 24px;
+  text-align: center;
 }
 
 .tender-card {
   width: 310px;
-  height: 350px;
+  min-height: 350px;
   padding: 24px;
   background: #FFFFFF;
   border-radius: 16px;
@@ -853,17 +930,22 @@ footer {
 
 .offer-list {
   display: flex;
-  margin-top: 24px;
+  flex-wrap: wrap;
+  margin: 12px -12px 0 -12px;
 }
 
 .offer-card {
   border-radius: 16px;
   padding: 24px;
-  width: 310px;
+  width: 290px;
   min-height: 430px;
   display: flex;
   flex-direction: column;
-  margin: 0 12px;
+  margin: 12px;
+}
+
+.offer-card-general {
+  background: linear-gradient(0deg, #EF533F, #EF533F), #FFFFFF;
 }
 
 .offer-card-top h6 {
@@ -925,9 +1007,8 @@ footer {
   font-size: 18px;
   line-height: 24px;
   color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
 }
 
 .offer-card.pink {
@@ -952,17 +1033,6 @@ footer {
     color: #007A5C;
     border-color: #007A5C;
   }
-}
-
-.offer-card-general {
-  border-radius: 16px;
-  padding: 24px;
-  width: 310px;
-  min-height: 430px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 12px;
-  background: linear-gradient(0deg, #EF533F, #EF533F), #FFFFFF;
 }
 
 .offer-card-general h4 {
@@ -1113,6 +1183,7 @@ footer {
 
 .faq {
   margin-top: 80px;
+  padding-bottom: 80px;
 }
 
 .faq .title-md {
@@ -1193,6 +1264,208 @@ footer {
 .app-section-img img {
   height: 100%;
   width: auto;
+}
+
+.form-slider-card {
+  background: #282828!important;
+}
+
+.form-slider-card h6 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.advantage-number-link {
+  padding: 8px;
+  min-height: 34px;
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+
+.advantage-number-link:hover, .advantage-number-link:focus {
+  color: #FFFFFF;
+}
+
+.form-slider-card .btn-main {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.form-label, .select-date {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 4px;
+  height: 56px;
+  box-sizing: border-box;
+  padding: 16px 12px;
+  border: 2px solid #E0E0E0;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-label:after, .select-date:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: 2px;
+  background: #43D38B;
+  border-radius: 0 0 4px 4px;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.form-label-title {
+  display: block;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6F7893;
+  position: absolute;
+  left: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  transform: translateZ(0);
+  transform-origin: 0 0;
+  user-select: none;
+  transition: transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), font-size 0.175s cubic-bezier(0.215, 0.61, 0.355, 1),
+}
+
+.form-label input, .select-date input {
+  padding: 0;
+  box-shadow: none;
+  margin: 0;
+  background: transparent;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  border: none;
+  margin-top: 6px;
+}
+
+.form-label input:focus, .select-date input:focus {
+  border: none;
+  outline: none;
+}
+
+.form-label-focus .form-label-title, .form-label-done .form-label-title, {
+  transform: translateY(-13px) scale(0.68) translateZ(0);
+}
+
+.form-label-focus:after, .form-label-done:after {
+  transform: scaleX(1);
+}
+
+.form-slider-card .form-label + .form-label {
+  margin-top: 12px;
+}
+
+.form-slider-card .form-label-wrapper {
+  margin-top: 24px;
+}
+
+.select2-container {
+  width: 100%!important;
+}
+
+.select2-selection {
+  border: none!important;
+  background: transparent!important;
+  height: 24px;
+  margin-top: 6px;
+  position: relative;
+}
+
+.select2-selection__rendered {
+  padding: 0!important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px!important;
+  color: #282828;
+}
+
+.select2-selection__arrow {
+  width: 20px!important;
+  height: 20px!important;
+  transition: 0.15s ease;
+  position: absolute;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.select2-selection__arrow b {
+  display: none;
+}
+
+.select2-selection__arrow:before {
+  content: '';
+  background: url("../img/icon/select-icon.svg") no-repeat center/contain;
+  width: 14px;
+  height: 7px;
+  background-size: 14px 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.select2-container.select2-container--open .select2-selection__arrow {
+  transform: rotate(180deg)!important;
+}
+
+.form-slider-card .select-date {
+  margin-top: 12px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.select-option-menu {
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 4px 4px;
+  top: 9px;
+
+}
+
+.select-option-menu .select2-results__option {
+  padding: 7px 12px 9px 7px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background: rgba(239, 83, 63, 0.08);
+  color: #282828;
 }
 
 

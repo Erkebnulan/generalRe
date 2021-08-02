@@ -1,20 +1,554 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-nav {
+    margin-left: 40px;
+  }
+  .advantage-box {
+    width: 100%;
+  }
+  .utility-card-wrapper {
+    column-count: 3;
+  }
+  .app-section-img {
+    right: -285px;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-app {
+    margin-left: 0;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    max-width: initial;
+    p {
+      display: none;
+    }
+    .app-icon-wrapper {
+      display: flex;
+      margin-top: 0;
+    }
+  }
+  .app-icon-wrapper .footer-app-icon + .footer-app-icon {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  .close-menu-box {
+    margin-right: 40px;
+  }
+  .menu-box-body {
+    padding-left: 81px;
+  }
+  .menu-box-bottom {
+    padding-left: 81px;
+  }
+  .menu-box-body {
+    flex-wrap: wrap;
+  }
+  .socials {
+    width: 100%;
+    max-width: initial;
+    margin-top: 70px;
+    display: flex;
+  }
+  .socials-app {
+    margin-top: 0;
+    margin-left: 50px;
+  }
+  .app-section {
+    overflow: hidden;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-nav {
+    display: none;
+  }
+  .advantage-box {
+    width: 100%;
+  }
+  .utility-card-wrapper {
+    column-count: 2;
+  }
+  .app-section-img {
+    display: none;
+  }
+  .header-top-nav {
+    display: none;
+  }
+  .close-menu-box {
+    margin-right: 41px;
+  }
+  .menu-box-head {
+    flex-wrap: wrap;
+  }
+  .menu-box-head .right-side {
+    margin-top: 30px;
+    padding-left: 81px;
+  }
+  .menu-box-body {
+    margin-top: 60px;
+    padding-left: 81px;
+  }
+  .menu-box-nav a {
+    font-size: 24px;
+  }
+  .menu-box-nav li + li {
+    margin-top: 15px;
+  }
+  .menu-box-body {
+    flex-wrap: wrap;
+  }
+  .menu-box {
+    padding: 40px 30px 60px 30px;
+  }
+  .menu-box-nav a {
+    line-height: 30px;
+  }
+  .nav-xs li + li {
+    margin-top: 10px;
+  }
+  .socials {
+    margin-left: 0;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .socials-app {
+    margin-top: 40px;
+  }
+  .menu-box-bottom {
+    padding-left: 81px;
+    display: block;
+    margin-top: 40px;
+  }
+  .menu-box-bottom .left-side {
+    max-width: 100%;
+  }
+  .menu-box-bottom .right-side {
+    margin-top: 15px;
+    max-width: 100%;
+  }
+  .padding-x {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .promo {
+    padding-top: 30px;
+  }
+  .title-xl {
+    font-size: 45px;
+    line-height: 120%;
+  }
+  .promo-offer-item svg {
+    width: 30px;
+    height: 30px;
+  }
+  .promo-offer {
+    display: block;
+    padding-top: 15px;
+  }
+  .promo-offer-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .insurance-slider-tabs a {
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+  .insurance-slider-tabs a.active {
+    border-bottom: 2px solid #fff;
+  }
+  .slider-arrows a {
+    width: 40px;
+    height: 40px;
+  }
+  .slider-arrows li + li {
+    margin-left: 10px;
+  }
+  .insurance-slider .slider-card {
+    width: 280px;
+    min-height: 300px;
+  }
+  .insurance-slider .slider-card-img {
+    height: 240px;
+  }
+  .partners {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+  .tender {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .tender-btn {
+    margin-top: 20px;
+  }
+  .tender-slider {
+    margin-top: 30px;
+  }
+  .tender-card {
+    width: 280px;
+    min-height: 300px;
+    padding: 15px;
+  }
+  .tender-card-img {
+    height: 180px;
+  }
+  .tender-card h6 {
+    font-size: 22px;
+    line-height: 120%;
+  }
+  .offer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .title-md {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .faq {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+  .faq-wrapper {
+    margin-top: 20px;
+  }
+  .faq-item {
+    width: calc(50% - 24px);
+  }
+  .faq-item h6 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .faq-item p {
+    margin-top: 10px;
+  }
+  .app-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 250px;
+    background-size: 350px 220px;
+  }
+  .app-section-caption {
+    width: 100%;
+  }
+  footer {
+    padding-top: 30px;
+  }
+  .footer-top {
+    display: block;
+  }
+  .footer-social {
+    width: 100%;
+  }
+  .footer-social-nav {
+    margin-top: 20px;
+  }
+  .footer-nav-wrapper {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .footer-nav li + li {
+    margin-top: 10px;
+  }
+  .footer-app {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+  }
+  .footer-app p {
+    display: none;
+  }
+  .footer-app .app-icon-wrapper {
+    display: flex;
+  }
+  .app-icon-wrapper .footer-app-icon + .footer-app-icon {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  .footer-bottom {
+    display: block;
+  }
+  .footer-bottom .left-side {
+    width: 100%;
+  }
+  .footer-bottom .right-side {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .insurance-slider-content {
+    margin-right: -30px;
+  }
+  .tender-slider {
+    margin-right: -60px;
+  }
+  .partner-slider {
+    margin-right: -30px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header-top {
+    display: none;
+  }
+  .padding-x {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-nav {
+    display: none;
+  }
+  .link-personal-account span {
+    display: none;
+  }
+  .call-callback {
+    display: none;
+  }
+  .call-xs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+  }
+  .main-logo-xs {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 16px;
+  }
+  .main-logo-xs img {
+    height: 19px;
+    width: auto;
+  }
+  .link-personal-account {
+    margin-left: 16px;
+  }
+  .promo {
+    padding-top: 24px;
+    padding-bottom: 150px;
+    background-size: 180px 112px!important;
+    display: block;
+  }
+  .promo-title {
+    width: 100%;
+  }
+  .title-xl {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .promo-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  .promo-offer {
+    margin: 24px -8px 0 -8px;
+    padding-top: 0;
+  }
+  .promo-offer-item {
+    display: block;
+  }
+  .promo-offer-item svg {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+  }
+  .promo-offer-item p {
+    margin-left: 0;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .promo-btn {
+    margin-top: 24px;
+  }
+  .promo-btn .btn-white {
+    padding: 11px 12px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .promo-btn .btn-border {
+    padding: 9px 12px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .menu-box {
+    padding: 16px;
+    top: 56px!important;
+    max-height: calc(100% - 56px);
+  }
+  .menu-box-head {
+    display: block;
+  }
+  .close-menu-box {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .search-container input {
+    order: 1;
+  }
+  .search-container input::placeholder {
+    font-size: 16px;
+    line-height: 100%
+  }
+  .search-container input {
+    line-height: 100%;
+    margin-left: 0;
+    margin-right: 10px;
+    display: none;
+  }
+  .search-btn {
+    order: 2;
+    margin-left: auto;
+  }
+  .search-container {
+    min-height: 24px;
+    border-bottom: none;
+    flex: 1;
+  }
+  .search-container.active {
+    border-bottom: 1px solid #6F7893;
+    input {
+      display: block;
+    }
+  }
+  .menu-box-head .right-side {
+    margin-top: 20px;
+  }
+  .menu-box-head .link-personal-account {
+    margin-left: 0;
+    order: 1;
+  }
+  .menu-box-head .link-personal-account span {
+    display: block;
+  }
+  .menu-box-head .call-callback {
+    display: block;
+    order: 2;
+  }
+  .menu-box-body {
+    margin-top: 30px;
+    padding-left: 0;
+    display: block;
+  }
+  .menu-box-nav {
+    width: 100%;
+  }
+  .menu-box-nav li + li {
+    margin-top: 6px;
+  }
+  .menu-box-nav a {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .nav-xs-wrapper {
+    margin-top: 40px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .nav-xs a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .nav-xs-wrapper .nav-xs-container + .nav-xs-container {
+    margin-left: 16px;
+  }
+  .menu-box-body .socials {
+    max-width: initial;
+    margin-left: 0;
+    margin: 40px -8px 0 -8px;
+    display: flex;
+  }
+  .socials-app {
+    order: 1;
+    width: calc(50% - 16px);
+    margin: 0 8px;
+  }
+  .socials-app p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .app-wrapper .app-icon {
+    max-width: 164px;
+    max-height: 48px;
+  }
+  .socials-media {
+    order: 2;
+    width: calc(50% - 16px);
+    margin: 0 8px;
+  }
+  .social-media-phone {
+    font-size: 18px;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  .social-media-mail {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 8px;
+  }
+  .social-media-nav {
+    margin: 8px -8px 0 -8px;
+  }
+  .social-media-nav li + li {
+    margin: initial;
+  }
+  .social-media-nav li:first-child {
+    margin: initial;
+  }
+  .social-media-nav li {
+    margin: 8px!important;
+  }
+  .menu-box-bottom {
+    margin-top: 40px;
+    padding-left: 0;
+    display: block;
+  }
+  .menu-box-bottom .left-side {
+    width: 100%;
+    max-width: 100%;
+  }
+  .menu-box-bottom .right-side {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 16px;
+  }
+  .menu-box-bottom p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #6F7893;
+  }
+  .header-bottom {
+    min-height: 56px;
+  }
+}
+
+
 
 @media (max-width: 320px) {
 
 }
 
 
-@media (min-width: 320px) and (max-width: 767px) {
-
-}
 
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
 
 
-@media (min-width: 992px) and (max-width: 1199px) {
 
-}
+
 

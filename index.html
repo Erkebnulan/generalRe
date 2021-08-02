@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="slick-slider/slick/slick.css">
     <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -57,6 +59,9 @@
                 <path d="M3.00024 19H21.0002" stroke="#6F7893" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </button>
+        <a class="main-logo-xs" href="index.html">
+            <img src="img/main/logo.png">
+        </a>
         <ul class="main-nav">
             <li>
                 <a href="#">Авто</a>
@@ -84,6 +89,14 @@
             </li>
         </ul>
         <button class="btn-plain call-callback">Перезвоните мне</button>
+        <a class="call-xs" href="tel:+77000000000">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.6935 9.73235C16.6144 9.08782 16.4168 8.58174 16.0658 8.13347C15.6101 7.55625 15.0278 7.21061 14.1657 7.00557C13.6038 6.86891 13.3768 6.8846 13.1736 7.07068C12.9843 7.24502 12.9473 7.59453 13.092 7.82086C13.1937 7.98513 13.3111 8.04398 13.6375 8.10821C14.0721 8.18838 14.3725 8.29243 14.6457 8.44905C15.2257 8.78475 15.4958 9.31009 15.5247 10.1606C15.5382 10.5599 15.5726 10.6827 15.7117 10.8243C15.9696 11.0832 16.4285 11.0328 16.6232 10.723C16.6946 10.6063 16.7055 10.5554 16.7131 10.2843C16.718 10.1164 16.7108 9.86653 16.6935 9.73235Z" fill="#282828"/>
+                <path d="M18.9653 10.4591C18.8507 8.48448 18.0803 6.89578 16.7015 5.778C15.9246 5.14992 14.9856 4.71804 13.9562 4.508C13.5792 4.43288 12.885 4.372 12.7659 4.40682C12.6535 4.43907 12.4945 4.56107 12.4237 4.67139C12.3488 4.79102 12.3319 5.05813 12.3958 5.21264C12.4989 5.47093 12.6909 5.56218 13.2283 5.60931C14.0568 5.68198 14.9114 5.9738 15.5571 6.40582C16.2943 6.89771 16.8803 7.5705 17.2594 8.36109C17.5869 9.04036 17.7884 10.0193 17.7828 10.8959C17.7809 11.2129 17.8298 11.392 17.9569 11.5229C18.1489 11.7242 18.4288 11.7682 18.6757 11.6345C18.9494 11.4902 19.0135 11.2369 18.9653 10.4591Z" fill="#282828"/>
+                <path d="M21.791 17.3522L21.7909 17.3522C21.8729 17.4798 21.9863 17.695 22.045 17.8648C22.1073 18.0395 22.1445 18.2389 22.1614 18.4193C22.1778 18.5957 22.1797 18.8063 22.1396 18.9942C22.0881 19.2386 21.9789 19.4756 21.8207 19.7408C21.6625 20.0059 21.4365 20.3296 21.1259 20.7486L21.125 20.7499C20.9188 21.0265 20.6402 21.3432 20.3804 21.6104C20.1375 21.8602 19.8529 22.1277 19.6416 22.2541L19.6367 22.257L19.6367 22.2569C19.2333 22.493 18.825 22.619 18.3217 22.5977C17.8527 22.5778 17.3321 22.4307 16.6976 22.1997L16.6974 22.1997C14.4944 21.3972 12.3778 20.2257 10.3441 18.6944C6.44405 15.7584 3.60357 12.0564 1.70429 7.4325L21.791 17.3522ZM21.791 17.3522L21.7868 17.3458M21.791 17.3522L21.7868 17.3458M21.7868 17.3458C21.641 17.1251 21.3793 16.8602 21.1012 16.6051M21.7868 17.3458L21.1012 16.6051M14.1049 15.6672C14.108 15.6642 14.1114 15.6607 14.1154 15.6567C14.1434 15.6279 14.1824 15.5858 14.2304 15.5318C14.3256 15.4246 14.4445 15.2839 14.5631 15.137C14.5633 15.1368 14.5635 15.1365 14.5637 15.1363L15.0306 15.5131L14.1049 15.6672ZM14.1049 15.6672C14.0965 15.6716 14.0855 15.6769 14.0719 15.6829C14.0406 15.6965 14.0014 15.7106 13.9574 15.7233C13.8648 15.7499 13.7833 15.7609 13.738 15.7611C13.5701 15.7596 13.2688 15.698 12.8895 15.5621C12.5213 15.4302 12.1285 15.2459 11.792 15.04L11.7914 15.0396C11.2691 14.721 10.5672 14.126 10.0249 13.5297L10.024 13.5286C9.37944 12.823 8.9556 12.2176 8.62253 11.5429L8.62197 11.5418C8.39657 11.0876 8.27603 10.7615 8.22743 10.5215C8.18066 10.2905 8.20823 10.1789 8.23706 10.1167L8.23708 10.1167L8.2393 10.1119C8.25567 10.0757 8.27596 10.036 8.29431 10.0032C8.29441 10.003 8.29452 10.0028 8.29463 10.0026C8.32875 9.9736 8.37619 9.93395 8.43445 9.88576C8.55269 9.78795 8.7092 9.66014 8.87478 9.52584C9.19277 9.2723 9.42562 9.07995 9.58975 8.8943C9.78292 8.6758 9.873 8.47762 9.94978 8.25243L9.95011 8.25146C10.1611 7.62911 10.095 6.99761 9.79151 6.40051L9.79152 6.40051L9.78982 6.39721C9.5906 6.01123 9.09653 5.21407 8.74124 4.7021L8.74026 4.7007C8.49798 4.3537 8.08643 3.8244 7.71202 3.36365C7.52358 3.13175 7.34064 2.91241 7.18874 2.73726C7.05133 2.57883 6.90392 2.41461 6.80224 2.32976L6.80226 2.32973L6.79708 2.3255C6.18633 1.82732 5.42209 1.776 4.68168 2.06352L4.68135 2.06365C4.28549 2.21766 3.78604 2.55783 3.34945 2.90975C2.90491 3.26806 2.45336 3.69712 2.16644 4.07556L2.16576 4.07645C1.67341 4.72838 1.43935 5.25764 1.40624 5.95989C1.39393 6.20766 1.39601 6.42491 1.44746 6.67184C1.49626 6.90607 1.58449 7.14152 1.70423 7.43236L14.1049 15.6672ZM21.1012 16.6051C20.8094 16.3373 20.4534 16.0392 20.0799 15.746M21.1012 16.6051L20.0799 15.746M20.0799 15.746C19.3417 15.1668 18.4912 14.5727 17.8968 14.2671L20.0799 15.746ZM8.25334 10.0384C8.25118 10.0405 8.24996 10.0416 8.25001 10.0415C8.25005 10.0415 8.25109 10.0405 8.25334 10.0384ZM17.8963 14.2669C17.2575 13.938 16.6146 13.7303 16.0371 13.8982L17.8963 14.2669Z" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.2776 10.9126C21.2364 9.79565 21.0488 8.87946 20.6577 7.85799C20.2715 6.85319 19.8806 6.19751 19.1425 5.31068C18.4446 4.47918 17.9026 4.0044 17.0429 3.47591C15.8435 2.73958 14.3838 2.2523 12.748 2.04737C12.1902 1.97575 12.064 1.98086 11.8928 2.09535C11.5612 2.31221 11.5656 2.85313 11.8983 3.06675C12.0084 3.13471 12.1062 3.15946 12.5524 3.21801C13.2374 3.31047 13.6779 3.3976 14.2005 3.54055C16.25 4.10221 17.8261 5.25025 18.8798 6.95446C19.7615 8.37493 20.1275 9.79552 20.0756 11.6098C20.0575 12.2232 20.0706 12.3311 20.1642 12.4785C20.3433 12.7532 20.8156 12.8075 21.0579 12.5796C21.2087 12.4407 21.2371 12.3364 21.2668 11.8114C21.281 11.5376 21.2841 11.1333 21.2776 10.9126Z" fill="#282828"/>
+            </svg>
+        </a>
         <a class="link-personal-account" href="#">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 14C14.2082 14 16.0002 12.208 16.0002 10C16.0002 7.792 14.2082 6 12.0002 6C9.79218 6 8.00018 7.792 8.00018 10C8.00018 12.208 9.79218 14 12.0002 14Z" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -292,32 +305,50 @@
     <div class="insurance-slider-top">
         <ul class="nav insurance-slider-tabs">
             <li>
-                <a class="active" data-toggle="tab" href="#individSlider">Для физических лиц</a>
+                <a class="active" href="#individSlider" data-toggle="tab" id="individArrowLink">Для физических лиц</a>
             </li>
             <li>
-                <a data-toggle="tab" href="#entitySlider">Для юридических лиц</a>
+                <a href="#entitySlider" data-toggle="tab">Для юридических лиц</a>
             </li>
         </ul>
-        <ul class="slider-arrows">
-            <li>
-                <a class="prev-arrow" href="#">
-                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 15L1 8L7 1" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="next-arrow" href="#">
-                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7 8L1 15" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
-            </li>
-        </ul>
+        <div class="slider-arrows-wrapper">
+            <ul class="slider-arrows active" id="individSliderArrow">
+                <li>
+                    <a class="prev-arrow" href="#">
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 15L1 8L7 1" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="next-arrow" href="#">
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 8L1 15" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="slider-arrows" id="entitySliderArrow">
+                <li>
+                    <a class="prev-arrow" href="#">
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 15L1 8L7 1" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="next-arrow" href="#">
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 8L1 15" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="insurance-slider-content">
         <div class="tab-content">
-            <div id="individSlider" class="tab-pane active">
+            <div class="tab-pane active" id="individSlider" >
                 <div class="slider">
                     <div class="slider-card">
                         <div class="slider-card-caption">
@@ -375,9 +406,94 @@
                         </div>
                         <a class="absolute-link" href="#"></a>
                     </div>
+                    <div class="slider-card form-slider-card">
+                        <h6>Расчитать Обязательное автострахование</h6>
+                        <a class="advantage-number-link" href="#">5 предложении</a>
+                        <div class="form-label-wrapper">
+                            <label class="form-label">
+                                <span class="form-label-title">Введите Ваш ИИН</span>
+                                <input type="number">
+                            </label>
+                            <label class="form-label">
+                                <span class="form-label-title">Гос.номер авто</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <button class="btn-plain btn-main">Расчитать</button>
+                    </div>
+                    <div class="slider-card form-slider-card">
+                        <h6>Расчитать медицинское страхование</h6>
+                        <a class="advantage-number-link" href="#">3 предложении</a>
+                        <div class="form-label-wrapper">
+                            <label class="form-label select-label">
+                                <span class="form-label-title">Укажите возраст</span>
+                                <select class="select-custom">
+                                    <option></option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                </select>
+                            </label>
+                            <label class="select-date">
+                                <span class="form-label-title">Период страхование</span>
+                                <input type="text" class="date-range" name="daterange" value="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </label>
+                        </div>
+                        <button class="btn-plain btn-main">Расчитать</button>
+                    </div>
+                    <div class="slider-card form-slider-card">
+                        <h6>Расчитать медицинское страхование туриста</h6>
+                        <a class="advantage-number-link" href="#">2 предложении</a>
+                        <div class="form-label-wrapper">
+                            <label class="form-label select-label">
+                                <span class="form-label-title">Выберите страну</span>
+                                <select class="select-custom">
+                                    <option></option>
+                                    <option>Казахстан</option>
+                                    <option>Турция</option>
+                                    <option>Египет</option>
+                                    <option>Шри-ланка</option>
+                                    <option>Тайланд</option>
+                                </select>
+                            </label>
+                            <label class="select-date">
+                                <span class="form-label-title">Период поездки</span>
+                                <input type="text" class="date-range" name="daterange" value="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </label>
+                        </div>
+                        <button class="btn-plain btn-main">Расчитать</button>
+                    </div>
+                    <div class="slider-card form-slider-card">
+                        <h6>Расчитать страхование имущества</h6>
+                        <a class="advantage-number-link" href="#">5 предложении</a>
+                        <div class="form-label-wrapper">
+                            <label class="form-label">
+                                <span class="form-label-title">Введите Ваш ИИН</span>
+                                <input type="number">
+                            </label>
+                        </div>
+                        <button class="btn-plain btn-main">Расчитать</button>
+                    </div>
                 </div>
             </div>
-            <div id="entitySlider" class="tab-pane">
+            <div class="tab-pane" id="entitySlider">
                 <div class="slider">
                     <div class="slider-card">
                         <div class="slider-card-caption">
@@ -406,6 +522,56 @@
                             <img src="img/content/x-ray.png">
                         </div>
                         <a class="absolute-link" href="#"></a>
+                    </div>
+                    <div class="slider-card form-slider-card">
+                        <h6>Расчитать Обязательное автострахование авто</h6>
+                        <a class="advantage-number-link" href="#">5 предложении</a>
+                        <div class="form-label-wrapper">
+                            <label class="form-label">
+                                <span class="form-label-title">БИН организации</span>
+                                <input type="text">
+                            </label>
+                            <label class="form-label">
+                                <span class="form-label-title">Введите номер телефона</span>
+                                <input type="text" class="phone-mask">
+                            </label>
+                        </div>
+                        <button class="btn-plain btn-main">Отправить</button>
+                    </div>
+                    <div class="slider-card form-slider-card">
+                        <h6>Расчитать страхование имущества</h6>
+                        <a class="advantage-number-link" href="#">5 предложении</a>
+                        <div class="form-label-wrapper">
+                            <label class="form-label">
+                                <span class="form-label-title">БИН организации</span>
+                                <input type="text">
+                            </label>
+                            <label class="form-label select-label">
+                                <span class="form-label-title">Выберите город</span>
+                                <select class="select-custom">
+                                    <option></option>
+                                    <option>Алматы</option>
+                                    <option>Астана</option>
+                                    <option>Шымкент</option>
+                                    <option>Москва</option>
+                                    <option>Караганды</option>
+                                    <option>Милан</option>
+                                    <option>Пекин</option>
+                                </select>
+                            </label>
+                        </div>
+                        <button class="btn-plain btn-main">Расчитать</button>
+                    </div>
+                    <div class="slider-card form-slider-card">
+                        <h6>Расчитать медицинское страхование </h6>
+                        <a class="advantage-number-link" href="#">5 предложении</a>
+                        <div class="form-label-wrapper">
+                            <label class="form-label">
+                                <span class="form-label-title">Введите сумму страхование</span>
+                                <input type="number">
+                            </label>
+                        </div>
+                        <button class="btn-plain btn-main">Расчитать</button>
                     </div>
                 </div>
             </div>
@@ -459,7 +625,7 @@
 </section>
 <section class="tender padding-x">
     <div class="row">
-        <div class="col-5">
+        <div class="col-lg-6 col-xl-5">
             <div class="tender-left">
                 <h6>Для юридических лиц</h6>
                 <h1 class="title-xl">Мы всё сделаем за Вас бесплатно</h1>
@@ -470,7 +636,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-7">
+        <div class="col-lg-6 col-xl-7">
             <div class="tender-right">
                 <div class="tender-slider">
                     <div class="tender-card">
@@ -592,7 +758,7 @@
                 <a class="offer-btn" href="#">Оформить</a>
             </div>
         </div>
-        <div class="offer-card-general">
+        <div class="offer-card offer-card-general">
             <h4>Стать партнером General Re</h4>
             <a class="link-xs" href="#">Для страховых агентов</a>
             <p>Станьте партнером нашего сервиса и предлагайте свои лучшие решения </p>
@@ -857,27 +1023,63 @@
 
 
 <script src="js/libs.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="slick-slider/slick/slick.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
 <script src="js/main.js"></script>
 <script>
     //main slider
-    $('.insurance-slider .slider').slick({
+    $('#individSlider .slider').slick({
         dots: false,
         infinite: false,
         speed: 600,
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
-        prevArrow: $('.insurance-slider .prev-arrow'),
-        nextArrow: $('.insurance-slider .next-arrow'),
+        prevArrow: $('#individSliderArrow .prev-arrow'),
+        nextArrow: $('#individSliderArrow .next-arrow'),
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('#entitySlider .slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 600,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        prevArrow: $('#entitySliderArrow .prev-arrow'),
+        nextArrow: $('#entitySliderArrow .next-arrow'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
                 }
             },
             {
@@ -913,9 +1115,7 @@
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    slidesToScroll: 1,
                 }
             },
             {
@@ -938,7 +1138,7 @@
         ]
     });
 
-    //partner slider
+    //tender slider
     $('.tender-slider').slick({
         dots: false,
         infinite: true,
@@ -954,9 +1154,7 @@
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    slidesToScroll: 1,
                 }
             },
             {
@@ -978,6 +1176,15 @@
             // instead of a settings object
         ]
     });
+
+    //arrows
+    $('.insurance-slider-tabs a').click(function () {
+        if($('#individArrowLink').hasClass('active')) {
+            $('#individSliderArrow').addClass('active');
+        } else {
+            $('#entitySliderArrow').addClass('active');
+        }
+    })
 
 </script>
 </body>
