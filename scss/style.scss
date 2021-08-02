@@ -863,6 +863,7 @@ footer {
   line-height: 24px;
   color: #FFFFFF;
   text-align: center;
+  height: fit-content;
 }
 
 .tender-btn .btn-border {
@@ -931,7 +932,7 @@ footer {
 .offer-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 12px -12px 0 -12px;
+  margin-top: 24px;
 }
 
 .offer-card {
@@ -939,7 +940,7 @@ footer {
   padding: 24px;
   width: 290px;
   min-height: 430px;
-  display: flex;
+  display: flex!important;
   flex-direction: column;
   margin: 12px;
 }

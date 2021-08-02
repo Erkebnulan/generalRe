@@ -762,7 +762,59 @@
             <h4>Стать партнером General Re</h4>
             <a class="link-xs" href="#">Для страховых агентов</a>
             <p>Станьте партнером нашего сервиса и предлагайте свои лучшие решения </p>
-            <a class="offer-btn" href="#">Узнать подробнее</a>
+            <div class="offer-card-bottom">
+                <a class="offer-btn" href="#">Узнать подробнее</a>
+            </div>
+        </div>
+        <div class="offer-card pink">
+            <div class="offer-card-top">
+                <h6>Страхование имущества</h6>
+                <div class="offer-card-img">
+                    <img src="img/content/nomad.png">
+                </div>
+            </div>
+            <div class="offer-card-body">
+                <div class="item">
+                    <span>Недвижимое имущество</span>
+                    <p>2 000 000 тенге</p>
+                </div>
+                <div class="item">
+                    <span>Внутренняя отделка</span>
+                    <p>3 500 000 тенге</p>
+                </div>
+                <div class="item">
+                    <span>Компенсация соседям</span>
+                    <p>800 000 тенге</p>
+                </div>
+            </div>
+            <div class="offer-card-bottom">
+                <a class="offer-btn" href="#">Оформить</a>
+            </div>
+        </div>
+        <div class="offer-card light-blue">
+            <div class="offer-card-top">
+                <h6>Страхование имущества</h6>
+                <div class="offer-card-img">
+                    <img src="img/content/eur.png">
+                </div>
+            </div>
+            <div class="offer-card-body">
+                <div class="item">
+                    <span>Недвижимое имущество</span>
+                    <p>2 000 000 тенге</p>
+                </div>
+                <div class="item">
+                    <span>Внутренняя отделка</span>
+                    <p>3 500 000 тенге</p>
+                </div>
+                <div class="item">
+                    <span>Компенсация соседям</span>
+                    <p>800 000 тенге</p>
+                </div>
+            </div>
+            <div class="offer-card-bottom">
+                <a class="offer-btn" href="#">Оформить</a>
+            </div>
         </div>
     </div>
 </section>
@@ -1176,6 +1228,47 @@
             // instead of a settings object
         ]
     });
+
+    //offer slider
+    $('.offer-list').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay:true,
+        arrows: false,
+        variableWidth: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+
 
     //arrows
     $('.insurance-slider-tabs a').click(function () {
