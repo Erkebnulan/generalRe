@@ -12,17 +12,20 @@ let menuBoxTop = $('.header-top').height() + 30;
 
 
 //form-label
-$('.form-label input').focus(function () {
-    $(this).closest('.form-label').addClass('form-label-focus');
-});
-$('.form-label input').blur(function () {
-    $(this).closest('.form-label').removeClass('form-label-focus');
-    $(this).closest('.form-label').addClass('form-label-done');
-    if ($(this).val().length === 0) {
+$(document).ready(function (){
+    $('.form-label input').focus(function () {
+        $(this).closest('.form-label').addClass('form-label-focus');
+    });
+    $('.form-label input').blur(function () {
         $(this).closest('.form-label').removeClass('form-label-focus');
-        $(this).closest('.form-label').removeClass('form-label-done');
-    }
-});
+        $(this).closest('.form-label').addClass('form-label-done');
+        if ($(this).val().length === 0) {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').removeClass('form-label-done');
+        }
+    });
+})
+
 
 
 //phone-mask
@@ -36,21 +39,20 @@ $(document).ready(function() {
     $('.select-custom').select2({
         dropdownCssClass: 'select-option-menu',
     });
-});
 
-$('.select-custom').on('select2:open', function (e) {
-    $(this).closest('.form-label').addClass('form-label-focus');
-});
+    $('.select-custom').on('select2:open', function (e) {
+        $(this).closest('.form-label').addClass('form-label-focus');
+    });
 
-$('.select-custom').on('select2:close', function (e) {
-    $(this).closest('.form-label').removeClass('form-label-focus');
-    $(this).closest('.form-label').addClass('form-label-done');
-    if ($(this).val().length === 0) {
+    $('.select-custom').on('select2:close', function (e) {
         $(this).closest('.form-label').removeClass('form-label-focus');
-        $(this).closest('.form-label').removeClass('form-label-done');
-    }
+        $(this).closest('.form-label').addClass('form-label-done');
+        if ($(this).val().length === 0) {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').removeClass('form-label-done');
+        }
+    });
 });
-
 
 //calendar
 $('.date-range').daterangepicker({
@@ -94,6 +96,7 @@ $(document).ready(function () {
         })
     }
 })
+
 
 
 
