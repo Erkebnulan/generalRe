@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/main/favicon.png">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top padding-x">
+        <a class="main-logo" href="index.html">
+            <img src="img/main/logo.png">
+            <img class="logoImg-white" src="img/main/logo-white.png">
+            <img class="logoImg-dark" src="img/main/logo-dark.png">
+            <h6>центр <br>страхования</h6>
+        </a>
+        <ul class="header-top-nav">
+            <li>
+                <a class="active" href="#">Для физических лиц</a>
+            </li>
+            <li>
+                <a href="#">Для юридических лиц</a>
+            </li>
+            <li>
+                <a href="#">Для страховых компании</a>
+            </li>
+            <li>
+                <a class="text-red" href="#">General Re</a>
+            </li>
+        </ul>
+        <a class="header-top-phone" href="tel:+77272254040">+ 7 727 225 40-40</a>
+        <ul class="lang-nav">
+            <li>
+                <a>Қаз</a>
+            </li>
+            <li>
+                <a class="active">Рус</a>
+            </li>
+            <li>
+                <a>Eng</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-bottom padding-x">
+        <button class="btn-plain call-menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.00024 5H21.0002" stroke="#6F7893" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.00024 12H21.0002" stroke="#6F7893" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.00024 19H21.0002" stroke="#6F7893" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <ul class="main-nav">
+            <li>
+                <a href="#">Авто</a>
+            </li>
+            <li>
+                <a href="#">Каско</a>
+            </li>
+            <li>
+                <a href="#">Для туристов</a>
+            </li>
+            <li>
+                <a href="#">Имущество</a>
+            </li>
+            <li>
+                <a href="#">Здоровье</a>
+            </li>
+            <li>
+                <a href="#">Калькулятор</a>
+            </li>
+            <li>
+                <a href="#">О нас</a>
+            </li>
+            <li>
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+        <button class="btn-plain call-callback">Перезвоните мне</button>
+        <a class="link-personal-account" href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 14C14.2082 14 16.0002 12.208 16.0002 10C16.0002 7.792 14.2082 6 12.0002 6C9.79218 6 8.00018 7.792 8.00018 10C8.00018 12.208 9.79218 14 12.0002 14Z" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.9631 21.87C18.6301 19.142 15.6381 17 12.0001 17C8.36311 17 5.37111 19.142 5.03711 21.869" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.126 19C2.044 18.681 2 18.346 2 18V6C2 3.791 3.791 2 6 2H18C20.209 2 22 3.791 22 6V18C22 20.209 20.209 22 18 22H6C4.136 22 2.57 20.726 2.126 19" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Личный кабинет</span>
+        </a>
+    </div>
+</header>
+
+<label class="form-label">
+    <span class="form-label-title">БИН организации</span>
+    <input type="text">
+</label>
+<label class="form-label phone">
+    <span class="form-label-title">Введите номер телефона</span>
+    <input type="text" class="phone-mask">
+</label>
+<label class="form-label select-label">
+    <span class="form-label-title">Укажите</span>
+    <select class="select-custom">
+        <option></option>
+        <option>option</option>
+        <option>option</option>
+        <option>option</option>
+    </select>
+</label>
+<label class="select-date">
+    <span class="form-label-title">Период страхование</span>
+    <input type="text" class="date-range" name="daterange" value="">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</label>
+
+<div class="radio-box">
+    <label class="radio-container">
+        Физическое лицо
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+    </label>
+    <label class="radio-container">
+        Юридическое лицо
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+    </label>
+</div>
+
+<label class="checkbox-form">
+    Льготы - инвалиды/пенсионеры
+    <input type="checkbox">
+    <span class="checkmark"></span>
+</label>
+
+
+<footer class="padding-x">
+    <div class="footer-top">
+        <div class="footer-social">
+            <a class="footer-social-phone" href="tel+:77272254040">+ 7 727 225 40-40</a>
+            <a class="footer-social-mail" href="mailto:info@generalre.kz">info@generalre.kz</a>
+            <ul class="footer-social-nav">
+                <li>
+                    <a href="#">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="46" height="46" rx="7" fill="#F5F5F7" stroke="#E0E0E0" stroke-width="2"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0415 33.8549H24.0374C22.3822 33.8544 20.7559 33.4391 19.3114 32.6512L14.0688 34.0264L15.4718 28.9018C14.6064 27.402 14.151 25.7007 14.1518 23.9577C14.1539 18.505 18.5904 14.0688 24.0414 14.0688C26.6869 14.07 29.17 15.0999 31.0371 16.9692C32.9042 18.8385 33.932 21.3231 33.9309 23.9655C33.9287 29.417 29.4941 33.8527 24.0415 33.8549ZM19.5544 30.8612L19.8545 31.0393C21.1165 31.7882 22.5632 32.1845 24.0382 32.185H24.0415C28.572 32.185 32.2593 28.4976 32.2611 23.9652C32.262 21.7689 31.4078 19.7037 29.8559 18.15C28.304 16.5963 26.2402 15.7403 24.0447 15.7395C19.5107 15.7395 15.8233 19.4266 15.8215 23.9586C15.8209 25.5117 16.2555 27.0243 17.0783 28.333L17.2737 28.644L16.4433 31.6772L19.5544 30.8612ZM28.6855 26.0949C28.8578 26.1782 28.9742 26.2345 29.0239 26.3174C29.0856 26.4204 29.0856 26.9152 28.8798 27.4925C28.6738 28.0697 27.6866 28.5965 27.2118 28.6674C26.7861 28.7311 26.2474 28.7576 25.6555 28.5695C25.2966 28.4556 24.8363 28.3036 24.2468 28.049C21.9302 27.0487 20.3647 24.8034 20.0688 24.3791C20.0481 24.3494 20.0336 24.3286 20.0255 24.3178L20.0235 24.3151C19.8927 24.1407 19.0165 22.9715 19.0165 21.7616C19.0165 20.6233 19.5756 20.0267 19.833 19.7521C19.8506 19.7333 19.8668 19.716 19.8814 19.7001C20.1078 19.4527 20.3756 19.3909 20.5403 19.3909C20.705 19.3909 20.8699 19.3924 21.0139 19.3996C21.0317 19.4005 21.0501 19.4004 21.0692 19.4003C21.2132 19.3995 21.3928 19.3984 21.5699 19.8238C21.638 19.9875 21.7377 20.2303 21.8428 20.4862C22.0555 21.0039 22.2904 21.5758 22.3317 21.6586C22.3935 21.7823 22.4347 21.9266 22.3523 22.0915C22.34 22.1163 22.3285 22.1396 22.3176 22.1619C22.2558 22.2882 22.2102 22.3811 22.1052 22.5037C22.064 22.5519 22.0213 22.6039 21.9786 22.6559C21.8936 22.7594 21.8086 22.8629 21.7346 22.9367C21.6109 23.0599 21.4821 23.1936 21.6262 23.441C21.7704 23.6884 22.2663 24.4975 23.0009 25.1528C23.7906 25.8571 24.4769 26.1548 24.8248 26.3057C24.8927 26.3352 24.9477 26.359 24.9881 26.3793C25.2351 26.503 25.3793 26.4823 25.5234 26.3174C25.6676 26.1525 26.1411 25.5958 26.3058 25.3485C26.4705 25.1012 26.6353 25.1424 26.8618 25.2248C27.0883 25.3074 28.3032 25.9051 28.5503 26.0288C28.5986 26.0529 28.6437 26.0747 28.6855 26.0949Z" fill="#282828"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="46" height="46" rx="7" fill="#F5F5F7" stroke="#E0E0E0" stroke-width="2"/>
+                            <path d="M13.3021 24.7048C15.3481 23.5778 17.6321 22.6371 19.7661 21.6917C23.4374 20.1431 27.1233 18.6214 30.8464 17.2047C31.5708 16.9634 32.8724 16.7273 33 17.8008C32.9301 19.3203 32.6426 20.8309 32.4454 22.3416C31.945 25.6636 31.3665 28.9742 30.8024 32.2853C30.608 33.3882 29.2264 33.9591 28.3424 33.2533C26.2178 31.8183 24.077 30.3972 21.9796 28.9288C21.2925 28.2307 21.9296 27.2282 22.5432 26.7296C24.2931 25.0052 26.1488 23.5401 27.8072 21.7265C28.2545 20.6463 26.9327 21.5566 26.4968 21.8356C24.1012 23.4864 21.7643 25.238 19.2387 26.6888C17.9486 27.399 16.445 26.7921 15.1555 26.3958C13.9993 25.9171 12.305 25.4348 13.302 24.7049L13.3021 24.7048Z" fill="#282828"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="46" height="46" rx="7" fill="#F5F5F7" stroke="#E0E0E0" stroke-width="2"/>
+                            <path d="M14 20.4753L22.4764 24.3881C23.4436 24.8335 24.5564 24.8335 25.5236 24.3881L34 20.4753" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.1818 32.3636H15.8182C14.8145 32.3636 14 31.5491 14 30.5455V17.8182C14 16.8145 14.8145 16 15.8182 16H32.1818C33.1855 16 34 16.8145 34 17.8182V30.5455C34 31.5491 33.1855 32.3636 32.1818 32.3636Z" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-nav-wrapper">
+            <ul class="footer-nav">
+                <li>
+                    <a href="#">Авто</a>
+                </li>
+                <li>
+                    <a href="#">Туристам</a>
+                </li>
+                <li>
+                    <a href="#">Имущество</a>
+                </li>
+                <li>
+                    <a href="#">Здоровье</a>
+                </li>
+                <li>
+                    <a href="#">Калькулятор</a>
+                </li>
+            </ul>
+            <ul class="footer-nav">
+                <li>
+                    <a href="#">Для физических лиц</a>
+                </li>
+                <li>
+                    <a href="#">Для юридических лиц</a>
+                </li>
+                <li>
+                    <a href="#">Для Страховых компаний</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+            <ul class="footer-nav">
+                <li>
+                    <a href="#">General.Re</a>
+                </li>
+                <li>
+                    <a href="#">О компании</a>
+                </li>
+                <li>
+                    <a href="#">Полезное</a>
+                </li>
+                <li>
+                    <a href="#">Законы</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-app">
+            <p>Ваш личный кабинет и страховой полис у вас под рукой</p>
+            <div class="app-icon-wrapper">
+                <a class="footer-app-icon" href="#">
+                    <img src="img/icon/app-store-black.png">
+                </a>
+                <a class="footer-app-icon" href="#">
+                    <img src="img/icon/google-play-black.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="left-side">
+            <p>© 1998 - 2021 Центр Страхования "General Re" г. Алматы пр. Сейфуллина 498 оф. 202</p>
+        </div>
+        <div class="right-side">
+            <p>Офисы Центра Страхования General Re находятся во всех наиболее важных экономических регионах Казахстана.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="slick-slider/slick/slick.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/main.js"></script>
+<script>
+    //main slider
+    $('.insurance-slider .slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 600,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        prevArrow: $('.insurance-slider .prev-arrow'),
+        nextArrow: $('.insurance-slider .next-arrow'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    //partner slider
+    $('.partner-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay:true,
+        arrows: false,
+        autoplaySpeed: 3000,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+    //partner slider
+    $('.tender-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay:true,
+        arrows: false,
+        autoplaySpeed: 3000,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+
+
+
+</script>
+</body>
+</html>

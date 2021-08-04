@@ -57,6 +57,7 @@ ul {
 body {
   font-family: "Source Sans Pro";
   overflow-x: hidden;
+  font-weight: 400;
 }
 
 .scroll-locked {
@@ -211,6 +212,7 @@ body {
           align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .call-menu {
@@ -1100,6 +1102,7 @@ footer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  white-space: nowrap;
 }
 
 .tender-btn .btn-border {
@@ -1672,6 +1675,7 @@ footer {
   -o-transition: transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), font-size 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), font-size 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), font-size 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
+  max-width: calc(100% - 30px);
 }
 
 .form-label input, .select-date input {
@@ -1697,6 +1701,7 @@ footer {
 .form-label-focus .form-label-title, .form-label-done .form-label-title {
   -webkit-transform: translateY(-13px) scale(0.68) translateZ(0);
           transform: translateY(-13px) scale(0.68) translateZ(0);
+  max-width: 100%;
 }
 
 .form-label-focus:after, .form-label-done:after {
@@ -2097,8 +2102,11 @@ header.red .link-personal-account span {
       flex-wrap: wrap;
 }
 
-.contact-tab li a {
+.contact-tab li {
   margin: 4px;
+}
+
+.contact-tab li a {
   padding: 12px;
   font-weight: normal;
   font-size: 18px;
@@ -2189,6 +2197,7 @@ header.red .link-personal-account span {
 .contact-map iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 .main-modal .modal-content {
@@ -2323,6 +2332,27 @@ header.red .link-personal-account span {
 .calc-content .tab-content {
   margin-left: 24px;
   width: 58%;
+  position: relative;
+}
+
+.calc-content-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.calc-content-info p {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #6F7893;
+  margin-top: 16px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .calc-box {
@@ -2332,6 +2362,8 @@ header.red .link-personal-account span {
   border-radius: 4px;
   padding: 24px;
   max-width: 755px;
+  z-index: 1;
+  position: relative;
 }
 
 .calc-box-title {
@@ -2380,6 +2412,9 @@ header.red .link-personal-account span {
   padding-left: 31px;
   margin-bottom: 0;
   white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .radio-container input {
@@ -2441,6 +2476,9 @@ header.red .link-personal-account span {
   font-size: 14px;
   line-height: 18px;
   color: #282828;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .checkbox-form input {
@@ -2624,6 +2662,843 @@ footer.white-bg {
   margin-top: 8px;
 }
 
+.calc .title-md {
+  margin-top: 16px;
+}
+
+.insurance-promo {
+  background: #F5F5F7;
+  padding-top: 24px;
+}
+
+.insurance-promo-content {
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+.insurance-promo .title-md {
+  color: #282828;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.insurance-instruction {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.insurance-instruction-item {
+  margin-right: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.instruction-number {
+  width: 32px;
+  height: 32px;
+  background: #EF533F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.insurance-instruction-item p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  width: 170px;
+}
+
+.insurance-form {
+  background: #282828;
+  width: 100%;
+  border-radius: 12px;
+  padding: 40px;
+  margin-top: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.insurance-form-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insurance-form .form-label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.insurance-form .form-label {
+  margin-right: 24px;
+}
+
+.insurance-form .btn-main {
+  min-height: 56px;
+}
+
+.insurance-form-notice {
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 180px;
+  max-width: 185px;
+}
+
+.insurance-form-notice svg {
+  min-width: 24px;
+}
+
+.insurance-form-notice p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-left: 8px;
+}
+
+.insurance-form-bottom {
+  margin-top: 8px;
+}
+
+.insurance-form .checkbox-form {
+  color: #fff;
+}
+
+.tariff-wrapper {
+  max-width: 1090px;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+.title-sm {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  color: #282828;
+}
+
+.tariff-title .title-sm {
+  text-align: center;
+}
+
+.tariff-title p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #6F7893;
+  margin-top: 8px;
+}
+
+.tariff-card-wrapper {
+  margin-top: 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.tariff-card {
+  width: 33.3%;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.tariff-card-img {
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+}
+
+.tariff-card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.tariff-card-caption {
+  text-align: center;
+  padding: 24px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.tariff-card-caption span {
+  margin-top: 4px;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #6F7893;
+}
+
+.tariff-card-price {
+  font-size: 48px;
+  line-height: 46px;
+  text-align: center;
+  color: #282828;
+  margin-top: 16px;
+}
+
+.tariff-card-caption .btn-main {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.tariff-card-info {
+  padding: 17px 24px 24px 24px;
+}
+
+.tariff-card-info h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.check-nav li + li {
+  margin-top: 12px;
+}
+
+.check-nav li {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+  position: relative;
+  padding-left: 26px;
+}
+
+.check-nav li:before {
+  content: '';
+  background: url("../img/icon/check-circle.svg") no-repeat center/contain;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tariff-card-info .check-nav {
+  margin-top: 12px;
+}
+
+.tariff-card-wrapper .tariff-card + .tariff-card {
+  border-left: 1px solid #EAEAEA;
+}
+
+.insurance-body {
+  background: #fff;
+}
+
+.tariff-compare {
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.tariff-compare-content {
+  display: none;
+}
+
+.compare-th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 49px;
+  background: #F5F5F7;
+  border-bottom: 1px solid #E0E0E2;
+}
+
+.compare-th p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.compare-th-left {
+  width: 33.3%;
+  padding: 12px 0;
+}
+
+.compare-th-right {
+  width: 66.7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.compare-th-right .compare-td {
+  width: 33.3%;
+  padding: 12px 0;
+}
+
+.compare-th-right .compare-td p {
+  text-align: center;
+}
+
+.compare-title {
+  min-width: 42px;
+  padding: 12px 0 12px 33.3%;
+}
+
+.compare-title p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #282828;
+  text-align: center;
+}
+
+.compare-body {
+  background: #F5F5F7;
+  border-bottom: 1px solid #E0E0E2;
+}
+
+.compare-tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 41px;
+  border-top: 1px solid #E0E0E2;
+}
+
+.compare-tr p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #282828;
+}
+
+.compare-tr-left {
+  width: 33.3%;
+  padding: 12px 8px;
+  border-right: 2px solid #E0E0E2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.compare-tr-right {
+  width: 66.7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.compare-tr-right .compare-td {
+  width: 33.3%;
+  padding: 12px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.compare-tr-right .compare-td p {
+  text-align: center;
+}
+
+.compare-tr-right .compare-td + .compare-td {
+  border-left: 1px solid #CECECF;
+}
+
+.compare-tr-right .compare-td.success i {
+  content: '';
+  background: url("../img/icon/check-circle.svg") no-repeat center/contain;
+  width: 18px;
+  height: 18px;
+}
+
+.compare-tr-right .compare-td.error i {
+  content: '';
+  background: url("../img/icon/x-gray.svg") no-repeat center/contain;
+  width: 18px;
+  height: 18px;
+}
+
+.tariff-compare-toggle {
+  min-height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.tariff-compare-toggle p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #282828;
+  margin-right: 9px;
+}
+
+.tariff-compare-toggle svg {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.tariff-compare-toggle.active svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.insurance-advantage {
+  margin-top: 80px;
+}
+
+.insurance-advantage-inner {
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+.insurance-advantage-content {
+  margin: 12px -12px 0 -12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.insurance-advantage-content .item {
+  width: calc(33.3% - 24px);
+  margin: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.insurance-advantage-content .item p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #6F7893;
+  margin-left: 16px;
+}
+
+.useful {
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.useful .title-sm {
+  text-align: center;
+}
+
+.insurance-advantage .title-sm {
+  text-align: center;
+}
+
+.useful-box {
+  margin: 24px -12px 0 -12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.useful-item {
+  background: #FEF1F0;
+  border-radius: 16px;
+  width: calc(25% - 24px);
+  margin: 12px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 24px;
+}
+
+.useful-item p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+}
+
+.callback {
+  background: #F5F5F7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.callback .title-md {
+  color: #282828;
+}
+
+.callback-left {
+  width: 50%;
+}
+
+.callback-right {
+  width: calc(50% - 24px);
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.callback-form .btn-main {
+  min-height: 56px;
+  margin-left: 24px;
+}
+
+.callback-form .form-label {
+  max-width: 310px;
+}
+
+.loading {
+  background: #F5F5F7;
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loading-content {
+  max-width: 1090px;
+  width: 100%;
+}
+
+.loading-content .title-md {
+  text-align: center;
+}
+
+.loading-progress {
+  margin-top: 40px;
+  width: 100%;
+  background: #F4DBDA;
+  border-radius: 24px;
+  overflow: hidden;
+  height: 24px;
+}
+
+.loading-progress .progress {
+  background: #EF533F;
+  border-radius: 0;
+  height: 100%;
+}
+
+.loading-content p {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #282828;
+  margin-top: 32px;
+}
+
+.insurance-result {
+  background: #F5F5F7;
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+.insurance-result-inner {
+  max-width: 1090px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.insurance-result-form {
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.insurance-result-form .title-sm {
+  text-align: center;
+}
+
+.insurance-result-body {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insurance-result-body .form-label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.insurance-result-body .form-label-wrapper .form-label {
+  margin-right: 24px;
+  min-width: 180px;
+}
+
+.insurance-result-form .btn-main {
+  min-height: 56px;
+}
+
+.insurance-result-form .insurance-form-notice p {
+  color: #282828;
+}
+
+.insurance-result-bottom {
+  margin-top: 8px;
+}
+
+.insurance-result-container {
+  margin-top: 40px;
+}
+
+.result-container-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 16px;
+}
+
+.insurance-result-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 16px;
+  min-height: 96px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.result-container-top p {
+  color: #6F7893;
+}
+
+.result-container-top .left-side {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insurance-result-item .left-side {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.result-container-top .right-side {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insurance-result-item .right-side {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insurance-result-container .insurance-name {
+  width: 83%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insurance-result-container .insurance-time {
+  width: calc(27% - 24px);
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.insurance-result-container .insurance-cost {
+  width: calc(50% - 24px);
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.insurance-result-btn {
+  width: calc(50% - 24px);
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insurance-cost button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.insurance-cost button p {
+  margin-right: 4px;
+}
+
+.result-container-body {
+  margin-top: 16px;
+}
+
+.result-container-body .insurance-result-item + .insurance-result-item {
+  margin-top: 8px;
+}
+
+.result-container-top .insurance-time p {
+  text-align: right;
+}
+
+.result-container-top .insurance-cost {
+  text-align: right;
+}
+
+.result-container-top .insurance-cost button {
+  margin-left: auto;
+}
+
+.insurance-result-item .insurance-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insurance-result-item .insurance-name-img {
+  width: 72px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.insurance-result-item .insurance-name-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.insurance-result-item .insurance-name p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+  margin-left: 16px;
+}
+
+.insurance-result-item .insurance-time p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: #282828;
+  margin-left: auto;
+}
+
+.insurance-result-item .insurance-cost p {
+  text-align: right;
+  margin-left: auto;
+}
+
+.insurance-result-item .insurance-result-btn button {
+  margin-left: auto;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.insurance-result-item .insurance-result-btn button:hover {
+  background: #F5F5F7;
+  color: #6F7893;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .main-nav {
     margin-left: 40px;
@@ -2692,6 +3567,13 @@ footer.white-bg {
   }
   .app-section {
     overflow: hidden;
+  }
+  .calc-aside {
+    width: 20%;
+    min-width: initial;
+  }
+  .calc-content .tab-content {
+    width: 75%;
   }
 }
 
@@ -2932,6 +3814,34 @@ footer.white-bg {
   }
   .partner-slider {
     margin-right: -30px;
+  }
+  .contact-info-box a {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .contact-info-box .content a + a {
+    margin-top: 5px;
+  }
+  .contact-info-box p {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .contact-map {
+    height: 400px;
+  }
+  .calc-content {
+    display: block;
+  }
+  .calc-content .tab-content {
+    margin-left: 0;
+    margin-top: 24px;
+    width: 100%;
+  }
+  .calc {
+    padding-bottom: 60px;
+  }
+  .calc-content-info {
+    display: none;
   }
 }
 
@@ -3472,5 +4382,181 @@ footer.white-bg {
   }
   .fixed-social-nav {
     display: none;
+  }
+  .about-promo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    min-height: 145px;
+    background-size: 180px 112px !important;
+  }
+  .about-promo-title h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .about-promo-title p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 8px;
+  }
+  .about-promo-tab .nav a {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 6px;
+  }
+  .about-promo-tab .nav a.active {
+    border-bottom: 2px solid #fff;
+  }
+  .about header {
+    top: 0 !important;
+  }
+  .about-content {
+    padding-top: 24px;
+    padding-bottom: 64px;
+  }
+  .about-mission-text p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .about-mission-text p + p {
+    margin-top: 24px;
+  }
+  .about-team .marker-list li {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .about-team .marker-list {
+    padding-left: 22px;
+  }
+  .contact {
+    padding-top: 16px;
+    padding-bottom: 64px;
+  }
+  .contact-tab {
+    margin: 16px 0 0 0;
+    overflow-x: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .contact-tab a {
+    white-space: nowrap;
+  }
+  .contact .tab-content {
+    margin-top: 28px;
+  }
+  .contact-info {
+    display: block;
+  }
+  .contact-info-left {
+    width: 100%;
+  }
+  .contact-info-box span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .contact-info-box a {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .contact-info-box .content {
+    margin-top: 12px;
+  }
+  .contact-info-box .content a + a {
+    margin-top: 16px;
+  }
+  .contact-info-right {
+    margin-top: 40px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .contact-info-box p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .contact-map {
+    margin: 40px -15px 0 -15px;
+    height: 400px;
+    width: initial;
+  }
+  .calc {
+    padding-top: 16px;
+    padding-bottom: 37px;
+  }
+  .calc-content {
+    display: block;
+  }
+  .calc-content .tab-content {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 16px;
+  }
+  .calc-content-info {
+    display: none;
+  }
+  .calc-aside {
+    width: 100%;
+  }
+  .calc-box {
+    padding: 16px;
+  }
+  .calc-box-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .calc-box .radio-box {
+    margin-top: 16px;
+  }
+  .radio-container {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 27px;
+  }
+  .radio-container .checkmark {
+    width: 18px;
+    height: 18px;
+  }
+  .radio-container .checkmark:after {
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .calc-box .radio-box .radio-container + .radio-container {
+    margin-left: 24px;
+  }
+  .calc-box-body {
+    display: block;
+    margin-top: 16px;
+    padding-bottom: 24px;
+  }
+  .calc-box-body .left-side {
+    width: 100%;
+  }
+  .calc-box-body .right-side {
+    margin-left: 0;
+    margin-top: 24px;
+    width: 100%;
+  }
+  .calc-box-body .right-side .checkbox-form {
+    margin-top: 12px;
+  }
+  .calc-box-bottom .right-side span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .calc-box-bottom .right-side p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 2px;
+  }
+  .calc-aside a {
+    padding: 10px 12px;
+  }
+  .modal-content {
+    width: 90% !important;
+    max-height: 80vh;
+    overflow-y: auto;
   }
 }

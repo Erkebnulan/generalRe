@@ -97,8 +97,11 @@ $(document).ready(function () {
     }
 })
 
-
-
+//fixed social
+$('.show-social-nav').click(function (){
+    $(this).closest('.fixed-social-nav').toggleClass('show');
+    $(this).prev('.social-nav-list').slideToggle(300);
+})
 
 
 

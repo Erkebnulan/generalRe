@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/main/favicon.png">
+    <link rel="icon" href="img/main/favicon.ico">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="slick-slider/slick/slick.css">
     <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
@@ -60,6 +60,7 @@
             </button>
             <a class="main-logo-xs" href="index.html">
                 <img src="img/main/logo.png">
+                <img class="logoImg-white" src="img/main/logo-white.png">
             </a>
             <ul class="main-nav">
                 <li>
@@ -306,7 +307,7 @@
                 </div>
                 <div class="tab-pane about-slider" id="aboutSlider">
                     <section class="partners">
-                        <h1 class="title-md">Страховые компании</h1>
+                        <h1 class="title-md">Наши партнеры</h1>
                         <div class="partner-slider">
                             <div class="partner-slider-item">
                                 <img src="img/content/halyk.png">
@@ -458,22 +459,6 @@
             </div>
         </div>
     </footer>
-    <div class="fixed-social-nav">
-        <div class="social-nav-list">
-            <a href="#">
-                <img src="img/icon/wp.png">
-            </a>
-            <a href="#">
-                <img src="img/icon/viber.png">
-            </a>
-            <a href="#">
-                <img src="img/icon/tg.png">
-            </a>
-        </div>
-        <button class="btn-plain show-social-nav">
-            <i class="icon"></i>
-        </button>
-    </div>
 </div>
 
 <script src="js/libs.min.js"></script>
@@ -523,8 +508,15 @@
     $(document).ready(function (){
         let headerStickyTop = $('.header-top').outerHeight();
         let tabStickyTop = $('.header-bottom').outerHeight();
-        $('.header-bottom').css('top', ''+headerStickyTop + 'px');
+        $('header').css('top', '-'+headerStickyTop + 'px');
         $('.about-promo-tab').css('top', ''+tabStickyTop + 'px');
+    })
+
+    //header xs
+    $(document).ready(function (){
+        if($(window).width() < 500) {
+            $('header').removeClass('red');
+        }
     })
 </script>
 </body>

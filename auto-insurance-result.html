@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/main/favicon.png">
+    <link rel="icon" href="img/main/favicon.ico">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="slick-slider/slick/slick.css">
     <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
@@ -265,413 +265,156 @@
                 </div>
             </div>
         </div>
-        <section class="calc padding-x">
+        <section class="insurance-result padding-x">
             <ul class="breadcrumb">
                 <li>Главная</li>
-                <li>Контакты</li>
+                <li>Для физических лиц</li>
+                <li>Автострахование</li>
             </ul>
-            <h1 class="title-md">Расчитайте полис</h1>
-            <div class="calc-content">
-                <ul class="nav calc-aside calc-tab">
-                    <li>
-                        <a href="#calcOgpo" data-toggle="tab">ОГПО</a>
-                    </li>
-                    <li>
-                        <a href="#calcKasko" data-toggle="tab">КАСКО</a>
-                    </li>
-                    <li>
-                        <a href="#calcEstate" data-toggle="tab">Имущество</a>
-                    </li>
-                    <li>
-                        <a href="#calcEmployee" data-toggle="tab">Сотрудники</a>
-                    </li>
-                    <li>
-                        <a href="#calcTourist" data-toggle="tab">Туристам</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="calc-content-info">
-                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 32H56" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M29.3333 13.3334L8 32.0001L29.3333 50.6667" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p>Выберите типа полиса чтобы расчитать</p>
+            <div class="insurance-result-inner">
+                <div class="insurance-result-form">
+                    <div class="insurance-result-title">
+                        <h1 class="title-sm">Обязательное автостраховние </h1>
                     </div>
-                    <div class="calc-box tab-pane" id="calcOgpo">
-                        <h6 class="calc-box-title">Обязательное автострахование</h6>
-                        <div class="radio-box">
-                            <label class="radio-container">
-                                Физическое лицо
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
+                    <div class="insurance-result-body">
+                        <div class="form-label-wrapper">
+                            <label class="form-label">
+                                <span class="form-label-title">Гос. номер авто</span>
+                                <input type="text">
                             </label>
-                            <label class="radio-container">
-                                Юридическое лицо
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>
+                            <label class="form-label">
+                                <span class="form-label-title">Введите ИИН</span>
+                                <input type="number">
                             </label>
+                            <label class="form-label phone">
+                                <span class="form-label-title">Номер телефона</span>
+                                <input type="text" class="phone-mask">
+                            </label>
+                            <button class="btn-plain btn-main">Расчитать</button>
                         </div>
-                        <div class="calc-box-body">
-                            <div class="left-side">
-                                <div class="calc-forms">
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Возраст застрахованного</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>25 лет и старше</option>
-                                            <option>до 18 лет</option>
-                                            <option>40 лет и старше</option>
-                                        </select>
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Стаж вождения</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>Меньше года</option>
-                                            <option>2 года и более</option>
-                                            <option>5 лет и более</option>
-                                        </select>
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Класс бонус</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>Класс 3</option>
-                                            <option>Класс 4</option>
-                                            <option>Класс 5</option>
-                                            <option>Класс 7</option>
-                                            <option>Класс 10</option>
-                                        </select>
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Территория регистрации авто</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>Алматы</option>
-                                            <option>Город</option>
-                                            <option>Город</option>
-                                            <option>Город</option>
-                                            <option>Город</option>
-                                        </select>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Город областного назначения
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <div class="half-form">
-                                        <label class="form-label select-label">
-                                            <span class="form-label-title">Год выпуска авто</span>
-                                            <select class="select-custom">
-                                                <option></option>
-                                                <option>до 7 лет</option>
-                                                <option>старше 7 лет</option>
-                                            </select>
-                                        </label>
-                                        <label class="form-label select-label">
-                                            <span class="form-label-title">Типа авто</span>
-                                            <select class="select-custom">
-                                                <option></option>
-                                                <option>Легковой</option>
-                                                <option>Грузовой</option>
-                                                <option>Спец. техника</option>
-                                                <option>Мото</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                </div>
+                        <div class="insurance-form-notice">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6364 13.3634C20.6364 18.1334 16.77 21.9998 12 21.9998C7.23001 21.9998 3.36365 18.1334 3.36365 13.3634C3.36365 8.59341 7.23001 4.72705 12 4.72705C16.77 4.72705 20.6364 8.59341 20.6364 13.3634Z" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.36365 13.8184H12V9.27295" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 5.63636L6.54545 2" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 5.63636L17.4546 2" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p>Автозаполнения по номер автомобиля экономит до 30 минут</p>
+                        </div>
+                    </div>
+                    <div class="insurance-result-bottom">
+                        <label class="checkbox-form">
+                            Не помню номер авто
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="insurance-result-container">
+                    <div class="result-container-top">
+                        <div class="left-side">
+                            <div class="insurance-name">
+                                <p>Страховая компания</p>
                             </div>
-                            <div class="right-side">
-                                <p class="calc-right-title">Дополнительно:</p>
-                                <label class="checkbox-form">
-                                    Льготы - инвалиды/пенсионеры
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <p class="add-info">* расчеты производятся в информационных целях стоимость страховки может измениться.</p>
+                            <div class="insurance-time">
+                                <p>Срок</p>
                             </div>
                         </div>
-                        <div class="calc-box-bottom">
-                            <button class="btn-plain btn-main">Расчитать полис</button>
-                            <div class="right-side">
-                                <span>Итого</span>
-                                <p>18 421 ₸</p>
+                        <div class="right-side">
+                            <div class="insurance-cost">
+                                <button class="btn-plain">
+                                    <p>Цена</p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 21V3" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5 13L12 21L19 13" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="calc-box tab-pane" id="calcKasko">
-                        <h6 class="calc-box-title">Страхование КАСКО</h6>
-                        <div class="calc-box-body">
+                    <div class="result-container-body">
+                        <div class="insurance-result-item">
                             <div class="left-side">
-                                <div class="calc-forms">
-                                    <label class="form-label">
-                                        <span class="form-label-title">Страховая сумма</span>
-                                        <input type="number">
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Франшиза по повреждению</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>1 000 000 ₸</option>
-                                            <option>10 000 000 ₸</option>
-                                            <option>100 000 000 ₸</option>
-                                        </select>
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Франшиза по угону</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>10%</option>
-                                            <option>20%</option>
-                                            <option>100%</option>
-                                        </select>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="right-side">
-                                <p class="calc-right-title">Дополнительно:</p>
-                                <div class="checkbox-form-wrapper">
-                                    <label class="checkbox-form">
-                                        ДТП
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Противоправные действия третьих лиц
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Угон
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Ремонт на спец. СТО
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Выплата без вызова ГАИ
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div> 
-                                <p class="add-info">* расчеты производятся в информационных целях стоимость страховки может измениться.</p>
-                            </div>
-                        </div>
-                        <div class="calc-box-bottom">
-                            <button class="btn-plain btn-main">Расчитать полис</button>
-                            <div class="right-side">
-                                <span>Итого</span>
-                                <p>18 421 ₸</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calc-box tab-pane" id="calcEstate">
-                        <h6 class="calc-box-title">Страхование имущество</h6>
-                        <div class="calc-box-body">
-                            <div class="left-side">
-                                <div class="calc-forms">
-                                    <label class="form-label">
-                                        <span class="form-label-title">Страховая сумма</span>
-                                        <input type="number">
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Франшиза по повреждению</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>1 000 000 ₸</option>
-                                            <option>10 000 000 ₸</option>
-                                            <option>100 000 000 ₸</option>
-                                        </select>
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Франшиза по угону</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>10%</option>
-                                            <option>20%</option>
-                                            <option>100%</option>
-                                        </select>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="right-side">
-                                <p class="calc-right-title">Дополнительно:</p>
-                                <div class="checkbox-form-wrapper">
-                                    <label class="checkbox-form">
-                                        Ститхийные бедствия
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Противоправные действия третьих лиц
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Землятресение
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Прорыв водопроводных и отопительных система
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Падение пилотируемых летательных объектов
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <p class="add-info">* расчеты производятся в информационных целях стоимость страховки может измениться.</p>
-                            </div>
-                        </div>
-                        <div class="calc-box-bottom">
-                            <button class="btn-plain btn-main">Расчитать полис</button>
-                            <div class="right-side">
-                                <span>Итого</span>
-                                <p>18 421 ₸</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calc-box tab-pane" id="calcEmployee">
-                        <h6 class="calc-box-title">Обязательное страхование работника от несчастного случая</h6>
-                        <div class="calc-box-body">
-                            <div class="left-side">
-                                <div class="calc-forms">
-                                    <div class="half-form mt-0">
-                                        <div class="form-label-detail">
-                                            <label class="form-label select-label">
-                                                <span class="form-label-title">Укажите возраст</span>
-                                                <select class="select-custom">
-                                                    <option></option>
-                                                    <option>16</option>
-                                                    <option>17</option>
-                                                    <option>18</option>
-                                                    <option>19</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                </select>
-                                            </label>
-                                            <a class="form-label-link" href="#">Посмотреть свой класс</a>
-                                        </div>
-                                        <div class="form-label-detail">
-                                            <label class="form-label">
-                                                <span class="form-label-title">БИН организации</span>
-                                                <input type="text">
-                                            </label>
-                                            <p class="form-label-text">МЗП 2021 год - 42 500₸</p>
-                                        </div>
+                                <div class="insurance-name">
+                                    <div class="insurance-name-img">
+                                        <img src="img/content/halyk-sm.png">
                                     </div>
-                                    <div class="half-form">
-                                        <label class="form-label">
-                                            <span class="form-label-title">БИН организации</span>
-                                            <input type="text">
-                                        </label>
-                                        <label class="form-label">
-                                            <span class="form-label-title">БИН организации</span>
-                                            <input type="text">
-                                        </label>
-                                    </div>
-                                    <label class="form-label mt-12">
-                                        <span class="form-label-title">БИН организации</span>
-                                        <input type="text">
-                                    </label>
+                                    <p>Halyk Insurance</p>
+                                </div>
+                                <div class="insurance-time">
+                                    <p>12 месяцев</p>
                                 </div>
                             </div>
                             <div class="right-side">
-                                <p class="calc-right-title">Статистика несчастных случаев:</p>
-                                <div class="checkbox-form-wrapper">
-                                    <label class="checkbox-form">
-                                        Было
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Не было
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                <div class="insurance-cost">
+                                    <p>18 200 ₸</p>
                                 </div>
-                                <p class="add-info">* расчеты производятся в информационных целях стоимость страховки может измениться.</p>
+                                <div class="insurance-result-btn">
+                                    <button class="btn-plain btn-main">Купить</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="calc-box-bottom">
-                            <button class="btn-plain btn-main">Расчитать полис</button>
-                            <div class="right-side">
-                                <span>Итого</span>
-                                <p>18 421 ₸</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calc-box tab-pane" id="calcTourist">
-                        <h6 class="calc-box-title">Медицинское страхование туристов</h6>
-                        <div class="calc-box-body">
+                        <div class="insurance-result-item">
                             <div class="left-side">
-                                <div class="calc-forms">
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Страна пребывания</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>option</option>
-                                            <option>option</option>
-                                            <option>option</option>
-                                        </select>
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Цель поездки</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>option</option>
-                                            <option>option</option>
-                                            <option>option</option>
-                                        </select>
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Страховая сумма</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>option</option>
-                                            <option>option</option>
-                                            <option>option</option>
-                                        </select>
-                                    </label>
-                                    <div class="half-form">
-                                        <label class="form-label select-label">
-                                            <span class="form-label-title">Продолжительность</span>
-                                            <select class="select-custom">
-                                                <option></option>
-                                                <option>option</option>
-                                                <option>option</option>
-                                                <option>option</option>
-                                            </select>
-                                        </label>
-                                        <label class="form-label select-label">
-                                            <span class="form-label-title">Возраст до 30 лет</span>
-                                            <select class="select-custom">
-                                                <option></option>
-                                                <option>option</option>
-                                                <option>option</option>
-                                                <option>option</option>
-                                            </select>
-                                        </label>
+                                <div class="insurance-name">
+                                    <div class="insurance-name-img">
+                                        <img src="img/content/eur-sm.png">
                                     </div>
+                                    <p>Halyk Insurance</p>
+                                </div>
+                                <div class="insurance-time">
+                                    <p>12 месяцев</p>
                                 </div>
                             </div>
                             <div class="right-side">
-                                <p class="add-info">* расчеты производятся в информационных целях стоимость страховки может измениться.</p>
+                                <div class="insurance-cost">
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="insurance-result-btn">
+                                    <button class="btn-plain btn-main">Купить</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="calc-box-bottom">
-                            <button class="btn-plain btn-main">Расчитать полис</button>
+                        <div class="insurance-result-item">
+                            <div class="left-side">
+                                <div class="insurance-name">
+                                    <div class="insurance-name-img">
+                                        <img src="img/content/viktor-sm.png">
+                                    </div>
+                                    <p>Halyk Insurance</p>
+                                </div>
+                                <div class="insurance-time">
+                                    <p>12 месяцев</p>
+                                </div>
+                            </div>
                             <div class="right-side">
-                                <span>Итого</span>
-                                <p>18 421 ₸</p>
+                                <div class="insurance-cost">
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="insurance-result-btn">
+                                    <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="insurance-result-item">
+                            <div class="left-side">
+                                <div class="insurance-name">
+                                    <div class="insurance-name-img">
+                                        <img src="img/content/nomad-sm.png">
+                                    </div>
+                                    <p>Halyk Insurance</p>
+                                </div>
+                                <div class="insurance-time">
+                                    <p>12 месяцев</p>
+                                </div>
+                            </div>
+                            <div class="right-side">
+                                <div class="insurance-cost">
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="insurance-result-btn">
+                                    <button class="btn-plain btn-main">Купить</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -679,7 +422,7 @@
             </div>
         </section>
     </main>
-    <footer class="white-bg padding-x">
+    <footer class="padding-x white-bg">
         <div class="footer-top">
             <div class="footer-social">
                 <a class="footer-social-phone" href="tel+:77272254040">+ 7 727 225 40-40</a>
