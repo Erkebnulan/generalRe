@@ -272,16 +272,24 @@
                 <li>Автострахование</li>
             </ul>
             <div class="insurance-result-inner">
+                <h1 class="title-sm xs">Обязательное <br>автостраховние</h1>
                 <div class="insurance-result-form">
                     <div class="insurance-result-title">
                         <h1 class="title-sm">Обязательное автостраховние </h1>
                     </div>
                     <div class="insurance-result-body">
                         <div class="form-label-wrapper">
-                            <label class="form-label">
-                                <span class="form-label-title">Гос. номер авто</span>
-                                <input type="text">
-                            </label>
+                            <div class="form-label-detail">
+                                <label class="form-label">
+                                    <span class="form-label-title">Гос. номер авто</span>
+                                    <input type="text">
+                                </label>
+                                <label class="checkbox-form">
+                                    Не помню номер авто
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                             <label class="form-label">
                                 <span class="form-label-title">Введите ИИН</span>
                                 <input type="number">
@@ -290,8 +298,8 @@
                                 <span class="form-label-title">Номер телефона</span>
                                 <input type="text" class="phone-mask">
                             </label>
-                            <button class="btn-plain btn-main">Расчитать</button>
                         </div>
+                        <button class="btn-plain btn-main">Расчитать</button>
                         <div class="insurance-form-notice">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6364 13.3634C20.6364 18.1334 16.77 21.9998 12 21.9998C7.23001 21.9998 3.36365 18.1334 3.36365 13.3634C3.36365 8.59341 7.23001 4.72705 12 4.72705C16.77 4.72705 20.6364 8.59341 20.6364 13.3634Z" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -301,13 +309,6 @@
                             </svg>
                             <p>Автозаполнения по номер автомобиля экономит до 30 минут</p>
                         </div>
-                    </div>
-                    <div class="insurance-result-bottom">
-                        <label class="checkbox-form">
-                            Не помню номер авто
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
                     </div>
                 </div>
                 <div class="insurance-result-container">
@@ -322,7 +323,8 @@
                         </div>
                         <div class="right-side">
                             <div class="insurance-cost">
-                                <button class="btn-plain">
+                                <!--при клике добавляется класс 'back', меняется направление стрелки-->
+                                <button class="btn-plain price-sort">
                                     <p>Цена</p>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 21V3" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -536,6 +538,10 @@
 <script src="js/daterangepicker.js"></script>
 <script src="js/main.js"></script>
 <script>
+//price-sort btn
+$('.price-sort').click(function (){
+    $(this).toggleClass('back');
+})
 
 </script>
 </body>

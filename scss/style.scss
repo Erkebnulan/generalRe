@@ -2248,14 +2248,14 @@ footer.white-bg {
 }
 
 .insurance-instruction {
-  margin-top: 40px;
+  margin: 28px -12px 0 -12px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .insurance-instruction-item {
-  margin-right: 24px;
+  margin: 12px;
   display: flex;
 }
 
@@ -2304,6 +2304,20 @@ footer.white-bg {
 
 .insurance-form .form-label {
   margin-right: 24px;
+  width: 33.3%;
+}
+
+.insurance-form .form-label-detail {
+  margin-right: 24px;
+  width: 33.3%;
+}
+
+.insurance-form .form-label-detail .form-label {
+  width: 100%;
+}
+
+.form-label-detail .checkbox-form {
+  margin-top: 8px;
 }
 
 .insurance-form .btn-main {
@@ -2374,6 +2388,18 @@ footer.white-bg {
 .tariff-card {
   width: 33.3%;
   border-bottom: 1px solid #EAEAEA;
+}
+
+.tariff-card.basic {
+  border-top: 2px solid #6F7893;
+}
+
+.tariff-card.standard {
+  border-top: 2px solid #43D38B;
+}
+
+.tariff-card.premium {
+  border-top: 2px solid #EF533F;
 }
 
 .tariff-card-img {
@@ -2621,6 +2647,10 @@ margin-top: 12px;
   flex-shrink: 0;
 }
 
+.insurance-advantage-content .item svg {
+  min-width: 40px;
+}
+
 .insurance-advantage-content .item p {
   font-weight: 600;
   font-size: 24px;
@@ -2655,6 +2685,7 @@ margin-top: 12px;
   margin: 12px;
   flex-shrink: 0;
   padding: 24px;
+  position: relative;
 }
 
 .useful-item p {
@@ -2777,7 +2808,6 @@ margin-top: 12px;
 
 .insurance-result-body .form-label-wrapper .form-label {
   margin-right: 24px;
-  min-width: 180px;
 }
 
 .insurance-result-form .btn-main {
@@ -2862,12 +2892,16 @@ margin-top: 12px;
   align-items: center;
 }
 
-.insurance-cost button {
+.price-sort {
   display: flex;
 }
 
-.insurance-cost button p {
+.price-sort p {
   margin-right: 4px;
+}
+
+.price-sort.back svg {
+  transform: rotate(180deg);
 }
 
 .result-container-body {
@@ -2897,6 +2931,7 @@ margin-top: 12px;
   }
   .insurance-name-img {
     width: 72px;
+    min-width: 72px;
     height: 48px;
     overflow: hidden;
   }
@@ -2932,6 +2967,27 @@ margin-top: 12px;
   }
 }
 
+.tariff-name-xs {
+  display: none;
+}
+
+.insurance-result-form .form-label-detail {
+  margin-right: 24px;
+  width: 33.3%;
+}
+
+.insurance-result-form .form-label-detail .form-label {
+  width: 100%;
+}
+
+.insurance-result-form .form-label {
+  margin-right: 24px;
+  width: 33.3%;
+}
+
+.insurance-result-inner .title-sm.xs {
+  display: none;
+}
 
 
 

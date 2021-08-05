@@ -294,10 +294,17 @@
                 <div class="insurance-form">
                     <div class="insurance-form-top">
                         <div class="form-label-wrapper">
-                            <label class="form-label">
-                                <span class="form-label-title">Гос. номер авто</span>
-                                <input type="text">
-                            </label>
+                            <div class="form-label-detail">
+                                <label class="form-label">
+                                    <span class="form-label-title">Гос. номер авто</span>
+                                    <input type="text">
+                                </label>
+                                <label class="checkbox-form">
+                                    Не помню номер авто
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                             <label class="form-label">
                                 <span class="form-label-title">Введите ИИН</span>
                                 <input type="text">
@@ -306,8 +313,8 @@
                                 <span class="form-label-title">Номер телефона</span>
                                 <input type="text" class="phone-mask">
                             </label>
-                            <button class="btn-plain btn-main">Расчитать</button>
                         </div>
+                        <button class="btn-plain btn-main">Расчитать</button>
                         <div class="insurance-form-notice">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6363 13.3634C20.6363 18.1334 16.7699 21.9998 11.9999 21.9998C7.22989 21.9998 3.36353 18.1334 3.36353 13.3634C3.36353 8.59341 7.22989 4.72705 11.9999 4.72705C16.7699 4.72705 20.6363 8.59341 20.6363 13.3634Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -317,13 +324,6 @@
                             </svg>
                             <p>Автозаполнения по номер автомобиля экономит до 30 минут</p>
                         </div>
-                    </div>
-                    <div class="insurance-form-bottom">
-                        <label class="checkbox-form">
-                            Не помню номер авто
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
                     </div>
                 </div>
             </div>
@@ -335,7 +335,7 @@
                     <p>Пакет действует только при покупке полиса в нашем сервисе</p>
                 </div>
                 <div class="tariff-card-wrapper"> 
-                    <div class="tariff-card">
+                    <div class="tariff-card basic">
                         <div class="tariff-card-img">
                             <img src="img/main/ratecard1.png">
                         </div>
@@ -353,7 +353,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tariff-card">
+                    <div class="tariff-card standard">
                         <div class="tariff-card-img">
                             <img src="img/main/ratecard2.png">
                         </div>
@@ -372,7 +372,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tariff-card">
+                    <div class="tariff-card premium">
                         <div class="tariff-card-img">
                             <img src="img/main/ratecard3.png">
                         </div>
@@ -422,12 +422,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -438,12 +441,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td error">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td error">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -454,12 +460,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <p>один</p>
                                     </div>
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <p>два выезда - бесплатно, каждый последующий - 2500₸</p>
                                     </div>
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <p>Неограниченно</p>
                                     </div>
                                 </div>
@@ -470,12 +479,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -486,12 +498,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -502,12 +517,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -518,12 +536,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -534,12 +555,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -555,12 +579,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -571,12 +598,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td error">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td error">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -587,12 +617,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <p>один</p>
                                     </div>
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <p>два выезда - бесплатно, каждый последующий - 2500₸</p>
                                     </div>
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <p>Неограниченно</p>
                                     </div>
                                 </div>
@@ -603,12 +636,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -619,12 +655,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -635,12 +674,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -656,12 +698,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -672,12 +717,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td error">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td error">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -688,12 +736,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <p>один</p>
                                     </div>
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <p>два выезда - бесплатно, каждый последующий - 2500₸</p>
                                     </div>
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <p>Неограниченно</p>
                                     </div>
                                 </div>
@@ -704,12 +755,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -720,12 +774,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -736,12 +793,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -757,12 +817,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -773,12 +836,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td error">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td error">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -789,12 +855,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <p>один</p>
                                     </div>
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <p>два выезда - бесплатно, каждый последующий - 2500₸</p>
                                     </div>
                                     <div class="compare-td text">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <p>Неограниченно</p>
                                     </div>
                                 </div>
@@ -805,12 +874,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -821,12 +893,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -837,12 +912,15 @@
                                 </div>
                                 <div class="compare-tr-right">
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Базовый</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Стандартный</span>
                                         <i class="icon"></i>
                                     </div>
                                     <div class="compare-td success">
+                                        <span class="tariff-name-xs">Расширенный</span>
                                         <i class="icon"></i>
                                     </div>
                                 </div>
@@ -895,15 +973,19 @@
             <div class="useful-box">
                 <div class="useful-item">
                     <p>Главное правило автострахование</p>
+                    <a class="absolute-link" href="#"></a>
                 </div>
                 <div class="useful-item">
                     <p>Европротокол</p>
+                    <a class="absolute-link" href="#"></a>
                 </div>
                 <div class="useful-item">
                     <p>Базовая защита на дороге</p>
+                    <a class="absolute-link" href="#"></a>
                 </div>
                 <div class="useful-item">
                     <p>Что делать если у виновника нет старховки?</p>
+                    <a class="absolute-link" href="#"></a>
                 </div>
             </div>
         </section>

@@ -2683,7 +2683,7 @@ footer.white-bg {
 }
 
 .insurance-instruction {
-  margin-top: 40px;
+  margin: 28px -12px 0 -12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2695,7 +2695,7 @@ footer.white-bg {
 }
 
 .insurance-instruction-item {
-  margin-right: 24px;
+  margin: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2758,6 +2758,20 @@ footer.white-bg {
 
 .insurance-form .form-label {
   margin-right: 24px;
+  width: 33.3%;
+}
+
+.insurance-form .form-label-detail {
+  margin-right: 24px;
+  width: 33.3%;
+}
+
+.insurance-form .form-label-detail .form-label {
+  width: 100%;
+}
+
+.form-label-detail .checkbox-form {
+  margin-top: 8px;
 }
 
 .insurance-form .btn-main {
@@ -2833,6 +2847,18 @@ footer.white-bg {
 .tariff-card {
   width: 33.3%;
   border-bottom: 1px solid #EAEAEA;
+}
+
+.tariff-card.basic {
+  border-top: 2px solid #6F7893;
+}
+
+.tariff-card.standard {
+  border-top: 2px solid #43D38B;
+}
+
+.tariff-card.premium {
+  border-top: 2px solid #EF533F;
 }
 
 .tariff-card-img {
@@ -3115,6 +3141,10 @@ footer.white-bg {
       flex-shrink: 0;
 }
 
+.insurance-advantage-content .item svg {
+  min-width: 40px;
+}
+
 .insurance-advantage-content .item p {
   font-weight: 600;
   font-size: 24px;
@@ -3153,6 +3183,7 @@ footer.white-bg {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 24px;
+  position: relative;
 }
 
 .useful-item p {
@@ -3298,7 +3329,6 @@ footer.white-bg {
 
 .insurance-result-body .form-label-wrapper .form-label {
   margin-right: 24px;
-  min-width: 180px;
 }
 
 .insurance-result-form .btn-main {
@@ -3415,14 +3445,20 @@ footer.white-bg {
           align-items: center;
 }
 
-.insurance-cost button {
+.price-sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.insurance-cost button p {
+.price-sort p {
   margin-right: 4px;
+}
+
+.price-sort.back svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .result-container-body {
@@ -3456,6 +3492,7 @@ footer.white-bg {
 
 .insurance-result-item .insurance-name-img {
   width: 72px;
+  min-width: 72px;
   height: 48px;
   overflow: hidden;
 }
@@ -3497,6 +3534,28 @@ footer.white-bg {
 .insurance-result-item .insurance-result-btn button:hover {
   background: #F5F5F7;
   color: #6F7893;
+}
+
+.tariff-name-xs {
+  display: none;
+}
+
+.insurance-result-form .form-label-detail {
+  margin-right: 24px;
+  width: 33.3%;
+}
+
+.insurance-result-form .form-label-detail .form-label {
+  width: 100%;
+}
+
+.insurance-result-form .form-label {
+  margin-right: 24px;
+  width: 33.3%;
+}
+
+.insurance-result-inner .title-sm.xs {
+  display: none;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -3574,6 +3633,15 @@ footer.white-bg {
   }
   .calc-content .tab-content {
     width: 75%;
+  }
+  .useful-item {
+    padding: 20px;
+  }
+  .insurance-instruction-item {
+    width: calc(25% - 24px);
+  }
+  .insurance-result-form {
+    padding: 24px;
   }
 }
 
@@ -3843,6 +3911,148 @@ footer.white-bg {
   .calc-content-info {
     display: none;
   }
+  .insurance-form-top {
+    display: block;
+  }
+  .insurance-form-notice {
+    margin-left: 0;
+    margin-top: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .insurance-form {
+    padding: 25px;
+    margin-top: 25px;
+  }
+  .insurance-instruction-item {
+    width: calc(25% - 24px);
+  }
+  .tariff-wrapper {
+    padding-top: 50px;
+  }
+  .tariff-card-img {
+    height: 200px;
+  }
+  .tariff-card-caption {
+    padding: 15px;
+  }
+  .title-sm {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .tariff-card-price {
+    font-size: 30px;
+    line-height: 120%;
+    margin-top: 8px;
+  }
+  .tariff-card-info {
+    padding: 15px;
+  }
+  .compare-th-left {
+    padding: 7px 0;
+  }
+  .compare-th-right .compare-td {
+    padding: 7px 0;
+  }
+  .compare-th {
+    min-height: 40px;
+  }
+  .compare-title {
+    min-height: 40px;
+    padding: 7px 0 7px 33.3%;
+  }
+  .compare-tr-left {
+    padding: 7px 8px;
+  }
+  .compare-tr-right .compare-td {
+    padding: 7px 8px;
+  }
+  .insurance-advantage {
+    margin-top: 40px;
+  }
+  .insurance-advantage-content .item svg {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .insurance-advantage-content .item p {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .useful {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+  .useful-item {
+    padding: 15px;
+  }
+  .useful-item p {
+    font-size: 20px;
+    line-height: 120%;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  .callback {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .callback-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .callback-form .form-label {
+    margin-left: auto;
+  }
+  .callback-form .btn-main {
+    margin-left: auto;
+    margin-top: 15px;
+  }
+  .insurance-form .btn-main {
+    margin-top: 15px;
+  }
+  .insurance-result-form {
+    padding: 24px;
+  }
+  .insurance-result-body {
+    display: block;
+  }
+  .insurance-result-form .btn-main {
+    margin-top: 15px;
+  }
+  .insurance-result-item .insurance-name p {
+    font-size: 20px;
+    line-height: 120%;
+    margin-left: 10px;
+  }
+  .result-container-top .left-side {
+    width: 60%;
+  }
+  .insurance-result-item .left-side {
+    width: 60%;
+  }
+  .result-container-top .right-side {
+    width: 40%;
+  }
+  .insurance-result-item .right-side {
+    width: 40%;
+  }
+  .insurance-result-item .insurance-time p {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .insurance-result-item .insurance-cost p {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -3949,6 +4159,7 @@ footer.white-bg {
     padding: 16px;
     top: 56px !important;
     max-height: calc(100% - 56px);
+    height: calc(100% - 56px);
   }
   .menu-box-head {
     display: block;
@@ -4558,5 +4769,357 @@ footer.white-bg {
     width: 90% !important;
     max-height: 80vh;
     overflow-y: auto;
+  }
+  .insurance-promo {
+    padding-top: 16px;
+  }
+  .insurance-instruction {
+    margin: 16px -8px 0 -8px;
+  }
+  .insurance-instruction-item {
+    width: calc(50% - 16px);
+    margin: 8px;
+  }
+  .insurance-instruction-item p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .insurance-form {
+    margin-top: 24px;
+    padding: 16px;
+  }
+  .insurance-form-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .insurance-form .form-label-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .insurance-form .form-label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .insurance-form .form-label-detail {
+    width: 100%;
+    margin-right: 0;
+  }
+  .insurance-form .form-label-detail .form-label {
+    margin-top: 0;
+  }
+  .insurance-form .btn-main {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .insurance-form .insurance-form-notice {
+    margin-top: 16px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .tariff-wrapper {
+    padding-top: 64px;
+  }
+  .title-sm {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .tariff-title p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .tariff-card-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .tariff-card {
+    width: 100%;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  }
+  .tariff-card-img {
+    height: 240px;
+  }
+  .tariff-card-caption {
+    padding: 16px 24px;
+  }
+  .tariff-card-caption span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .tariff-card-price {
+    margin-top: 9px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .tariff-card-caption .btn-main {
+    margin-top: 9px;
+    min-height: 48px;
+  }
+  .tariff-card-wrapper .tariff-card + .tariff-card {
+    margin-top: 16px;
+  }
+  .tariff-compare {
+    margin-top: 16px;
+  }
+  .compare-th {
+    display: none;
+  }
+  .compare-title {
+    padding: 8px;
+  }
+  .compare-tr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .compare-body .compare-tr-left {
+    width: 100%;
+    border-right: none;
+    padding: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #E0E0E2;
+  }
+  .compare-body .compare-tr-left p {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .compare-tr-right {
+    width: 100%;
+  }
+  .compare-tr-right .compare-td {
+    padding: 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .compare-tr-right .compare-td + .compare-td {
+    border: none;
+  }
+  .tariff-name-xs {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #6F7893;
+    margin-bottom: 4px;
+  }
+  .compare-tr-right .compare-td.text {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .compare-tr-right .compare-td.text p {
+    font-size: 10px;
+    line-height: 110%;
+  }
+  .tariff-compare-toggle p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .tariff-compare-toggle svg {
+    width: 12px;
+    height: 5px;
+  }
+  .insurance-advantage {
+    margin-top: 64px;
+  }
+  .insurance-advantage-content {
+    margin: 8px -8px 0 -8px;
+  }
+  .insurance-advantage-content .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 8px;
+  }
+  .insurance-advantage-content .item svg {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+  }
+  .insurance-advantage-content .item p {
+    margin-left: 0;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .useful {
+    margin-top: 64px;
+    padding-bottom: 64px;
+  }
+  .useful-box {
+    margin: 16px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .useful-box .useful-item + .useful-item {
+    margin-top: 8px;
+  }
+  .useful-item {
+    margin: 0;
+    width: 100%;
+    padding: 12px;
+  }
+  .useful-item p {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 80%;
+  }
+  .callback {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+  }
+  .callback-left {
+    width: 100%;
+  }
+  .callback-right {
+    margin-top: 24px;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+  }
+  .callback-form {
+    display: block;
+  }
+  .callback-form .form-label {
+    width: 100%;
+    max-width: 100%;
+  }
+  .callback-form .btn-main {
+    margin-left: 0;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .loading-content {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+  .loading-progress {
+    height: 16px;
+    margin-top: 24px;
+  }
+  .loading-content p {
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .insurance-result-inner .title-sm.xs {
+    display: block;
+    text-align: center;
+  }
+  .insurance-result-form {
+    margin-top: 24px;
+    padding: 16px;
+  }
+  .insurance-result-form .insurance-result-title {
+    display: none;
+  }
+  .insurance-result-body {
+    display: block;
+    margin-top: 0;
+  }
+  .insurance-result-body .form-label-wrapper {
+    display: block;
+  }
+  .insurance-result-form .form-label-detail {
+    width: 100%;
+    margin-right: 0;
+  }
+  .insurance-result-body .form-label-wrapper .form-label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .insurance-result-form .form-label-detail .form-label {
+    margin-top: 0;
+  }
+  .insurance-result-form .btn-main {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .insurance-result-form .insurance-form-notice {
+    margin-top: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .insurance-result-container {
+    margin-top: 24px;
+  }
+  .result-container-top {
+    display: none;
+  }
+  .result-container-body {
+    margin-top: 0;
+  }
+  .insurance-result-item {
+    padding: 16px;
+    display: block;
+  }
+  .insurance-result-item .left-side {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .insurance-result-item .insurance-name p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 8px;
+  }
+  .insurance-result-item .right-side {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 16px;
+  }
+  .insurance-result-container .insurance-cost {
+    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .insurance-result-item .insurance-cost p {
+    margin-left: 0;
+  }
+  .insurance-result-btn {
+    margin-left: 0;
+  }
+  .insurance-result-item .insurance-result-btn button {
+    min-width: 120px;
+  }
+  .insurance-result {
+    padding-bottom: 64px;
+  }
+  .insurance-result-item .insurance-name {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
