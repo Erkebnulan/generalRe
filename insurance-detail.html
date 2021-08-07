@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -265,155 +266,145 @@
                 </div>
             </div>
         </div>
-        <section class="insurance-result padding-x">
+        <section class="insurance-info padding-x">
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Для физических лиц</li>
                 <li>Автострахование</li>
             </ul>
-            <div class="insurance-result-inner">
-                <h1 class="title-sm xs">Обязательное <br>автостраховние</h1>
-                <div class="insurance-form insurance-form-result auto">
-                    <div class="insurance-result-title">
-                        <h1 class="title-sm">Обязательное автостраховние </h1>
-                    </div>
-                    <div class="insurance-form-main">
-                        <div class="form-main-top">
-                            <div class="form-label-wrapper">
-                                <div class="form-label-detail">
-                                    <label class="form-label">
-                                        <span class="form-label-title">Гос. номер авто</span>
-                                        <input type="text">
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Не помню номер авто
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <label class="form-label">
-                                    <span class="form-label-title">Введите ИИН</span>
-                                    <input type="number">
-                                </label>
-                                <label class="form-label phone">
-                                    <span class="form-label-title">Номер телефона</span>
-                                    <input type="text" class="phone-mask">
-                                </label>
+            <a class="backlink" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 23.75L10 15L17.5 6.25" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Halyk Insurance</span>
+            </a>
+            <div class="row-box">
+                <div class="row-box-left">
+                    <div class="insurance-detail-box">
+                        <div class="detail-box-top">
+                            <div class="detail-box-img">
+                                <img src="img/content/halyk-lg.png">
                             </div>
-                            <button class="btn-plain btn-main">Расчитать</button>
-                            <div class="insurance-form-notice">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6364 13.3634C20.6364 18.1334 16.77 21.9998 12 21.9998C7.23001 21.9998 3.36365 18.1334 3.36365 13.3634C3.36365 8.59341 7.23001 4.72705 12 4.72705C16.77 4.72705 20.6364 8.59341 20.6364 13.3634Z" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8.36365 13.8184H12V9.27295" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 5.63636L6.54545 2" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M22 5.63636L17.4546 2" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p>Автозаполнения по номер автомобиля экономит до 30 минут</p>
+                            <div class="detail-box-caption">
+                                <div class="detail-box-title">
+                                    <h1>Страховая компания Халык БанкHalyk Insurance</h1>
+                                    <p>На рынке с 1996 года, 25 лет</p>
+                                </div>
+                                <div class="right-side">
+                                    <p>Рейтинг</p>
+                                    <div class="star-rating">
+                                        <span>4.5</span>
+                                        <div class="star-rate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-box-body">
+                            <div class="detail-item">
+                                <div class="left-side">
+                                    <p>Финансовые показатели на 2020 год:</p>
+                                </div>
+                                <div class="right-side">
+                                    <div class="detail-indicators-box">
+                                        <div class="detail-indicators-item">
+                                            <span>Активы</span>
+                                            <p>22,4 млн. ₸</p>
+                                        </div>
+                                        <div class="detail-indicators-item">
+                                            <span>Резервы</span>
+                                            <p>16 млн. ₸</p>
+                                        </div>
+                                        <div class="detail-indicators-item">
+                                            <span>Выплаты</span>
+                                            <p>34,2 млн. ₸</p>
+                                        </div>
+                                        <div class="detail-indicators-item">
+                                            <span>Выплаты</span>
+                                            <p>12 млн. ₸</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="left-side">
+                                    <p>Жалобы:</p>
+                                </div>
+                                <div class="right-side">
+                                    <p>Отсуствует</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="left-side">
+                                    <p>Аккредитация:</p>
+                                </div>
+                                <div class="right-side">
+                                    <p>Лицензия на право осуществления страховой (перестраховочной) деятельности по отрасли «общее страхование» № 2.1.71 от 18 февраля 2020 года</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="left-side">
+                                    <p>Приостановления лицензии:</p>
+                                </div>
+                                <div class="right-side">
+                                    <p>Отсуствует</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="insurance-result-container">
-                    <div class="insurance-condition-heading">
-                        <div class="th">
-                            <div class="condition-heading-td td-1 condition-insurance-name">
-                                <p>Страховая компания</p>
+                <div class="row-box-right">
+                    <div class="insurance-tender-box">
+                        <h6>Выигранные тендеры</h6>
+                        <div class="insurance-tender-inner">
+                            <div class="insurance-tender-item">
+                                <span>В общем участвовал</span>
+                                <p>123 тендерах</p>
                             </div>
-                            <div class="condition-heading-td td-2">
-                                <p>Выплата по страховке</p>
+                            <div class="insurance-tender-item">
+                                <span>Выиграл</span>
+                                <p>80 тендеров</p>
                             </div>
-                            <div class="condition-heading-td td-3 condition-insurance-cost">
-                                <button class="btn-plain btn-sort">
-                                    <p>Цена</p>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 14V2" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M3.33334 8.66699L8.00001 14.0003L12.6667 8.66699" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
+                            <div class="insurance-tender-item">
+                                <span>Выплатил более</span>
+                                <p>4.3 млн тенге</p>
                             </div>
-                            <div class="condition-heading-td td-4"></div>
-                        </div>
-                    </div>
-                    <div class="insurance-condition-box">
-                        <div class="condition-box-top">
-                            <div class="tr">
-                                <div class="condition-box-td td-1 condition-insurance-name">
-                                    <img src="img/content/halyk-sm.png">
-                                    <p>Halyk Insurance</p>
-                                    <p class="cost-xs">18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-4">
-                                    <button class="btn-plain btn-main">Купить</button>
-                                </div>
+                            <div class="insurance-tender-item">
+                                <span>Средняя оценка</span>
+                                <p>4.8</p>
                             </div>
                         </div>
                     </div>
-                    <div class="insurance-condition-box">
-                        <div class="condition-box-top">
-                            <div class="tr">
-                                <div class="condition-box-td td-1 condition-insurance-name">
-                                    <img src="img/content/halyk-sm.png">
-                                    <p>Halyk Insurance</p>
-                                    <p class="cost-xs">18 200 ₸</p>
+                </div>
+            </div>
+            <div class="row-box">
+                <div class="row-box-left">
+                    <div class="insurance-review-box">
+                        <div class="review-box-top">
+                            <h6>Отзывы</h6>
+                        </div>
+                        <div class="review-box-body">
+                            <div class="review-box-item">
+                                <div class="left-side">
+                                    <p>Арман Жунисов</p>
+                                    <div class="star-rating">
+                                        <span>4.5</span>
+                                        <div class="star-rate"></div>
+                                    </div>
                                 </div>
-                                <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-4">
-                                    <button class="btn-plain btn-main">Купить</button>
+                                <div class="right-side">
+                                    <p>Очень большая компания, с широким выбором продуктов. Которые покрывает все случаи страховок. Рекмоендую всем!!! Плюс еще очень простые и удобные условия оформления без банков и офисов.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="insurance-condition-box">
-                        <div class="condition-box-top">
-                            <div class="tr">
-                                <div class="condition-box-td td-1 condition-insurance-name">
-                                    <img src="img/content/halyk-sm.png">
-                                    <p>Halyk Insurance</p>
-                                    <p class="cost-xs">18 200 ₸</p>
+                            <div class="review-box-item">
+                                <div class="left-side">
+                                    <p>Бексултан Абдразак</p>
+                                    <div class="star-rating">
+                                        <span>4.5</span>
+                                        <div class="star-rate"></div>
+                                    </div>
                                 </div>
-                                <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-4">
-                                    <button class="btn-plain btn-main">Купить</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="insurance-condition-box">
-                        <div class="condition-box-top">
-                            <div class="tr">
-                                <div class="condition-box-td td-1 condition-insurance-name">
-                                    <img src="img/content/halyk-sm.png">
-                                    <p>Halyk Insurance</p>
-                                    <p class="cost-xs">18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-4">
-                                    <button class="btn-plain btn-main">Купить</button>
+                                <div class="right-side">
+                                    <p>Чет не очень банк! Слишком много бумаг и подписей. И ещее долго ждать. И не понятно как смотреть полис, всегда приходится распечатывать что неудобно.</p>
                                 </div>
                             </div>
                         </div>
@@ -534,13 +525,20 @@
 <script src="js/select2.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.js"></script>
+<script src="js/jquery.raty.js"></script>
 <script src="js/main.js"></script>
 <script>
-//price-sort btn
-$('.price-sort').click(function (){
-    $(this).toggleClass('back');
-})
-
+    //star rating
+    $('.star-rate').raty({
+        half: true,
+        score: 4.5,
+        readOnly: 'true',
+        halfShow: true,
+        path: 'img/icon',
+        starHalf: 'star-half.png',
+        starOff: 'star-off.png',
+        starOn: 'star-on.png',
+    });
 </script>
 </body>
 </html>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -265,159 +266,179 @@
                 </div>
             </div>
         </div>
-        <section class="insurance-result padding-x">
+        <section class="insurance-paperwork padding-x">
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Для физических лиц</li>
                 <li>Автострахование</li>
             </ul>
-            <div class="insurance-result-inner">
-                <h1 class="title-sm xs">Обязательное <br>автостраховние</h1>
-                <div class="insurance-form insurance-form-result auto">
-                    <div class="insurance-result-title">
-                        <h1 class="title-sm">Обязательное автостраховние </h1>
-                    </div>
-                    <div class="insurance-form-main">
-                        <div class="form-main-top">
-                            <div class="form-label-wrapper">
-                                <div class="form-label-detail">
-                                    <label class="form-label">
-                                        <span class="form-label-title">Гос. номер авто</span>
-                                        <input type="text">
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Не помню номер авто
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
+            <a class="backlink" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 23.75L10 15L17.5 6.25" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Оформить заявку</span>
+            </a>
+            <div class="row-box">
+                <div class="row-box-left">
+                    <div class="insurance-data-form">
+                        <div class="data-form-top">
+                            <h6>Застрахованные</h6>
+                            <div class="data-form-box">
+                                <div class="data-form-item">
+                                    <span class="data-form-number">1.</span>
+                                    <div class="data-form-line">
+                                        <label class="form-label">
+                                            <span class="form-label-title">Фамилия</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="form-label">
+                                            <span class="form-label-title">Фамилия</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="form-label">
+                                            <span class="form-label-title">Номер паспорта</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="select-date">
+                                            <span class="form-label-title">Дата рождения</span>
+                                            <input type="text" class="date-range" name="daterange" value="">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                    </div>
                                 </div>
+                                <div class="data-form-item">
+                                    <span class="data-form-number">2.</span>
+                                    <div class="data-form-line">
+                                        <label class="form-label">
+                                            <span class="form-label-title">Фамилия</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="form-label">
+                                            <span class="form-label-title">Фамилия</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="form-label">
+                                            <span class="form-label-title">Номер паспорта</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="select-date">
+                                            <span class="form-label-title">Дата рождения</span>
+                                            <input type="text" class="date-range" name="daterange" value="">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="data-form-item">
+                                    <span class="data-form-number">3.</span>
+                                    <div class="data-form-line">
+                                        <label class="form-label">
+                                            <span class="form-label-title">Фамилия</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="form-label">
+                                            <span class="form-label-title">Фамилия</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="form-label">
+                                            <span class="form-label-title">Номер паспорта</span>
+                                            <input type="text">
+                                        </label>
+                                        <label class="select-date">
+                                            <span class="form-label-title">Дата рождения</span>
+                                            <input type="text" class="date-range" name="daterange" value="">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="btn-plain add-tourist">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 12H20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Добавить еще туриста</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="data-form-bottom">
+                            <h6>Покупатель</h6>
+                            <div class="data-form-line">
                                 <label class="form-label">
-                                    <span class="form-label-title">Введите ИИН</span>
-                                    <input type="number">
+                                    <span class="form-label-title">Ф.И.О.</span>
+                                    <input type="text">
+                                </label>
+                                <label class="select-date">
+                                    <span class="form-label-title">Дата рождения</span>
+                                    <input type="text" class="date-range" name="daterange" value="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </label>
                                 <label class="form-label phone">
                                     <span class="form-label-title">Номер телефона</span>
                                     <input type="text" class="phone-mask">
                                 </label>
-                            </div>
-                            <button class="btn-plain btn-main">Расчитать</button>
-                            <div class="insurance-form-notice">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6364 13.3634C20.6364 18.1334 16.77 21.9998 12 21.9998C7.23001 21.9998 3.36365 18.1334 3.36365 13.3634C3.36365 8.59341 7.23001 4.72705 12 4.72705C16.77 4.72705 20.6364 8.59341 20.6364 13.3634Z" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8.36365 13.8184H12V9.27295" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 5.63636L6.54545 2" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M22 5.63636L17.4546 2" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p>Автозаполнения по номер автомобиля экономит до 30 минут</p>
+                                <label class="form-label">
+                                    <span class="form-label-title">E-mail</span>
+                                    <input type="email">
+                                </label>
                             </div>
                         </div>
                     </div>
+                    <button class="btn-plain btn-main btn-main-clone">Далее</button>
                 </div>
-                <div class="insurance-result-container">
-                    <div class="insurance-condition-heading">
-                        <div class="th">
-                            <div class="condition-heading-td td-1 condition-insurance-name">
-                                <p>Страховая компания</p>
+                <div class="row-box-right">
+                    <div class="insurance-ticket">
+                        <h6>Полис</h6>
+                        <div class="insurance-ticket-brand">
+                            <div class="ticket-brand-img">
+                                <img src="img/content/halyk-square.png">
                             </div>
-                            <div class="condition-heading-td td-2">
-                                <p>Выплата по страховке</p>
+                            <div class="ticket-brand-caption">
+                                <span>Страховая компания</span>
+                                <p>Halyk Insurance</p>
                             </div>
-                            <div class="condition-heading-td td-3 condition-insurance-cost">
-                                <button class="btn-plain btn-sort">
-                                    <p>Цена</p>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 14V2" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M3.33334 8.66699L8.00001 14.0003L12.6667 8.66699" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="condition-heading-td td-4"></div>
-                        </div>
-                    </div>
-                    <div class="insurance-condition-box">
-                        <div class="condition-box-top">
-                            <div class="tr">
-                                <div class="condition-box-td td-1 condition-insurance-name">
-                                    <img src="img/content/halyk-sm.png">
-                                    <p>Halyk Insurance</p>
-                                    <p class="cost-xs">18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-4">
-                                    <button class="btn-plain btn-main">Купить</button>
-                                </div>
+                            <div class="insurance-price-xs">
+                                <p>26 800 ₸</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="insurance-condition-box">
-                        <div class="condition-box-top">
-                            <div class="tr">
-                                <div class="condition-box-td td-1 condition-insurance-name">
-                                    <img src="img/content/halyk-sm.png">
-                                    <p>Halyk Insurance</p>
-                                    <p class="cost-xs">18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-4">
-                                    <button class="btn-plain btn-main">Купить</button>
-                                </div>
+                        <div class="insurance-ticket-body">
+                            <div class="ticket-info">
+                                <span>Компенсация </span>
+                                <p>до 2 000 000 ₸</p>
+                            </div>
+                            <div class="ticket-info">
+                                <span>Страна отправления</span>
+                                <p>Индонезия</p>
+                            </div>
+                            <div class="ticket-info full-width">
+                                <span>Даты поездки</span>
+                                <p>14.03.2021 - 22.03.2021</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="insurance-condition-box">
-                        <div class="condition-box-top">
-                            <div class="tr">
-                                <div class="condition-box-td td-1 condition-insurance-name">
-                                    <img src="img/content/halyk-sm.png">
-                                    <p>Halyk Insurance</p>
-                                    <p class="cost-xs">18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-4">
-                                    <button class="btn-plain btn-main">Купить</button>
-                                </div>
-                            </div>
+                        <div class="insurance-ticket-bottom">
+                            <span>Итоговая <br>стоимость</span>
+                            <p>26 800 ₸</p>
                         </div>
                     </div>
-                    <div class="insurance-condition-box">
-                        <div class="condition-box-top">
-                            <div class="tr">
-                                <div class="condition-box-td td-1 condition-insurance-name">
-                                    <img src="img/content/halyk-sm.png">
-                                    <p>Halyk Insurance</p>
-                                    <p class="cost-xs">18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
-                                </div>
-                                <div class="condition-box-td td-4">
-                                    <button class="btn-plain btn-main">Купить</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="btn-plain btn-main">Далее</button>
                 </div>
             </div>
         </section>
@@ -534,12 +555,9 @@
 <script src="js/select2.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.js"></script>
+<script src="js/jquery.raty.js"></script>
 <script src="js/main.js"></script>
 <script>
-//price-sort btn
-$('.price-sort').click(function (){
-    $(this).toggleClass('back');
-})
 
 </script>
 </body>

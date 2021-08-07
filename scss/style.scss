@@ -1351,7 +1351,7 @@ footer {
   transform-origin: 0 0;
   user-select: none;
   transition: transform 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.175s cubic-bezier(0.215, 0.61, 0.355, 1), font-size 0.175s cubic-bezier(0.215, 0.61, 0.355, 1);
-  max-width: calc(100% - 30px);
+  max-width: calc(100% - 40px);
 }
 
 .form-label input, .select-date input {
@@ -2293,27 +2293,13 @@ footer.white-bg {
   z-index: 1;
 }
 
-.insurance-form-top {
+.form-main-top {
   display: flex;
 }
 
 .insurance-form .form-label-wrapper {
   display: flex;
   flex: 1;
-}
-
-.insurance-form .form-label {
-  margin-right: 24px;
-  width: 33.3%;
-}
-
-.insurance-form .form-label-detail {
-  margin-right: 24px;
-  width: 33.3%;
-}
-
-.insurance-form .form-label-detail .form-label {
-  width: 100%;
 }
 
 .form-label-detail .checkbox-form {
@@ -2343,13 +2329,14 @@ footer.white-bg {
   margin-left: 8px;
 }
 
-.insurance-form-bottom {
-  margin-top: 8px;
-}
-
 .insurance-form .checkbox-form {
   color: #fff;
 }
+
+
+
+
+
 
 .tariff-wrapper {
   max-width: 1090px;
@@ -2627,11 +2614,13 @@ margin-top: 12px;
 
 .insurance-advantage {
   margin-top: 80px;
+  background: #fff;
 }
 
 .insurance-advantage-inner {
   max-width: 1090px;
   margin: 0 auto;
+  padding-top: 80px;
 }
 
 .insurance-advantage-content {
@@ -2786,212 +2775,1132 @@ margin-top: 12px;
   padding-top: 24px;
 }
 
-.insurance-result-form {
-  padding: 40px;
+.insurance-form-result {
   background: #FFFFFF;
-  border-radius: 12px;
+  margin-top: 24px;
 }
 
-.insurance-result-form .title-sm {
+.insurance-form-result .insurance-form-main {
+  margin-top: 24px;
+}
+
+.insurance-form-result .title-sm {
   text-align: center;
 }
 
-.insurance-result-body {
-  margin-top: 24px;
-  display: flex;
-}
-
-.insurance-result-body .form-label-wrapper {
-  display: flex;
-  flex: 1;
-}
-
-.insurance-result-body .form-label-wrapper .form-label {
-  margin-right: 24px;
-}
-
-.insurance-result-form .btn-main {
-  min-height: 56px;
-}
-
-.insurance-result-form .insurance-form-notice p {
+.insurance-form-result .insurance-form-notice p {
   color: #282828;
 }
 
-.insurance-result-bottom {
-  margin-top: 8px;
+.insurance-form-result .checkbox-form {
+  color: #282828;
+}
+
+
+.insurance-form.kasko {
+  .insurance-result-bottom {
+    margin-top: 24px;
+  }
+}
+
+.insurance-form-result.kasko {
+  .insurance-form-main {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #C4C4C4;
+  }
 }
 
 .insurance-result-container {
   margin-top: 40px;
 }
 
-.result-container-top {
-  display: flex;
-  padding: 0 16px;
-}
-
-.insurance-result-item {
-  display: flex;
-  padding: 24px 16px;
-  min-height: 96px;
-  background: #FFFFFF;
-  border-radius: 4px;
-}
-
-.result-container-top p {
-  color: #6F7893;
-}
-
-.result-container-top .left-side {
-  width: 70%;
-  display: flex;
-}
-
-.insurance-result-item .left-side {
-  width: 70%;
-  display: flex;
-}
-
-.result-container-top .right-side {
-  width: 30%;
-  display: flex;
-}
-
-.insurance-result-item .right-side {
-  width: 30%;
-  display: flex;
-}
-
-.insurance-result-container .insurance-name {
-  width: 83%;
-  display: flex;
-  align-items: center;
-}
-
-.insurance-result-container .insurance-time {
-  width: calc(27% - 24px);
-  margin-left: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.insurance-result-container .insurance-cost {
-  width: calc(50% - 24px);
-  margin-left: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.insurance-result-btn {
-  width: calc(50% - 24px);
-  margin-left: 24px;
-  display: flex;
-  align-items: center;
-}
-
-.price-sort {
-  display: flex;
-}
-
-.price-sort p {
-  margin-right: 4px;
-}
-
-.price-sort.back svg {
-  transform: rotate(180deg);
-}
-
-.result-container-body {
-  margin-top: 16px;
-}
-
-.result-container-body .insurance-result-item + .insurance-result-item {
-  margin-top: 8px;
-}
-
-.result-container-top {
-  .insurance-time p {
-    text-align: right;
-  }
-  .insurance-cost {
-    text-align: right;
-  }
-  .insurance-cost button {
-    margin-left: auto;
-  }
-}
-
-.insurance-result-item {
-  .insurance-name {
-    display: flex;
-    align-items: center;
-  }
-  .insurance-name-img {
-    width: 72px;
-    min-width: 72px;
-    height: 48px;
-    overflow: hidden;
-  }
-  .insurance-name-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .insurance-name p {
-    font-size: 24px;
-    line-height: 32px;
-    color: #282828;
-    margin-left: 16px;
-  }
-  .insurance-time p {
-    font-size: 18px;
-    line-height: 24px;
-    text-align: right;
-    color: #282828;
-    margin-left: auto;
-  }
-  .insurance-cost p {
-    text-align: right;
-    margin-left: auto;
-  }
-  .insurance-result-btn button {
-    margin-left: auto;
-    transition: 0.2s ease;
-  }
-  .insurance-result-btn button:hover {
-    background: #F5F5F7;
-    color: #6F7893;
-  }
-}
-
 .tariff-name-xs {
   display: none;
 }
 
-.insurance-result-form .form-label-detail {
-  margin-right: 24px;
-  width: 33.3%;
+.insurance-form.tour .choose-additional-option {
+    margin-top: 40px;
 }
 
-.insurance-result-form .form-label-detail .form-label {
-  width: 100%;
-}
-
-.insurance-result-form .form-label {
-  margin-right: 24px;
-  width: 33.3%;
+.choose-additional-option h6 {
+  font-size: 12px;
+  line-height: 16px;
+  color: #282828;
 }
 
 .insurance-result-inner .title-sm.xs {
   display: none;
 }
 
+.content-checkbox-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8.5px -7.5px 0 -7.5px;
+}
+
+.content-checkbox {
+  position: relative;
+  border: 2px solid #FEF1F0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 7.5px;
+  flex-shrink: 0;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-checkbox p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  margin-bottom: 2px;
+}
+
+.content-checkbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.content-checkbox-btn.on {
+  margin-top: auto;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #EF533F;
+}
+
+.content-checkbox-btn.off {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.16);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  right: 10px;
+  display: none;
+  z-index: 1;
+}
+
+.content-checkbox.active {
+  background: #EF533F;
+  border: 2px solid #EF533F;
+}
+
+.content-checkbox.active p {
+  color: #fff;
+}
+
+.content-checkbox.active .content-checkbox-btn.on {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.content-checkbox.active .content-checkbox-btn.off {
+  display: flex;
+}
+
+.form-label-detail .select-nav {
+  display: flex;
+  margin-top: 8px;
+}
+
+.form-label-detail .select-nav li + li {
+  margin-left: 8px;
+}
+
+.form-label-detail .select-nav a {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #E0E0E0;
+}
+
+.form-label-detail .select-nav a:focus, .form-label-detail .select-nav a:hover {
+  color: #E0E0E0;
+}
+
+.insurance-form-result {
+  .form-label-detail .select-nav a {
+    color: #282828;
+  }
+  .form-label-detail .select-nav a:focus, .form-label-detail .select-nav a:hover {
+    color: #282828;
+  }
+}
+
+.insurance-form .checkbox-form .checkmark {
+  background: transparent;
+}
+
+.insurance-form.kasko {
+  .form-label {
+    width: 25%;
+    margin-right: 24px;
+  }
+}
+
+.insurance-form.tour {
+  .form-label-detail, .form-label {
+    margin-right: 24px;
+  }
+  .form-label-detail.xl {
+    width: 55%;
+  }
+  .form-label-detail.md {
+    width: 32%;
+  }
+  .form-label.sm {
+    width: 13%;
+  }
+}
+
+.form-main-bottom {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-main-bottom .form-label-detail.age {
+  width: 100px;
+}
+
+.btn-main-clone {
+  display: none;
+}
+
+.form-label-detail .form-label {
+  width: 100%!important;
+}
+
+.form-label-detail .btn-delete {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  color: #E0E0E0;
+  text-decoration-line: underline;
+  width: fit-content;
+}
+
+.insurance-form-result .form-label-detail .btn-delete {
+  color: #EF533F;
+}
+
+.insurance-form .btn-add {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  background: #6F7893;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insurance-form.tour {
+  .insurance-result-bottom {
+    margin-top: 16px;
+  }
+}
+
+.content-checkbox.show-box {
+  .show-box-top {
+    display: flex;
+  }
+  span {
+    display: none;
+  }
+  p.clone {
+    display: none;
+  }
+  cursor: pointer;
+}
+
+.content-checkbox.show-box.active {
+  svg {
+    transform: rotate(180deg);
+  }
+  svg path {
+    stroke: #fff;
+  }
+  p {
+    display: none;
+  }
+  p.clone {
+    display: block;
+  }
+  span {
+    display: block;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.6;
+  }
+}
+
+.choose-insurance-cost {
+  display: flex;
+}
+
+.choose-insurance-cost h6 {
+  font-size: 12px;
+  line-height: 16px;
+  color: #282828;
+}
+
+.choose-insurance-cost .checkbox-form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 64px;
+}
+
+.choose-insurance-cost .checkbox-form-wrapper .checkbox-form {
+  margin-right: 16px;
+}
+
+.checkbox-form-wrapper.choose-option {
+  margin-top: 24px;
+  display: none;
+}
+
+.checkbox-form-wrapper.choose-option div {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.checkbox-form-wrapper.choose-option .checkbox-form {
+  margin-right: 24px;
+  margin-bottom: 16px;
+  min-width: 199px;
+}
+
+.insurance-info {
+  background: #F5F5F7;
+  padding-top: 24px;
+  padding-bottom: 80px;
+}
+
+.backlink {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.backlink span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+  margin-left: 16px;
+  display: block;
+  width: fit-content;
+}
+
+.row-box {
+  display: flex;
+  margin-top: 16px;
+}
+
+.insurance-detail-box {
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 16px 16px 64px 16px;
+}
+
+.detail-box-top {
+  display: flex;
+}
+
+.detail-box-img {
+  width: 20%;
+  min-width: 185px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.detail-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.detail-box-caption {
+  width: calc(80% - 24px);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+
+.detail-box-title h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+}
+
+.detail-box-title p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #6F7893;
+  margin-top: 4px;
+}
+
+.detail-box-caption .right-side p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  text-align: right;
+}
+
+.star-rating {
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.detail-box-caption .star-rating {
+  margin-top: 4px;
+}
+
+.star-rating span {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  margin-right: 5px;
+  display: block;
+  width: fit-content;
+}
+
+.detail-box-caption .star-rate {
+  width: fit-content;
+}
+
+.star-rate img {
+  width: 16px;
+  height: 16px;
+}
+
+.detail-box-body {
+  margin-top: 24px;
+}
+
+.detail-box-body .detail-item + .detail-item {
+  margin-top: 24px;
+}
+
+.detail-item {
+  display: flex;
+}
+
+.detail-item .left-side {
+  width: 20%;
+}
+
+.detail-item .left-side p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #EF533F;
+}
+
+.detail-item .right-side {
+  width: calc(80% - 24px);
+  margin-left: 24px;
+}
+
+.detail-item .right-side p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.detail-indicators-box {
+  display: flex;
+  margin: -12px;
+  flex-wrap: wrap;
+}
+
+.detail-indicators-item {
+  width: 126px;
+  margin: 12px;
+}
+
+.detail-indicators-item span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.detail-indicators-item p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  margin-top: 4px;
+}
+
+.insurance-tender-box {
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 16px;
+  height: fit-content;
+}
+
+.insurance-tender-box h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.insurance-tender-inner {
+  margin-top: 16px;
+}
+
+.insurance-tender-inner .insurance-tender-item + .insurance-tender-item {
+  margin-top: 16px;
+}
+
+.insurance-tender-item span {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+  display: block;
+}
+
+.insurance-tender-item p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #2C405A;
+  margin-top: 3px;
+}
+
+.insurance-review-box {
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.review-box-top {
+  padding: 23px 16px 9px 16px;
+  min-height: 56px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-box-top h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.review-box-body {
+  padding: 0 16px;
+}
+
+.review-box-body .review-box-item {
+  padding: 16px 0;
+  display: flex;
+}
+
+.review-box-body .review-box-item + .review-box-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-box-item .left-side {
+  width: 20%;
+}
+
+.review-box-item .left-side p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.review-box-item .right-side {
+  width: calc(80% - 24px);
+  margin-left: 24px;
+}
+
+.review-box-item .right-side p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.row-box .row-box-left {
+  width: 75%;
+}
+
+.row-box .row-box-right {
+  width: calc(25% - 24px);
+  margin-left: 24px;
+}
+
+.insurance-data-form {
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 16px 16px 24px 16px;
+}
+
+.data-form-top {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.data-form-top h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.data-form-box {
+  margin-top: 16px;
+}
+
+.data-form-item {
+  display: flex;
+}
+
+.data-form-number {
+  width: 40px;
+  min-width: 40px;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6F7893;
+  height: 56px;
+}
+
+.data-form-line {
+  display: flex;
+  margin-right: -8px;
+}
+
+.data-form-line .form-label {
+  margin-right: 8px;
+}
+
+.data-form-line .select-date {
+  margin-right: 8px;
+}
+
+.data-form-box .data-form-item + .data-form-item {
+  margin-top: 12px;
+}
+
+.add-tourist {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 24px;
+}
+
+.add-tourist span {
+  margin-left: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #EF533F;
+  display: block;
+}
+
+.data-form-bottom {
+  margin-top: 24px;
+}
+
+.data-form-bottom h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.data-form-bottom .data-form-line {
+  margin-top: 19px;
+}
+
+.insurance-ticket {
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.insurance-ticket h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.insurance-ticket-brand {
+  margin-top: 16px;
+  display: flex;
+}
+
+.ticket-brand-img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.ticket-brand-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.ticket-brand-caption {
+  margin-left: 12px;
+}
+
+.ticket-brand-caption span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.ticket-brand-caption p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.insurance-ticket-body {
+  margin-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.insurance-ticket-body .ticket-info + .ticket-info {
+  margin-top: 16px;
+}
+
+.ticket-info span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.ticket-info p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.insurance-ticket-bottom {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insurance-ticket-bottom span {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+  max-width: 50%;
+  display: block;
+  width: fit-content;
+}
+
+.insurance-ticket-bottom p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+}
+
+.insurance-paperwork .btn-main {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.insurance-paperwork {
+  padding-top: 24px;
+  padding-bottom: 80px;
+  background: #F5F5F7;
+}
+
+.insurance-form.med .form-label-wrapper {
+  .form-label {
+    margin-right: 24px;
+  }
+  .form-label-detail {
+    width: 33.3%;
+    margin-right: 24px;
+  }
+  .form-label.age {
+    width: 100px;
+  }
+  .form-label.gender {
+    width: 150px;
+  }
+}
+
+.insurance-form.med .btn-main {
+  min-width: 270px;
+}
+
+.insurance-form.med .btn-add {
+  margin-right: 24px;
+}
+
+.insurance-form.med .insurance-result-bottom {
+  margin-top: 24px;
+}
+
+.insurance-form-result.med .insurance-form-main {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.insurance-form-result.tour .insurance-form-main {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.insurance-form-result.med .choose-insurance-cost .checkbox-form {
+  min-width: 129px;
+}
+
+.insurance-form.auto {
+  .form-label {
+    margin-right: 24px;
+    width: 33.3%;
+  }
+  .form-label-detail {
+    margin-right: 24px;
+    width: 33.3%;
+  }
+}
+
+.insurance-result .filter-tools {
+  display: none;
+}
+
+.insurance-result-bottom .hide-filter {
+  display: none;
+}
+
+.choose-option-title {
+  display: none;
+}
+
+.filter-box-btn {
+  display: none;
+}
+
+.insurance-price-xs {
+  display: none;
+}
 
 
 
+
+////////////////
+.insurance-condition-heading {
+  padding: 0 16px;
+}
+
+.insurance-condition-heading .th {
+  display: flex;
+}
+
+.condition-heading-td {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.condition-heading-td.condition-insurance-name {
+  justify-content: flex-start;
+}
+
+.condition-heading-td p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+  white-space: nowrap;
+}
+
+.insurance-condition-box {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 24px 16px;
+  margin-top: 12px;
+}
+
+.insurance-condition-box .tr {
+  display: flex;
+}
+
+.btn-sort {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.btn-sort.back svg {
+  transform: rotate(180deg);
+}
+
+.btn-sort svg {
+  margin-left: 4px;
+}
+
+.condition-box-td {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.condition-box-td.condition-insurance-name {
+  justify-content: flex-start;
+}
+
+.insurance-condition-box .condition-insurance-name img {
+  width: 72px;
+  min-width: 72px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.condition-box-td p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.insurance-condition-box .condition-insurance-name p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+  margin-left: 16px;
+  max-width: fit-content;
+}
+
+.insurance-condition-box .condition-insurance-cost p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+}
+
+.insurance-condition-box .btn-main {
+  transition: 0.2s ease;
+}
+
+.insurance-condition-box .btn-main:hover, .insurance-condition-box .btn-main:focus {
+  background: #F5F5F7;
+  color: #6F7893;
+}
+
+.insurance-result-container {
+  .td-1 {
+    width: 54%;
+  }
+  .td-2 {
+    width: 18%;
+    padding-left: 25px;
+  }
+  .td-3 {
+    width: 14%;
+    padding-left: 25px;
+  }
+  .td-4 {
+    width: 14%;
+    padding-left: 25px;
+  }
+}
+
+.insurance-result-container.med-insurance-condition {
+  .td-1 {
+    width: 26%;
+  }
+  .td-2 {
+    width: 16%;
+    padding-left: 20px;
+  }
+  .td-3 {
+    width: 16%;
+    padding-left: 20px;
+  }
+  .td-4 {
+    width: 16%;
+    padding-left: 20px;
+  }
+  .td-5 {
+    width: 13%;
+    padding-left: 20px;
+  }
+  .td-6 {
+    width: 13%;
+    padding-left: 20px;
+  }
+  .condition-heading-td {
+    justify-content: flex-start;
+  }
+  .condition-box-td {
+    justify-content: flex-start;
+  }
+  .btn-sort {
+    margin-left: 0;
+  }
+  .insurance-condition-box .btn-main {
+    margin-left: auto;
+  }
+}
+
+.insurance-condition-box .cost-xs {
+  display: none;
+}
+
+.condition-box-td span {
+  display: none;
+}
+
+.condition-box-body {
+  padding-top: 40px;
+  margin: 0 -16px;
+  display: none;
+}
+
+.program-th {
+  display: flex;
+}
+
+.program-th-left {
+  width: 32%;
+}
+
+.program-th-right {
+  width: 68%;
+}
+
+.program-th-right {
+  display: flex;
+}
+
+.program-th-right .program-td {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-th-right .program-td p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.program-body {
+  margin-top: 16px;
+  border-top: 1px solid #EAEAEA;
+}
+
+.program-body .program-tr {
+  display: flex;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.program-tr-left {
+  width: 32%;
+}
+
+.program-condition {
+  padding: 16px;
+}
+
+.program-condition h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #282828;
+}
+
+.program-condition ul {
+  margin-top: 8px;
+  list-style-type: disc;
+  padding-left: 22px;
+}
+
+.program-condition ul li {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  color: #282828;
+}
+
+.program-tr-right {
+  width: 68%;
+  display: flex;
+}
+
+.program-tr-right .program-td {
+  width: 20%;
+  border-left: 1px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.program-tr-right .program-td span {
+  display: none;
+}
+
+.program-tr-right .program-td p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #EF533F;
+  text-align: center;
+}
+
+.condition-box-bottom {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-top: 1px solid #F5F5F7;
+  margin-top: 16px;
+  margin-bottom: -8px;
+}
+
+.condition-box-bottom p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #282828;
+}
+
+.condition-box-bottom svg {
+  margin-left: 8px;
+}
+
+.condition-box-bottom.show svg {
+  transform: rotate(180deg);
+}
+
+.choose-option-title {
+  display: none;
+}
 
 
 @import "media";

@@ -272,44 +272,248 @@
                 <li>Автострахование</li>
             </ul>
             <div class="insurance-result-inner">
-                <h1 class="title-sm xs">Обязательное <br>автостраховние</h1>
-                <div class="insurance-form insurance-form-result auto">
+                <h1 class="title-sm xs">Туристическое страхование</h1>
+                <div class="insurance-form insurance-form-result tour">
                     <div class="insurance-result-title">
-                        <h1 class="title-sm">Обязательное автостраховние </h1>
+                        <h1 class="title-sm">Добровольное автострахование КАСКО</h1>
                     </div>
                     <div class="insurance-form-main">
                         <div class="form-main-top">
                             <div class="form-label-wrapper">
-                                <div class="form-label-detail">
-                                    <label class="form-label">
-                                        <span class="form-label-title">Гос. номер авто</span>
-                                        <input type="text">
+                                <div class="form-label-detail xl">
+                                    <label class="form-label select-label">
+                                        <span class="form-label-title">Выберите страну отправления</span>
+                                        <select class="select-custom">
+                                            <option></option>
+                                            <option>option</option>
+                                            <option>option</option>
+                                            <option>option</option>
+                                        </select>
+                                    </label>
+                                    <ul class="select-nav">
+                                        <li>
+                                            <a href="">США,</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Турция,</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Россия,</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Тайланд,</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Шенген</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-label-detail md">
+                                    <label class="select-date">
+                                        <span class="form-label-title">Даты поездки</span>
+                                        <input type="text" class="date-range" name="daterange" value="">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                     </label>
                                     <label class="checkbox-form">
-                                        Не помню номер авто
+                                        Полис на год
                                         <input type="checkbox">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                <label class="form-label">
-                                    <span class="form-label-title">Введите ИИН</span>
+                                <label class="form-label sm">
+                                    <span class="form-label-title">Возраст</span>
                                     <input type="number">
-                                </label>
-                                <label class="form-label phone">
-                                    <span class="form-label-title">Номер телефона</span>
-                                    <input type="text" class="phone-mask">
                                 </label>
                             </div>
                             <button class="btn-plain btn-main">Расчитать</button>
-                            <div class="insurance-form-notice">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6364 13.3634C20.6364 18.1334 16.77 21.9998 12 21.9998C7.23001 21.9998 3.36365 18.1334 3.36365 13.3634C3.36365 8.59341 7.23001 4.72705 12 4.72705C16.77 4.72705 20.6364 8.59341 20.6364 13.3634Z" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M8.36365 13.8184H12V9.27295" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 5.63636L6.54545 2" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M22 5.63636L17.4546 2" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p>Автозаполнения по номер автомобиля экономит до 30 минут</p>
+                        </div>
+                        <div class="form-main-bottom">
+                            <div class="form-label-detail age">
+                                <label class="form-label">
+                                    <span class="form-label-title">Возраст</span>
+                                    <input type="number">
+                                </label>
+                                <a class="btn-delete" href="#">Удалить</a>
                             </div>
+                            <button class="btn-plain btn-add">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.7273 21.182V19.7047C14.7273 17.0102 11.8727 14.8184 8.36364 14.8184C4.85455 14.8184 2 17.0102 2 19.7047V21.182" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.36361 11.1818C10.6191 11.1818 12.4545 9.34636 12.4545 7.09091C12.4545 4.83545 10.6191 3 8.36361 3C6.10816 3 4.27271 4.83545 4.27271 7.09091C4.27271 9.34636 6.10816 11.1818 8.36361 11.1818Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.2727 9.36328V14.8178" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.5454 12.0908H22" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn-plain btn-main btn-main-clone">Расчитать</button>
+                    <div class="filter-tools">
+                        <button class="btn-plain show-filter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99836 14.175V2.9997C6.99836 2.73459 6.89305 2.48035 6.70559 2.29289C6.51813 2.10543 6.26389 2.00012 5.99878 2.00012C5.73368 2.00012 5.47943 2.10543 5.29197 2.29289C5.10452 2.48035 4.9992 2.73459 4.9992 2.9997V14.175C4.4203 14.3851 3.92012 14.7684 3.56665 15.2727C3.21318 15.777 3.02356 16.3779 3.02356 16.9938C3.02356 17.6097 3.21318 18.2106 3.56665 18.7149C3.92012 19.2192 4.4203 19.6025 4.9992 19.8126V20.9921C4.9992 21.2572 5.10452 21.5115 5.29197 21.6989C5.47943 21.8864 5.73368 21.9917 5.99878 21.9917C6.26389 21.9917 6.51813 21.8864 6.70559 21.6989C6.89305 21.5115 6.99836 21.2572 6.99836 20.9921V19.8126C7.57727 19.6025 8.07745 19.2192 8.43092 18.7149C8.78439 18.2106 8.97401 17.6097 8.97401 16.9938C8.97401 16.3779 8.78439 15.777 8.43092 15.2727C8.07745 14.7684 7.57727 14.3851 6.99836 14.175ZM5.99878 17.9934C5.80108 17.9934 5.60783 17.9348 5.44345 17.8249C5.27907 17.7151 5.15095 17.559 5.07529 17.3763C4.99964 17.1937 4.97984 16.9927 5.01841 16.7988C5.05698 16.6049 5.15218 16.4268 5.29197 16.287C5.43177 16.1472 5.60988 16.052 5.80378 16.0134C5.99767 15.9749 6.19866 15.9947 6.38131 16.0703C6.56395 16.146 6.72007 16.2741 6.8299 16.4385C6.93974 16.6028 6.99836 16.7961 6.99836 16.9938C6.99836 17.2589 6.89305 17.5132 6.70559 17.7006C6.51813 17.8881 6.26389 17.9934 5.99878 17.9934ZM20.9925 12.9955C20.9907 12.3768 20.7977 11.7738 20.4398 11.2691C20.0819 10.7645 19.5766 10.3829 18.9933 10.1767V2.9997C18.9933 2.73459 18.888 2.48035 18.7005 2.29289C18.5131 2.10543 18.2588 2.00012 17.9937 2.00012C17.7286 2.00012 17.4744 2.10543 17.2869 2.29289C17.0995 2.48035 16.9942 2.73459 16.9942 2.9997V10.1767C16.4152 10.3868 15.9151 10.7701 15.5616 11.2744C15.2081 11.7787 15.0185 12.3796 15.0185 12.9955C15.0185 13.6113 15.2081 14.2123 15.5616 14.7166C15.9151 15.2209 16.4152 15.6042 16.9942 15.8143V20.9921C16.9942 21.2572 17.0995 21.5115 17.2869 21.6989C17.4744 21.8864 17.7286 21.9917 17.9937 21.9917C18.2588 21.9917 18.5131 21.8864 18.7005 21.6989C18.888 21.5115 18.9933 21.2572 18.9933 20.9921V15.8143C19.5766 15.6081 20.0819 15.2265 20.4398 14.7218C20.7977 14.2172 20.9907 13.6142 20.9925 12.9955ZM17.9937 13.9951C17.796 13.9951 17.6028 13.9364 17.4384 13.8266C17.274 13.7168 17.1459 13.5607 17.0702 13.378C16.9946 13.1954 16.9748 12.9944 17.0134 12.8005C17.0519 12.6066 17.1471 12.4285 17.2869 12.2887C17.4267 12.1489 17.6048 12.0537 17.7987 12.0151C17.9926 11.9765 18.1936 11.9963 18.3763 12.072C18.5589 12.1477 18.715 12.2758 18.8249 12.4402C18.9347 12.6045 18.9933 12.7978 18.9933 12.9955C18.9933 13.2606 18.888 13.5148 18.7005 13.7023C18.5131 13.8898 18.2588 13.9951 17.9937 13.9951ZM14.995 4.99886C14.9965 4.44874 14.8467 3.90879 14.562 3.43812C14.2772 2.96744 13.8684 2.58417 13.3804 2.33025C12.8924 2.07633 12.3439 1.96154 11.795 1.99846C11.2462 2.03537 10.718 2.22257 10.2684 2.53955C9.81877 2.85653 9.46501 3.29108 9.24583 3.79565C9.02665 4.30023 8.95048 4.85537 9.02568 5.40033C9.10087 5.94528 9.32453 6.45906 9.67216 6.88542C10.0198 7.31178 10.478 7.63429 10.9967 7.81767V20.9921C10.9967 21.2572 11.102 21.5115 11.2894 21.6989C11.4769 21.8864 11.7312 21.9917 11.9963 21.9917C12.2614 21.9917 12.5156 21.8864 12.7031 21.6989C12.8905 21.5115 12.9958 21.2572 12.9958 20.9921V7.81767C13.5791 7.61144 14.0844 7.22985 14.4423 6.72519C14.8002 6.22054 14.9933 5.61754 14.995 4.99886ZM11.9963 5.99844C11.7986 5.99844 11.6053 5.93981 11.4409 5.82998C11.2765 5.72014 11.1484 5.56403 11.0728 5.38138C10.9971 5.19873 10.9773 4.99775 11.0159 4.80385C11.0545 4.60995 11.1497 4.43184 11.2894 4.29205C11.4292 4.15225 11.6074 4.05705 11.8012 4.01848C11.9951 3.97992 12.1961 3.99971 12.3788 4.07537C12.5614 4.15102 12.7175 4.27914 12.8274 4.44352C12.9372 4.6079 12.9958 4.80116 12.9958 4.99886C12.9958 5.26396 12.8905 5.51821 12.7031 5.70567C12.5156 5.89312 12.2614 5.99844 11.9963 5.99844Z" fill="#EF533F"/>
+                            </svg>
+                            <span>Дополнительные опции</span>
+                        </button>
+                        <button class="btn-plain clear-filter-val">Очистить</button>
+                    </div>
+                    <div class="insurance-result-bottom">
+                        <div class="hide-filter">
+                            <button class="btn-plain">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4L20 20" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Фильтр</span>
+                            </button>
+                        </div>
+                        <div class="filter-box">
+                            <div class="choose-insurance-cost">
+                                <h6>Выберите сумму страхование:</h6>
+                                <div class="checkbox-form-wrapper">
+                                    <label class="checkbox-form">
+                                        $ 10 000
+                                        <input type="radio" name="insurance-cost">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        $ 20 000
+                                        <input type="radio" name="insurance-cost">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        $ 50 000
+                                        <input type="radio" name="insurance-cost">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        $ 100 000
+                                        <input type="radio" name="insurance-cost">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="choose-additional-option">
+                                <h6>Выберите дополнительные опции:</h6>
+                                <div class="content-checkbox-wrapper">
+                                    <div class="content-checkbox">
+                                        <input type="checkbox" class="content-checkbox-input">
+                                        <p>Отмена поездки</p>
+                                        <button class="btn-plain content-checkbox-btn on">Выбрать</button>
+                                        <button class="btn-plain content-checkbox-btn off">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="content-checkbox">
+                                        <input type="checkbox" class="content-checkbox-input">
+                                        <p>Потеря багажа</p>
+                                        <button class="btn-plain content-checkbox-btn on">Выбрать</button>
+                                        <button class="btn-plain content-checkbox-btn off">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="content-checkbox">
+                                        <input type="checkbox" class="content-checkbox-input">
+                                        <p>Несчастный случай</p>
+                                        <button class="btn-plain content-checkbox-btn on">Выбрать</button>
+                                        <button class="btn-plain content-checkbox-btn off">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="content-checkbox">
+                                        <input type="checkbox" class="content-checkbox-input">
+                                        <p>Занятие спортом</p>
+                                        <button class="btn-plain content-checkbox-btn on">Выбрать</button>
+                                        <button class="btn-plain content-checkbox-btn off">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="content-checkbox show-box">
+                                        <div class="show-box-top">
+                                            <p>Дополнительные опции</p>
+                                            <p class="clone">Выбрано 2 опции</p>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5 10L12 16L19 10" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <span>еще 15 опции</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkbox-form-wrapper choose-option">
+                                <div class="choose-option-title">
+                                    <h6>Дополниельные опции</h6>
+                                    <span>Выбрано 2 опции</span>
+                                </div>
+                                <div>
+                                    <label class="checkbox-form">
+                                        Стоматология
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Аллергия
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Отравления
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Сломал руку
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Сломал ногу
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Сломал руку
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Аллергия
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Аллергия
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn-plain filter-box-btn">Применить</button>
                         </div>
                     </div>
                 </div>
@@ -536,10 +740,41 @@
 <script src="js/daterangepicker.js"></script>
 <script src="js/main.js"></script>
 <script>
-//price-sort btn
-$('.price-sort').click(function (){
-    $(this).toggleClass('back');
-})
+    //sort btn
+    $('.btn-sort').click(function (){
+        $(this).toggleClass('back');
+    })
+
+    //content-checkbox
+    $('.content-checkbox-btn.on').click(function (){
+        $(this).closest('.content-checkbox').find('.content-checkbox-input').click();
+        $(this).attr('disabled', true);
+        $(this).closest('.content-checkbox').addClass('active');
+    })
+    $('.content-checkbox-btn.off').click(function (){
+        $(this).closest('.content-checkbox').find('.content-checkbox-input').click();
+        $(this).closest('.content-checkbox').find('.content-checkbox-btn.on').removeAttr("disabled")
+        $(this).closest('.content-checkbox').removeClass('active');
+    })
+
+    //show checkbox-wrapper
+    $('.show-box ').click(function (){
+        $(this).toggleClass('active');
+        $('.choose-option').slideToggle(300);
+    })
+
+    //show mobile filter
+    $('.show-filter').click(function (){
+        $(this).closest('.insurance-form').find('.insurance-result-bottom').addClass('show');
+        $('body').addClass('scroll-locked');
+    })
+    $('.hide-filter button').click(function (){
+        $(this).closest('.insurance-result-bottom').removeClass('show');
+        $('body').removeClass('scroll-locked');
+    })
+
+
+
 
 </script>
 </body>
