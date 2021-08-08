@@ -1678,6 +1678,7 @@ header.red {
 .sticky-header-bottom {
   position: sticky;
   top: -64px;
+  z-index: 99;
 }
 
 .contact {
@@ -3610,12 +3611,15 @@ margin-top: 12px;
   display: none;
 }
 
-
-
-
-////////////////
 .insurance-condition-heading {
   padding: 0 16px;
+}
+
+.insurance-condition-heading.sticky {
+  position: sticky;
+  background: #F5F5F7;
+  border-bottom: 1px solid #C4C4C4;
+  padding: 11px 16px;
 }
 
 .insurance-condition-heading .th {
@@ -3729,7 +3733,7 @@ margin-top: 12px;
   }
 }
 
-.insurance-result-container.med-insurance-condition {
+.insurance-result-container.six-column {
   .td-1 {
     width: 26%;
   }
@@ -3901,6 +3905,341 @@ margin-top: 12px;
 .choose-option-title {
   display: none;
 }
+
+.insurance-form.property .form-label-wrapper {
+  .form-label {
+    width: 33.3%;
+    margin-right: 24px;
+  }
+}
+
+.insurance-form-result.property {
+  .insurance-form-main {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #C4C4C4;
+  }
+  .insurance-result-bottom {
+      margin-top: 24px;
+  }
+  .choose-additional-option {
+    margin-top: 40px;
+  }
+  .choose-insurance-cost .checkbox-form {
+    min-width: 129px;
+  }
+}
+
+.property-insurance-condition {
+  display: flex;
+  padding: 0 16px;
+  margin-top: -16px;
+}
+
+.property-insurance-condition .left-side {
+  width: 19.5%;
+}
+
+.property-insurance-condition .left-side p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #6F7893;
+}
+
+.property-insurance-condition .middle-side {
+  width: calc(52.5% - 24px);
+  margin-left: 24px;
+}
+
+.property-insurance-condition .middle-side p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.property-insurance-condition .right-side {
+  width: calc(28% - 24px);
+  margin-left: 24px;
+}
+
+.property-insurance-condition .right-side ul {
+  list-style-type: none;
+}
+
+.property-insurance-condition .right-side ul li + li {
+  margin-top: 18px;
+}
+
+.property-insurance-condition .right-side ul li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.property-insurance-condition .right-side ul li:before {
+  content: '';
+  background: url("../img/icon/check-green.svg");
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 18px;
+  height: 16px;
+  padding: 0;
+}
+
+
+.insurance-form.auto.juridical {
+  .form-label-detail {
+    width: 50%;
+  }
+  .form-label {
+    width: 50%;
+  }
+}
+
+.insurance-form.kasko.juridical .form-label {
+  width: 33.3%;
+}
+
+.insurance-form.med.juridical {
+  .form-label {
+    width: 382px;
+  }
+  .form-label-wrapper {
+    flex: initial;
+  }
+  .show-box {
+    margin-top: 0;
+    margin-left: 24px;
+  }
+  .choose-option-title span {
+    display: none;
+  }
+  .choose-option-title h6 {
+    font-size: 12px;
+    line-height: 16px;
+    color: #282828;
+  }
+  .checkbox-form-wrapper.choose-option {
+    margin-top: 0;
+  }
+  .checkbox-form-wrapper.choose-option .checkbox-form {
+    width: calc(50% - 24px);
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+  .checkbox-form-wrapper.choose-option div {
+    margin-top: 16px;
+  }
+  .insurance-result-bottom {
+    margin-top: 0;
+  }
+}
+
+.authorize {
+  background: url("../img/main/auth-bg.png") no-repeat center/cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+
+.authorize-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 502px;
+  height: fit-content;
+}
+
+.authorize-content h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.authorize-form {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 24px 40px;
+  margin-top: 23px;
+}
+
+.authorize-form .checkbox-form-wrapper {
+  display: flex;
+  margin: 0 -20px;
+  margin-bottom: 24px;
+}
+
+.authorize-form .checkbox-form-wrapper .checkbox-form {
+  width: calc(33.3% - 40px);
+  margin: 0 20px;
+}
+
+.authorize-form .form-label-wrapper {
+  .form-label {
+    margin-top: 8px;
+  }
+  .select-date {
+    margin-top: 8px;
+  }
+}
+
+.authorize-form-bottom {
+  margin-top: 16px;
+}
+
+.authorize-form-bottom .btn-main {
+  width: 100%;
+}
+
+.authorize-form-bottom .login-link {
+  margin: 16px auto 0 auto;
+  display: block;
+  width: fit-content;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6F7893;
+}
+
+.authorize-copyright {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.authorize-copyright p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.authorize-copyright p a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.authorize-copyright .left-side {
+  width: 55%;
+}
+
+.authorize-copyright .right-side {
+  width: 45%;
+  padding-left: 20px;
+}
+
+.authorize-copyright .right-side p {
+  text-align: right;
+}
+
+.form-label.error:after, .select-date.error:after {
+  background: #EF533F;
+}
+
+.error-alert {
+  margin-top: 8px;
+  background: #FEF1F0;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 32px;
+  padding: 8px;
+}
+
+.error-alert p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #EF533F;
+}
+
+.pass-hide {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pass-hide i {
+  background: url("../img/icon/show-pass.svg") no-repeat center/contain;
+  width: 20px;
+  height: 20px;
+}
+
+.pass-hide.pass-show i {
+  background: url("../img/icon/dont-show.svg") no-repeat center/contain;
+  width: 20px;
+  height: 20px;
+}
+
+.pwd-forget-link {
+  margin-top: 16px;
+  display: block;
+  width: fit-content;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6F7893;
+  margin-left: auto;
+}
+
+.registration-link {
+  margin: 16px auto 0 auto;
+  display: block;
+  width: fit-content;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6F7893;
+}
+
+.registration-link:hover, .registration-link:focus {
+  color: #6F7893;
+}
+
+.registration-link span {
+  color: #EF533F;
+}
+
+.authorize-form-title h6 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+}
+
+.authorize-form-title h6 svg {
+  margin-right: 8px;
+}
+
+.authorize-form-title p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  margin-top: 7px;
+}
+
+.mt-22 {
+  margin-top: 22px;
+}
+
+.authorize-form-title p a {
+  color: #EF533F;
+}
+
+.authorize-content.mt {
+  margin-top: 86px;
+}
+
 
 
 @import "media";

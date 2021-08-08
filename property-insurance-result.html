@@ -17,7 +17,7 @@
 <body>
 
 <div class="wrapper">
-    <header>
+    <header class="sticky-header-bottom">
         <div class="header-top padding-x">
             <a class="main-logo" href="index.html">
                 <img src="img/main/logo.png">
@@ -272,82 +272,38 @@
                 <li>Автострахование</li>
             </ul>
             <div class="insurance-result-inner">
-                <h1 class="title-sm xs">Туристическое страхование</h1>
-                <div class="insurance-form insurance-form-result tour">
+                <h1 class="title-sm xs">Страхование квартиры</h1>
+                <div class="insurance-form insurance-form-result property">
                     <div class="insurance-result-title">
-                        <h1 class="title-sm">Добровольное автострахование КАСКО</h1>
+                        <h1 class="title-sm">Страхование квартиры</h1>
                     </div>
                     <div class="insurance-form-main">
                         <div class="form-main-top">
                             <div class="form-label-wrapper">
-                                <div class="form-label-detail xl">
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Выберите страну отправления</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>option</option>
-                                            <option>option</option>
-                                            <option>option</option>
-                                        </select>
-                                    </label>
-                                    <ul class="select-nav">
-                                        <li>
-                                            <a href="">США,</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Турция,</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Россия,</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Тайланд,</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Шенген</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="form-label-detail md">
-                                    <label class="select-date">
-                                        <span class="form-label-title">Даты поездки</span>
-                                        <input type="text" class="date-range" name="daterange" value="">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Полис на год
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <label class="form-label sm">
-                                    <span class="form-label-title">Возраст</span>
+                                <label class="form-label select-label">
+                                    <span class="form-label-title">Город или населенный пункт</span>
+                                    <select class="select-custom">
+                                        <option></option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                    </select>
+                                </label>
+                                <label class="form-label select-label">
+                                    <span class="form-label-title">Объект страхования</span>
+                                    <select class="select-custom">
+                                        <option></option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                    </select>
+                                </label>
+                                <label class="form-label">
+                                    <span class="form-label-title">Рыночная стоимость имущества</span>
                                     <input type="number">
                                 </label>
                             </div>
                             <button class="btn-plain btn-main">Расчитать</button>
-                        </div>
-                        <div class="form-main-bottom">
-                            <div class="form-label-detail age">
-                                <label class="form-label">
-                                    <span class="form-label-title">Возраст</span>
-                                    <input type="number">
-                                </label>
-                                <a class="btn-delete" href="#">Удалить</a>
-                            </div>
-                            <button class="btn-plain btn-add">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.7273 21.182V19.7047C14.7273 17.0102 11.8727 14.8184 8.36364 14.8184C4.85455 14.8184 2 17.0102 2 19.7047V21.182" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.36361 11.1818C10.6191 11.1818 12.4545 9.34636 12.4545 7.09091C12.4545 4.83545 10.6191 3 8.36361 3C6.10816 3 4.27271 4.83545 4.27271 7.09091C4.27271 9.34636 6.10816 11.1818 8.36361 11.1818Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M19.2727 9.36328V14.8178" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M16.5454 12.0908H22" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
                         </div>
                     </div>
                     <button class="btn-plain btn-main btn-main-clone">Расчитать</button>
@@ -374,36 +330,41 @@
                         </div>
                         <div class="filter-box">
                             <div class="choose-insurance-cost">
-                                <h6>Выберите сумму страхование:</h6>
+                                <h6>Франшиза по поврееждению:</h6>
                                 <div class="checkbox-form-wrapper">
                                     <label class="checkbox-form">
-                                        $ 10 000
+                                        нет
                                         <input type="radio" name="insurance-cost">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="checkbox-form">
-                                        $ 20 000
+                                        от 1% до 1.5%
                                         <input type="radio" name="insurance-cost">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="checkbox-form">
-                                        $ 50 000
+                                        2%
                                         <input type="radio" name="insurance-cost">
                                         <span class="checkmark"></span>
                                     </label>
                                     <label class="checkbox-form">
-                                        $ 100 000
+                                        5%
+                                        <input type="radio" name="insurance-cost">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        10%
                                         <input type="radio" name="insurance-cost">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                             </div>
                             <div class="choose-additional-option">
-                                <h6>Выберите дополнительные опции:</h6>
+                                <h6>Страховые случаи:</h6>
                                 <div class="content-checkbox-wrapper">
                                     <div class="content-checkbox">
                                         <input type="checkbox" class="content-checkbox-input">
-                                        <p>Отмена поездки</p>
+                                        <p>Стихийные бедствия</p>
                                         <button class="btn-plain content-checkbox-btn on">Выбрать</button>
                                         <button class="btn-plain content-checkbox-btn off">
                                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -416,7 +377,7 @@
                                     </div>
                                     <div class="content-checkbox">
                                         <input type="checkbox" class="content-checkbox-input">
-                                        <p>Потеря багажа</p>
+                                        <p>Землятресение</p>
                                         <button class="btn-plain content-checkbox-btn on">Выбрать</button>
                                         <button class="btn-plain content-checkbox-btn off">
                                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -429,7 +390,7 @@
                                     </div>
                                     <div class="content-checkbox">
                                         <input type="checkbox" class="content-checkbox-input">
-                                        <p>Несчастный случай</p>
+                                        <p>Противоправные действия третьих лиц</p>
                                         <button class="btn-plain content-checkbox-btn on">Выбрать</button>
                                         <button class="btn-plain content-checkbox-btn off">
                                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -442,7 +403,7 @@
                                     </div>
                                     <div class="content-checkbox">
                                         <input type="checkbox" class="content-checkbox-input">
-                                        <p>Занятие спортом</p>
+                                        <p>Прорыв водопроводных и иных систем</p>
                                         <button class="btn-plain content-checkbox-btn on">Выбрать</button>
                                         <button class="btn-plain content-checkbox-btn off">
                                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -453,80 +414,41 @@
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="content-checkbox show-box">
-                                        <div class="show-box-top">
-                                            <p>Дополнительные опции</p>
-                                            <p class="clone">Выбрано 2 опции</p>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M5 10L12 16L19 10" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <div class="content-checkbox">
+                                        <input type="checkbox" class="content-checkbox-input">
+                                        <p>Пожар, удар молнии, взрыв</p>
+                                        <button class="btn-plain content-checkbox-btn on">Выбрать</button>
+                                        <button class="btn-plain content-checkbox-btn off">
+                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 1L9 9" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 9L9 1" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
-                                        </div>
-                                        <span>еще 15 опции</span>
+                                        </button>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="checkbox-form-wrapper choose-option">
-                                <div class="choose-option-title">
-                                    <h6>Дополниельные опции</h6>
-                                    <span>Выбрано 2 опции</span>
-                                </div>
-                                <div>
-                                    <label class="checkbox-form">
-                                        Стоматология
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Аллергия
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Отравления
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Сломал руку
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Сломал ногу
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Сломал руку
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Аллергия
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="checkbox-form">
-                                        Аллергия
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
                                 </div>
                             </div>
                             <button class="btn-plain filter-box-btn">Применить</button>
                         </div>
                     </div>
                 </div>
-                <div class="insurance-result-container">
-                    <div class="insurance-condition-heading">
+                <div class="insurance-result-container six-column">
+                    <div class="insurance-condition-heading sticky">
                         <div class="th">
-                            <div class="condition-heading-td td-1 condition-insurance-name">
+                            <div class="condition-heading-td td-1">
                                 <p>Страховая компания</p>
                             </div>
                             <div class="condition-heading-td td-2">
-                                <p>Выплата по страховке</p>
+                                <p>Движимое имущество</p>
                             </div>
-                            <div class="condition-heading-td td-3 condition-insurance-cost">
+                            <div class="condition-heading-td td-3">
+                                <p>Внутренняя отделка</p>
+                            </div>
+                            <div class="condition-heading-td td-4">
+                                <p>Компенсация соседям</p>
+                            </div>
+                            <div class="condition-heading-td td-5 condition-insurance-cost">
                                 <button class="btn-plain btn-sort">
                                     <p>Цена</p>
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -535,7 +457,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="condition-heading-td td-4"></div>
+                            <div class="condition-heading-td td-6"></div>
                         </div>
                     </div>
                     <div class="insurance-condition-box">
@@ -547,14 +469,48 @@
                                     <p class="cost-xs">18 200 ₸</p>
                                 </div>
                                 <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
+                                    <span>Движимое имущество</span>
+                                    <p>600 000 ₸</p>
                                 </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
+                                <div class="condition-box-td td-3">
+                                    <span>Внутренняя отделка</span>
+                                    <p>1 200 000 ₸</p>
                                 </div>
                                 <div class="condition-box-td td-4">
+                                    <span>Компенсация соседям</span>
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-5 condition-insurance-cost">
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-6">
                                     <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="condition-box-bottom">
+                            <p>Детальные условия полиса</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L12 16L19 10" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="condition-box-body">
+                            <div class="property-insurance-condition">
+                                <div class="left-side">
+                                    <p>Про страховой полис:</p>
+                                </div>
+                                <div class="middle-side">
+                                    <p>Квартира должна находиться в кирпичном, каменном или бетонном доме Максимальная выплата за один застрахованный предмет — 10 % от общей страховой суммы. То есть если домашнее имущество застраховано на 5 млн тенге, за испорченный домашний кинотеатр или ноутбук нельзя получить больше 600 000 тенге.</p>
+                                </div>
+                                <div class="right-side">
+                                    <ul>
+                                        <li>Пожар</li>
+                                        <li>Взрыв</li>
+                                        <li>ПДТЛ</li>
+                                        <li>Стихийные бедствия</li>
+                                        <li>Залив</li>
+                                        <li>Аварии инженерных систем</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -568,14 +524,48 @@
                                     <p class="cost-xs">18 200 ₸</p>
                                 </div>
                                 <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
+                                    <span>Движимое имущество</span>
+                                    <p>600 000 ₸</p>
                                 </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
+                                <div class="condition-box-td td-3">
+                                    <span>Внутренняя отделка</span>
+                                    <p>1 200 000 ₸</p>
                                 </div>
                                 <div class="condition-box-td td-4">
+                                    <span>Компенсация соседям</span>
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-5 condition-insurance-cost">
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-6">
                                     <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="condition-box-bottom">
+                            <p>Детальные условия полиса</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L12 16L19 10" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="condition-box-body">
+                            <div class="property-insurance-condition">
+                                <div class="left-side">
+                                    <p>Про страховой полис:</p>
+                                </div>
+                                <div class="middle-side">
+                                    <p>Квартира должна находиться в кирпичном, каменном или бетонном доме Максимальная выплата за один застрахованный предмет — 10 % от общей страховой суммы. То есть если домашнее имущество застраховано на 5 млн тенге, за испорченный домашний кинотеатр или ноутбук нельзя получить больше 600 000 тенге.</p>
+                                </div>
+                                <div class="right-side">
+                                    <ul>
+                                        <li>Пожар</li>
+                                        <li>Взрыв</li>
+                                        <li>ПДТЛ</li>
+                                        <li>Стихийные бедствия</li>
+                                        <li>Залив</li>
+                                        <li>Аварии инженерных систем</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -589,14 +579,48 @@
                                     <p class="cost-xs">18 200 ₸</p>
                                 </div>
                                 <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
+                                    <span>Движимое имущество</span>
+                                    <p>600 000 ₸</p>
                                 </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
+                                <div class="condition-box-td td-3">
+                                    <span>Внутренняя отделка</span>
+                                    <p>1 200 000 ₸</p>
                                 </div>
                                 <div class="condition-box-td td-4">
+                                    <span>Компенсация соседям</span>
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-5 condition-insurance-cost">
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-6">
                                     <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="condition-box-bottom">
+                            <p>Детальные условия полиса</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L12 16L19 10" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="condition-box-body">
+                            <div class="property-insurance-condition">
+                                <div class="left-side">
+                                    <p>Про страховой полис:</p>
+                                </div>
+                                <div class="middle-side">
+                                    <p>Квартира должна находиться в кирпичном, каменном или бетонном доме Максимальная выплата за один застрахованный предмет — 10 % от общей страховой суммы. То есть если домашнее имущество застраховано на 5 млн тенге, за испорченный домашний кинотеатр или ноутбук нельзя получить больше 600 000 тенге.</p>
+                                </div>
+                                <div class="right-side">
+                                    <ul>
+                                        <li>Пожар</li>
+                                        <li>Взрыв</li>
+                                        <li>ПДТЛ</li>
+                                        <li>Стихийные бедствия</li>
+                                        <li>Залив</li>
+                                        <li>Аварии инженерных систем</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -610,14 +634,48 @@
                                     <p class="cost-xs">18 200 ₸</p>
                                 </div>
                                 <div class="condition-box-td td-2">
-                                    <span>Выплата по страховке</span>
-                                    <p>до 2 000 000 ₸</p>
+                                    <span>Движимое имущество</span>
+                                    <p>600 000 ₸</p>
                                 </div>
-                                <div class="condition-box-td td-3 condition-insurance-cost">
-                                    <p>18 200 ₸</p>
+                                <div class="condition-box-td td-3">
+                                    <span>Внутренняя отделка</span>
+                                    <p>1 200 000 ₸</p>
                                 </div>
                                 <div class="condition-box-td td-4">
+                                    <span>Компенсация соседям</span>
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-5 condition-insurance-cost">
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-6">
                                     <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="condition-box-bottom">
+                            <p>Детальные условия полиса</p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10L12 16L19 10" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="condition-box-body">
+                            <div class="property-insurance-condition">
+                                <div class="left-side">
+                                    <p>Про страховой полис:</p>
+                                </div>
+                                <div class="middle-side">
+                                    <p>Квартира должна находиться в кирпичном, каменном или бетонном доме Максимальная выплата за один застрахованный предмет — 10 % от общей страховой суммы. То есть если домашнее имущество застраховано на 5 млн тенге, за испорченный домашний кинотеатр или ноутбук нельзя получить больше 600 000 тенге.</p>
+                                </div>
+                                <div class="right-side">
+                                    <ul>
+                                        <li>Пожар</li>
+                                        <li>Взрыв</li>
+                                        <li>ПДТЛ</li>
+                                        <li>Стихийные бедствия</li>
+                                        <li>Залив</li>
+                                        <li>Аварии инженерных систем</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -775,7 +833,29 @@
         $('body').removeClass('scroll-locked');
     })
 
+    //show mobile filter
+    $('.show-filter').click(function (){
+        $(this).closest('.insurance-form').find('.insurance-result-bottom').addClass('show');
+        $('body').addClass('scroll-locked');
+    })
+    $('.hide-filter button').click(function (){
+        $(this).closest('.insurance-result-bottom').removeClass('show');
+        $('body').removeClass('scroll-locked');
+    })
 
+    //show program table
+    $('.condition-box-bottom').click(function (){
+        $(this).toggleClass('show');
+        $(this).next('.condition-box-body').slideToggle(500);
+    })
+
+    //sticky header
+    $(document).ready(function (){
+        let headerStickyTop = $('.header-top').outerHeight();
+        let tabStickyTop = $('.header-bottom').outerHeight();
+        $('header').css('top', '-'+headerStickyTop + 'px');
+        $('.insurance-condition-heading').css('top', ''+tabStickyTop -1 + 'px');
+    })
 
 
 </script>

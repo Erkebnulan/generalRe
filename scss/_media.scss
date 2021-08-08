@@ -494,7 +494,7 @@
   .insurance-form-result .choose-insurance-cost .checkbox-form {
     margin-bottom: 12px;
   }
-  .insurance-result-container.med-insurance-condition {
+  .insurance-result-container.six-column {
     .insurance-condition-box {
       padding: 16px 10px;
     }
@@ -1956,7 +1956,7 @@
       margin-right: 16px;
     }
   }
-  .insurance-result-container.med-insurance-condition {
+  .insurance-result-container.six-column {
     .td-1 {
       width: 100%;
     }
@@ -2063,6 +2063,89 @@
   .program-tr-right .program-td + .program-td {
     margin-left: 10px;
   }
+
+  .insurance-form.juridical {
+    .form-label {
+      width: 100% !important;
+      margin-right: 0!important;
+    }
+    .form-label-detail {
+      width: 100% !important;
+      margin-right: 0!important;
+    }
+  }
+  .insurance-form.med.juridical .show-box {
+    display: none;
+  }
+  .authorize-content {
+    margin-top: 24px;
+  }
+  .authorize {
+    padding-bottom: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .authorize-content h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+  .authorize-form {
+    margin-top: 24px;
+    width: 100%;
+    padding: 24px 16px;
+  }
+  .authorize-form .checkbox-form-wrapper {
+    display: block;
+    margin: 0 0 16px 0;
+  }
+  .authorize-form .checkbox-form-wrapper .checkbox-form {
+    width: 100%;
+    margin: 0;
+  }
+  .authorize-form .checkbox-form-wrapper .checkbox-form + .checkbox-form {
+    margin-top: 18px;
+  }
+  .authorize-copyright {
+    display: block;
+  }
+  .authorize-copyright .left-side {
+    width: 100%;
+    text-align: center;
+  }
+  .authorize-copyright .right-side {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 16px;
+  }
+  .authorize-copyright .right-side p {
+    text-align: center;
+  }
+  .authorize-copyright p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .authorize-copyright p a {
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+  }
+  .authorize-form-title h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .authorize-form-title p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .authorize-content.mt {
+    margin-top: 56px;
+  }
+
+
 }
 
 

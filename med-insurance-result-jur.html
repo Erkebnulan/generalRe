@@ -265,34 +265,18 @@
                 </div>
             </div>
         </div>
-        <section class="insurance-promo padding-x">
+        <section class="insurance-result padding-x">
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Для физических лиц</li>
                 <li>Автострахование</li>
             </ul>
-            <div class="insurance-promo-content">
-                <h1 class="title-md">Расчитайте КАСКО</h1>
-                <div class="insurance-instruction">
-                    <div class="insurance-instruction-item">
-                        <span class="instruction-number">1</span>
-                        <p>Расчитайте полис</p>
+            <div class="insurance-result-inner">
+                <h1 class="title-sm xs">Медицинское страхование</h1>
+                <div class="insurance-form insurance-form-result med juridical">
+                    <div class="insurance-result-title">
+                        <h1 class="title-sm">Медицинское страхование</h1>
                     </div>
-                    <div class="insurance-instruction-item">
-                        <span class="instruction-number">2</span>
-                        <p>Выберите предложение</p>
-                    </div>
-                    <div class="insurance-instruction-item">
-                        <span class="instruction-number">3</span>
-                        <p>Оформите и оплатите полис</p>
-                    </div>
-                    <div class="insurance-instruction-item">
-                        <span class="instruction-number">4</span>
-                        <p>Страховой полис у вас</p>
-                    </div>
-                </div>
-                <!--Для юр лиц добавь класс "juridical" к "insurance-form"-->
-                <div class="insurance-form kasko">
                     <div class="insurance-form-main">
                         <div class="form-main-top">
                             <div class="form-label-wrapper">
@@ -300,104 +284,233 @@
                                     <span class="form-label-title">Страховая сумма</span>
                                     <input type="text">
                                 </label>
-                                <label class="form-label select-label">
-                                    <span class="form-label-title">Франшиза по повреждению</span>
-                                    <select class="select-custom">
-                                        <option></option>
-                                        <option>option</option>
-                                        <option>option</option>
-                                        <option>option</option>
-                                    </select>
-                                </label>
-                                <label class="form-label select-label">
-                                    <span class="form-label-title">Франшиза по угону</span>
-                                    <select class="select-custom">
-                                        <option></option>
-                                        <option>option</option>
-                                        <option>option</option>
-                                        <option>option</option>
-                                    </select>
-                                </label>
-                                <label class="form-label select-label">
-                                    <span class="form-label-title">Тип транспорта</span>
-                                    <select class="select-custom">
-                                        <option></option>
-                                        <option>option</option>
-                                        <option>option</option>
-                                        <option>option</option>
-                                    </select>
-                                </label>
                             </div>
                             <button class="btn-plain btn-main">Расчитать</button>
+                            <div class="content-checkbox show-box">
+                                <div class="show-box-top">
+                                    <p>Дополнительные опции</p>
+                                    <p class="clone">Выбрано 2 опции</p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 10L12 16L19 10" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>еще 15 опции</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-plain btn-main btn-main-clone">Расчитать</button>
+                    <div class="filter-tools">
+                        <button class="btn-plain show-filter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99836 14.175V2.9997C6.99836 2.73459 6.89305 2.48035 6.70559 2.29289C6.51813 2.10543 6.26389 2.00012 5.99878 2.00012C5.73368 2.00012 5.47943 2.10543 5.29197 2.29289C5.10452 2.48035 4.9992 2.73459 4.9992 2.9997V14.175C4.4203 14.3851 3.92012 14.7684 3.56665 15.2727C3.21318 15.777 3.02356 16.3779 3.02356 16.9938C3.02356 17.6097 3.21318 18.2106 3.56665 18.7149C3.92012 19.2192 4.4203 19.6025 4.9992 19.8126V20.9921C4.9992 21.2572 5.10452 21.5115 5.29197 21.6989C5.47943 21.8864 5.73368 21.9917 5.99878 21.9917C6.26389 21.9917 6.51813 21.8864 6.70559 21.6989C6.89305 21.5115 6.99836 21.2572 6.99836 20.9921V19.8126C7.57727 19.6025 8.07745 19.2192 8.43092 18.7149C8.78439 18.2106 8.97401 17.6097 8.97401 16.9938C8.97401 16.3779 8.78439 15.777 8.43092 15.2727C8.07745 14.7684 7.57727 14.3851 6.99836 14.175ZM5.99878 17.9934C5.80108 17.9934 5.60783 17.9348 5.44345 17.8249C5.27907 17.7151 5.15095 17.559 5.07529 17.3763C4.99964 17.1937 4.97984 16.9927 5.01841 16.7988C5.05698 16.6049 5.15218 16.4268 5.29197 16.287C5.43177 16.1472 5.60988 16.052 5.80378 16.0134C5.99767 15.9749 6.19866 15.9947 6.38131 16.0703C6.56395 16.146 6.72007 16.2741 6.8299 16.4385C6.93974 16.6028 6.99836 16.7961 6.99836 16.9938C6.99836 17.2589 6.89305 17.5132 6.70559 17.7006C6.51813 17.8881 6.26389 17.9934 5.99878 17.9934ZM20.9925 12.9955C20.9907 12.3768 20.7977 11.7738 20.4398 11.2691C20.0819 10.7645 19.5766 10.3829 18.9933 10.1767V2.9997C18.9933 2.73459 18.888 2.48035 18.7005 2.29289C18.5131 2.10543 18.2588 2.00012 17.9937 2.00012C17.7286 2.00012 17.4744 2.10543 17.2869 2.29289C17.0995 2.48035 16.9942 2.73459 16.9942 2.9997V10.1767C16.4152 10.3868 15.9151 10.7701 15.5616 11.2744C15.2081 11.7787 15.0185 12.3796 15.0185 12.9955C15.0185 13.6113 15.2081 14.2123 15.5616 14.7166C15.9151 15.2209 16.4152 15.6042 16.9942 15.8143V20.9921C16.9942 21.2572 17.0995 21.5115 17.2869 21.6989C17.4744 21.8864 17.7286 21.9917 17.9937 21.9917C18.2588 21.9917 18.5131 21.8864 18.7005 21.6989C18.888 21.5115 18.9933 21.2572 18.9933 20.9921V15.8143C19.5766 15.6081 20.0819 15.2265 20.4398 14.7218C20.7977 14.2172 20.9907 13.6142 20.9925 12.9955ZM17.9937 13.9951C17.796 13.9951 17.6028 13.9364 17.4384 13.8266C17.274 13.7168 17.1459 13.5607 17.0702 13.378C16.9946 13.1954 16.9748 12.9944 17.0134 12.8005C17.0519 12.6066 17.1471 12.4285 17.2869 12.2887C17.4267 12.1489 17.6048 12.0537 17.7987 12.0151C17.9926 11.9765 18.1936 11.9963 18.3763 12.072C18.5589 12.1477 18.715 12.2758 18.8249 12.4402C18.9347 12.6045 18.9933 12.7978 18.9933 12.9955C18.9933 13.2606 18.888 13.5148 18.7005 13.7023C18.5131 13.8898 18.2588 13.9951 17.9937 13.9951ZM14.995 4.99886C14.9965 4.44874 14.8467 3.90879 14.562 3.43812C14.2772 2.96744 13.8684 2.58417 13.3804 2.33025C12.8924 2.07633 12.3439 1.96154 11.795 1.99846C11.2462 2.03537 10.718 2.22257 10.2684 2.53955C9.81877 2.85653 9.46501 3.29108 9.24583 3.79565C9.02665 4.30023 8.95048 4.85537 9.02568 5.40033C9.10087 5.94528 9.32453 6.45906 9.67216 6.88542C10.0198 7.31178 10.478 7.63429 10.9967 7.81767V20.9921C10.9967 21.2572 11.102 21.5115 11.2894 21.6989C11.4769 21.8864 11.7312 21.9917 11.9963 21.9917C12.2614 21.9917 12.5156 21.8864 12.7031 21.6989C12.8905 21.5115 12.9958 21.2572 12.9958 20.9921V7.81767C13.5791 7.61144 14.0844 7.22985 14.4423 6.72519C14.8002 6.22054 14.9933 5.61754 14.995 4.99886ZM11.9963 5.99844C11.7986 5.99844 11.6053 5.93981 11.4409 5.82998C11.2765 5.72014 11.1484 5.56403 11.0728 5.38138C10.9971 5.19873 10.9773 4.99775 11.0159 4.80385C11.0545 4.60995 11.1497 4.43184 11.2894 4.29205C11.4292 4.15225 11.6074 4.05705 11.8012 4.01848C11.9951 3.97992 12.1961 3.99971 12.3788 4.07537C12.5614 4.15102 12.7175 4.27914 12.8274 4.44352C12.9372 4.6079 12.9958 4.80116 12.9958 4.99886C12.9958 5.26396 12.8905 5.51821 12.7031 5.70567C12.5156 5.89312 12.2614 5.99844 11.9963 5.99844Z" fill="#EF533F"/>
+                            </svg>
+                            <span>Дополнительные опции</span>
+                        </button>
+                        <button class="btn-plain clear-filter-val">Очистить</button>
+                    </div>
+                    <div class="insurance-result-bottom">
+                        <div class="hide-filter">
+                            <button class="btn-plain">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4L20 20" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Фильтр</span>
+                            </button>
+                        </div>
+                        <div class="filter-box">
+                            <div class="checkbox-form-wrapper choose-option">
+                                <div class="choose-option-title">
+                                    <h6>Выберите дополнительные опции:</h6>
+                                    <span>Выбрано 2 опции</span>
+                                </div>
+                                <div>
+                                    <label class="checkbox-form">
+                                        Смерть от несчастного случая
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Инвалидность 1, 2 группы от несчастного случая
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Инвалидность 1, 2 группы по любой причине
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Инвалидность 3 группы  от несчастного случая
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Временная утрата трудоспособности
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Диагностирование критических заболеваний
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-form">
+                                        Смерть по любой причине
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn-plain filter-box-btn">Применить</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="insurance-advantage padding-x">
-            <div class="insurance-advantage-inner">
-                <h1 class="title-sm">Преимущества сервиса</h1>
-                <div class="insurance-advantage-content">
-                    <div class="item">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.6694 12.5132L22.4506 10.1603" stroke="#EF533F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.8645 8.71039L24.8799 1.66695L7.31762 6.37275L12.5862 11.4645C13.1649 12.0262 13.2139 12.9464 12.673 13.5447C8.434 18.2256 4.76109 26.1021 6.31244 31.8918C6.81518 33.7681 7.57028 35.1344 8.52403 36.118L8.54403 36.1926C8.53815 36.1707 8.53519 36.1479 8.53263 36.1267C11.5598 39.2402 16.6357 38.3852 22.4269 36.8334L27.0267 35.6009C34.6488 33.5586 40.6103 31.1032 38.51 23.2645C36.9586 17.4748 29.841 12.4896 23.8294 10.5553C23.0619 10.3077 22.6442 9.48627 22.8645 8.71039Z" stroke="#EF533F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20.8044 21.5815L22.7652 28.8992" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M17.8772 22.3657L23.7313 20.7971" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M17.0933 19.439L22.9474 17.8704" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p>Выбор лучшей цены среди страховых компаний</p>
+                <div class="insurance-result-container six-column">
+                    <div class="insurance-condition-heading">
+                        <div class="th">
+                            <div class="condition-heading-td td-1">
+                                <p>Страховая компания</p>
+                            </div>
+                            <div class="condition-heading-td td-2">
+                                <p>медикаменты</p>
+                            </div>
+                            <div class="condition-heading-td td-3">
+                                <p>Стоматология</p>
+                            </div>
+                            <div class="condition-heading-td td-4">
+                                <p>Страховая сумма</p>
+                            </div>
+                            <div class="condition-heading-td td-5 condition-insurance-cost">
+                                <button class="btn-plain btn-sort">
+                                    <p>Цена</p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 14V2" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.33334 8.66699L8.00001 14.0003L12.6667 8.66699" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="condition-heading-td td-6"></div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.0872 34.8591C18.5201 36.4748 20.1828 37.4348 21.7985 37.0018C23.4157 36.5685 24.3742 34.9062 23.9412 33.2905L20.804 21.5823" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M16.0981 4.02002L16.8824 6.94707" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M36.7554 17.3083C33.8165 9.3022 25.206 4.71693 16.8083 6.96709C8.41207 9.21686 3.24783 17.493 4.70568 25.896L36.7554 17.3083Z" stroke="#EF533F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p>Онлайн-страховка без посредников и наценок</p>
+                    <div class="insurance-condition-box">
+                        <div class="condition-box-top">
+                            <div class="tr">
+                                <div class="condition-box-td td-1 condition-insurance-name">
+                                    <img src="img/content/halyk-sm.png">
+                                    <p>Halyk Insurance</p>
+                                    <p class="cost-xs">18 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-2">
+                                    <span>медикаменты</span>
+                                    <p>200 000 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-3">
+                                    <span>Стоматология</span>
+                                    <p>1 200 000 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-4">
+                                    <span>Страховая сумма</span>
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-5 condition-insurance-cost">
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-6">
+                                    <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.93066 18.8711L18.2644 21.5137C20.0137 21.8136 21.8051 21.3336 23.1701 20.1992L35.1282 10.2438" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.3292 30.1669L10.9857 37.2256C9.37002 37.6586 7.70733 36.6986 7.2744 35.0829L1.7843 14.5936C1.35137 12.9778 2.31132 11.3151 3.92705 10.8822L30.2705 3.8235C31.8862 3.39057 33.5489 4.35052 33.9818 5.96625L39.4719 26.4556C39.9049 28.0713 38.9449 29.734 37.3292 30.1669Z" stroke="#EF533F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <p>Полис сразу приходит на электронную почту</p>
+                    <div class="insurance-condition-box">
+                        <div class="condition-box-top">
+                            <div class="tr">
+                                <div class="condition-box-td td-1 condition-insurance-name">
+                                    <img src="img/content/halyk-sm.png">
+                                    <p>Halyk Insurance</p>
+                                    <p class="cost-xs">18 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-2">
+                                    <span>медикаменты</span>
+                                    <p>200 000 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-3">
+                                    <span>Стоматология</span>
+                                    <p>1 200 000 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-4">
+                                    <span>Страховая сумма</span>
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-5 condition-insurance-cost">
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-6">
+                                    <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="useful padding-x">
-            <h1 class="title-sm">Полезно знать про автострахование</h1>
-            <div class="useful-box">
-                <div class="useful-item">
-                    <p>Главное правило автострахование</p>
-                    <a class="absolute-link" href="#"></a>
-                </div>
-                <div class="useful-item">
-                    <p>Европротокол</p>
-                    <a class="absolute-link" href="#"></a>
-                </div>
-                <div class="useful-item">
-                    <p>Базовая защита на дороге</p>
-                    <a class="absolute-link" href="#"></a>
-                </div>
-                <div class="useful-item">
-                    <p>Что делать если у виновника нет старховки?</p>
-                    <a class="absolute-link" href="#"></a>
-                </div>
-            </div>
-        </section>
-        <section class="callback padding-x">
-            <div class="callback-left">
-                <h1 class="title-md">Есть вопросы? Мы готовы ответить</h1>
-            </div>
-            <div class="callback-right">
-                <div class="callback-form">
-                    <label class="form-label phone">
-                        <span class="form-label-title">Номер телефона</span>
-                        <input type="text" class="phone-mask">
-                    </label>
-                    <button class="btn-plain btn-main">Перезвоните мне</button>
+                    <div class="insurance-condition-box">
+                        <div class="condition-box-top">
+                            <div class="tr">
+                                <div class="condition-box-td td-1 condition-insurance-name">
+                                    <img src="img/content/halyk-sm.png">
+                                    <p>Halyk Insurance</p>
+                                    <p class="cost-xs">18 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-2">
+                                    <span>медикаменты</span>
+                                    <p>200 000 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-3">
+                                    <span>Стоматология</span>
+                                    <p>1 200 000 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-4">
+                                    <span>Страховая сумма</span>
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-5 condition-insurance-cost">
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-6">
+                                    <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insurance-condition-box">
+                        <div class="condition-box-top">
+                            <div class="tr">
+                                <div class="condition-box-td td-1 condition-insurance-name">
+                                    <img src="img/content/halyk-sm.png">
+                                    <p>Halyk Insurance</p>
+                                    <p class="cost-xs">18 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-2">
+                                    <span>медикаменты</span>
+                                    <p>200 000 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-3">
+                                    <span>Стоматология</span>
+                                    <p>1 200 000 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-4">
+                                    <span>Страховая сумма</span>
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-5 condition-insurance-cost">
+                                    <p>6 200 ₸</p>
+                                </div>
+                                <div class="condition-box-td td-6">
+                                    <button class="btn-plain btn-main">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -516,14 +629,32 @@
 <script src="js/daterangepicker.js"></script>
 <script src="js/main.js"></script>
 <script>
-    //insurance-form position
-    $(document).ready(function (){
-        let boxHeight = document.querySelector('.insurance-form').offsetHeight;
-        let halfHeight = boxHeight/2;
-        document.querySelector('.insurance-advantage').style.marginTop = - halfHeight + 'px';
-        document.querySelector('.insurance-advantage').style.paddingTop = halfHeight + 'px';
+    //sort btn
+    $('.btn-sort').click(function (){
+        $(this).toggleClass('back');
     })
 
+    //show program table
+    $('.condition-box-bottom').click(function (){
+        $(this).toggleClass('show');
+        $(this).prev('.condition-box-body').slideToggle(500);
+    })
+
+    //show mobile filter
+    $('.show-filter').click(function (){
+        $(this).closest('.insurance-form').find('.insurance-result-bottom').addClass('show');
+        $('body').addClass('scroll-locked');
+    })
+    $('.hide-filter button').click(function (){
+        $(this).closest('.insurance-result-bottom').removeClass('show');
+        $('body').removeClass('scroll-locked');
+    })
+
+    //show checkbox-wrapper
+    $('.show-box ').click(function (){
+        $(this).toggleClass('active');
+        $('.choose-option').slideToggle(300);
+    })
 </script>
 </body>
 </html>
