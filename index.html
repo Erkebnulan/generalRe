@@ -307,14 +307,14 @@
             <div class="insurance-slider-top">
                 <ul class="nav insurance-slider-tabs">
                     <li>
-                        <a class="active" href="#individSlider" data-toggle="tab" id="individArrowLink">Для физических лиц</a>
+                        <a class="active" href="#individSlider" data-toggle="tab" data-section="1">Для физических лиц</a>
                     </li>
                     <li>
-                        <a href="#entitySlider" data-toggle="tab">Для юридических лиц</a>
+                        <a href="#entitySlider" data-toggle="tab" data-section="2">Для юридических лиц</a>
                     </li>
                 </ul>
                 <div class="slider-arrows-wrapper">
-                    <ul class="slider-arrows active" id="individSliderArrow">
+                    <ul class="slider-arrows active slider-arrow-1" id="individSliderArrow">
                         <li>
                             <a class="prev-arrow" href="#">
                                 <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -330,7 +330,7 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="slider-arrows" id="entitySliderArrow">
+                    <ul class="slider-arrows slider-arrow-2" id="entitySliderArrow">
                         <li>
                             <a class="prev-arrow" href="#">
                                 <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -352,228 +352,420 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="individSlider" >
                         <div class="slider">
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>ОГПО ВТС</h6>
-                                    <p>Обязательное страхование авто</p>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>ОГПО ВТС</h6>
+                                                <p>Обязательное страхование авто</p>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/car.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать Обязательное автострахование</h6>
+                                            <a class="advantage-number-link" href="#">5 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label">
+                                                    <span class="form-label-title">Введите Ваш ИИН</span>
+                                                    <input type="number">
+                                                </label>
+                                                <label class="form-label">
+                                                    <span class="form-label-title">Гос.номер авто</span>
+                                                    <input type="text">
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/car.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
                             </div>
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>Медицинское страхование</h6>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>Медицинское страхование</h6>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/med.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать медицинское страхование</h6>
+                                            <a class="advantage-number-link" href="#">3 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label select-label">
+                                                    <span class="form-label-title">Укажите возраст</span>
+                                                    <select class="select-custom">
+                                                        <option></option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>21</option>
+                                                        <option>22</option>
+                                                        <option>23</option>
+                                                        <option>24</option>
+                                                    </select>
+                                                </label>
+                                                <label class="select-date">
+                                                    <span class="form-label-title">Период страхование</span>
+                                                    <input type="text" class="date-range" name="daterange" value="">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/med.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
                             </div>
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>Страхование туристов</h6>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>Страхование туристов</h6>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/tourist.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать медицинское страхование туриста</h6>
+                                            <a class="advantage-number-link" href="#">2 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label select-label">
+                                                    <span class="form-label-title">Выберите страну</span>
+                                                    <select class="select-custom">
+                                                        <option></option>
+                                                        <option>Казахстан</option>
+                                                        <option>Турция</option>
+                                                        <option>Египет</option>
+                                                        <option>Шри-ланка</option>
+                                                        <option>Тайланд</option>
+                                                    </select>
+                                                </label>
+                                                <label class="select-date">
+                                                    <span class="form-label-title">Период поездки</span>
+                                                    <input type="text" class="date-range" name="daterange" value="">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/tourist.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
                             </div>
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>Страхование имущество</h6>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>Страхование имущество</h6>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/window.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать страхование имущества</h6>
+                                            <a class="advantage-number-link" href="#">5 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label">
+                                                    <span class="form-label-title">Введите Ваш ИИН</span>
+                                                    <input type="number">
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/window.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
                             </div>
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>ОГПО ВТС</h6>
-                                    <p>Обязательное страхование авто</p>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>ОГПО ВТС</h6>
+                                                <p>Обязательное страхование авто</p>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/car.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать Обязательное автострахование</h6>
+                                            <a class="advantage-number-link" href="#">5 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label">
+                                                    <span class="form-label-title">Введите Ваш ИИН</span>
+                                                    <input type="number">
+                                                </label>
+                                                <label class="form-label">
+                                                    <span class="form-label-title">Гос.номер авто</span>
+                                                    <input type="text">
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/car.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
                             </div>
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>Медицинское страхование</h6>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>Медицинское страхование</h6>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/med.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать медицинское страхование</h6>
+                                            <a class="advantage-number-link" href="#">3 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label select-label">
+                                                    <span class="form-label-title">Укажите возраст</span>
+                                                    <select class="select-custom">
+                                                        <option></option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>21</option>
+                                                        <option>22</option>
+                                                        <option>23</option>
+                                                        <option>24</option>
+                                                    </select>
+                                                </label>
+                                                <label class="select-date">
+                                                    <span class="form-label-title">Период страхование</span>
+                                                    <input type="text" class="date-range" name="daterange" value="">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/med.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
-                            </div>
-                            <div class="slider-card form-slider-card">
-                                <h6>Расчитать Обязательное автострахование</h6>
-                                <a class="advantage-number-link" href="#">5 предложении</a>
-                                <div class="form-label-wrapper">
-                                    <label class="form-label">
-                                        <span class="form-label-title">Введите Ваш ИИН</span>
-                                        <input type="number">
-                                    </label>
-                                    <label class="form-label">
-                                        <span class="form-label-title">Гос.номер авто</span>
-                                        <input type="text">
-                                    </label>
-                                </div>
-                                <button class="btn-plain btn-main">Расчитать</button>
-                            </div>
-                            <div class="slider-card form-slider-card">
-                                <h6>Расчитать медицинское страхование</h6>
-                                <a class="advantage-number-link" href="#">3 предложении</a>
-                                <div class="form-label-wrapper">
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Укажите возраст</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                        </select>
-                                    </label>
-                                    <label class="select-date">
-                                        <span class="form-label-title">Период страхование</span>
-                                        <input type="text" class="date-range" name="daterange" value="">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </label>
-                                </div>
-                                <button class="btn-plain btn-main">Расчитать</button>
-                            </div>
-                            <div class="slider-card form-slider-card">
-                                <h6>Расчитать медицинское страхование туриста</h6>
-                                <a class="advantage-number-link" href="#">2 предложении</a>
-                                <div class="form-label-wrapper">
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Выберите страну</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>Казахстан</option>
-                                            <option>Турция</option>
-                                            <option>Египет</option>
-                                            <option>Шри-ланка</option>
-                                            <option>Тайланд</option>
-                                        </select>
-                                    </label>
-                                    <label class="select-date">
-                                        <span class="form-label-title">Период поездки</span>
-                                        <input type="text" class="date-range" name="daterange" value="">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </label>
-                                </div>
-                                <button class="btn-plain btn-main">Расчитать</button>
-                            </div>
-                            <div class="slider-card form-slider-card">
-                                <h6>Расчитать страхование имущества</h6>
-                                <a class="advantage-number-link" href="#">5 предложении</a>
-                                <div class="form-label-wrapper">
-                                    <label class="form-label">
-                                        <span class="form-label-title">Введите Ваш ИИН</span>
-                                        <input type="number">
-                                    </label>
-                                </div>
-                                <button class="btn-plain btn-main">Расчитать</button>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane" id="entitySlider">
                         <div class="slider">
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>ОГПО ВТС</h6>
-                                    <p>Обязательное страхование авто для юридических лиц.</p>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>ОГПО ВТС</h6>
+                                                <p>Обязательное страхование авто для юридических лиц.</p>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/truck.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать Обязательное автострахование авто</h6>
+                                            <a class="advantage-number-link" href="#">5 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label">
+                                                    <span class="form-label-title">БИН организации</span>
+                                                    <input type="text">
+                                                </label>
+                                                <label class="form-label">
+                                                    <span class="form-label-title">Введите номер телефона</span>
+                                                    <input type="text" class="phone-mask">
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Отправить</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/truck.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
                             </div>
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>Страхование имущества для юр.лиц</h6>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>Страхование имущества для юр.лиц</h6>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/factory.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать страхование имущества</h6>
+                                            <a class="advantage-number-link" href="#">5 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label">
+                                                    <span class="form-label-title">БИН организации</span>
+                                                    <input type="text">
+                                                </label>
+                                                <label class="form-label select-label">
+                                                    <span class="form-label-title">Выберите город</span>
+                                                    <select class="select-custom">
+                                                        <option></option>
+                                                        <option>Алматы</option>
+                                                        <option>Астана</option>
+                                                        <option>Шымкент</option>
+                                                        <option>Москва</option>
+                                                        <option>Караганды</option>
+                                                        <option>Милан</option>
+                                                        <option>Пекин</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/factory.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
                             </div>
-                            <div class="slider-card">
-                                <div class="slider-card-caption">
-                                    <h6>Страхование туристов</h6>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>Страхование туристов</h6>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/x-ray.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать медицинское страхование </h6>
+                                            <a class="advantage-number-link" href="#">5 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label">
+                                                    <span class="form-label-title">Введите сумму страхование</span>
+                                                    <input type="number">
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="slider-card-img">
-                                    <img src="img/content/x-ray.png">
-                                </div>
-                                <a class="absolute-link" href="#"></a>
                             </div>
-                            <div class="slider-card form-slider-card">
-                                <h6>Расчитать Обязательное автострахование авто</h6>
-                                <a class="advantage-number-link" href="#">5 предложении</a>
-                                <div class="form-label-wrapper">
-                                    <label class="form-label">
-                                        <span class="form-label-title">БИН организации</span>
-                                        <input type="text">
-                                    </label>
-                                    <label class="form-label">
-                                        <span class="form-label-title">Введите номер телефона</span>
-                                        <input type="text" class="phone-mask">
-                                    </label>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>ОГПО ВТС</h6>
+                                                <p>Обязательное страхование авто для юридических лиц.</p>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/truck.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать Обязательное автострахование авто</h6>
+                                            <a class="advantage-number-link" href="#">5 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label">
+                                                    <span class="form-label-title">БИН организации</span>
+                                                    <input type="text">
+                                                </label>
+                                                <label class="form-label">
+                                                    <span class="form-label-title">Введите номер телефона</span>
+                                                    <input type="text" class="phone-mask">
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Отправить</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button class="btn-plain btn-main">Отправить</button>
                             </div>
-                            <div class="slider-card form-slider-card">
-                                <h6>Расчитать страхование имущества</h6>
-                                <a class="advantage-number-link" href="#">5 предложении</a>
-                                <div class="form-label-wrapper">
-                                    <label class="form-label">
-                                        <span class="form-label-title">БИН организации</span>
-                                        <input type="text">
-                                    </label>
-                                    <label class="form-label select-label">
-                                        <span class="form-label-title">Выберите город</span>
-                                        <select class="select-custom">
-                                            <option></option>
-                                            <option>Алматы</option>
-                                            <option>Астана</option>
-                                            <option>Шымкент</option>
-                                            <option>Москва</option>
-                                            <option>Караганды</option>
-                                            <option>Милан</option>
-                                            <option>Пекин</option>
-                                        </select>
-                                    </label>
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="slider-card">
+                                            <div class="slider-card-caption">
+                                                <h6>Страхование имущества для юр.лиц</h6>
+                                            </div>
+                                            <div class="slider-card-img">
+                                                <img src="img/content/factory.png">
+                                            </div>
+                                            <a class="absolute-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="slider-card form-slider-card">
+                                            <h6>Расчитать страхование имущества</h6>
+                                            <a class="advantage-number-link" href="#">5 предложении</a>
+                                            <div class="form-label-wrapper">
+                                                <label class="form-label">
+                                                    <span class="form-label-title">БИН организации</span>
+                                                    <input type="text">
+                                                </label>
+                                                <label class="form-label select-label">
+                                                    <span class="form-label-title">Выберите город</span>
+                                                    <select class="select-custom">
+                                                        <option></option>
+                                                        <option>Алматы</option>
+                                                        <option>Астана</option>
+                                                        <option>Шымкент</option>
+                                                        <option>Москва</option>
+                                                        <option>Караганды</option>
+                                                        <option>Милан</option>
+                                                        <option>Пекин</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <button class="btn-plain btn-main">Расчитать</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button class="btn-plain btn-main">Расчитать</button>
-                            </div>
-                            <div class="slider-card form-slider-card">
-                                <h6>Расчитать медицинское страхование </h6>
-                                <a class="advantage-number-link" href="#">5 предложении</a>
-                                <div class="form-label-wrapper">
-                                    <label class="form-label">
-                                        <span class="form-label-title">Введите сумму страхование</span>
-                                        <input type="number">
-                                    </label>
-                                </div>
-                                <button class="btn-plain btn-main">Расчитать</button>
                             </div>
                         </div>
                     </div>
@@ -1159,11 +1351,14 @@
     //main slider
     $('#individSlider .slider').slick({
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 600,
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
+        autoplay: false,
+        pauseOnHover: true,
+        pauseOnFocus: true,
         prevArrow: $('#individSliderArrow .prev-arrow'),
         nextArrow: $('#individSliderArrow .next-arrow'),
         responsive: [
@@ -1193,11 +1388,14 @@
 
     $('#entitySlider .slider').slick({
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 600,
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
+        autoplay: false,
+        pauseOnHover: true,
+        pauseOnFocus: true,
         prevArrow: $('#entitySliderArrow .prev-arrow'),
         nextArrow: $('#entitySliderArrow .next-arrow'),
         responsive: [
@@ -1336,26 +1534,20 @@
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 
     //arrows
     $('.insurance-slider-tabs a').click(function () {
-        if($('#individArrowLink').hasClass('active')) {
-            $('#individSliderArrow').addClass('active');
-        } else {
-            $('#entitySliderArrow').addClass('active');
-        }
-    })
+        $('.slider-arrows').fadeOut(0);
+        $('.slider-arrow-' + $(this).attr('data-section')).css('display','flex');
+    });
 
     //fixed social
     $('.show-social-nav').click(function (){
         $(this).closest('.fixed-social-nav').toggleClass('show');
         $(this).prev('.social-nav-list').slideToggle(300);
-    })
+    });
 
     //modal
     $('.btn-main').click(function (){
@@ -1363,6 +1555,30 @@
     });
     $('.close-modal').click(function (){
         $(this).closest('.modal').modal('hide');
+    })
+
+    //rotate card
+    $(document).ready(function (){
+        if($(window).width() > 500) {
+            $('.flip-container').mouseenter(function (){
+                $(this).addClass('hover');
+            })
+            $('.flip-container').mouseleave(function (){
+                var check_empty_input = 1;
+                $(this).find('input, .select-custom').each(function (){
+                    if($(this).val() != ''){
+                        check_empty_input = 0;
+                        return;
+                    }
+                });
+
+                if(check_empty_input == 1) {
+                    $(this).closest('.flip-container').removeClass('hover');
+                } else {
+                    $(this).closest('.flip-container').addClass('hover');
+                }
+            });
+        }
     })
 
 </script>

@@ -27,7 +27,6 @@ $(document).ready(function (){
 })
 
 
-
 //phone-mask
 $(document).ready(function () {
     $(".phone-mask").mask("8(999)999-9999");
@@ -62,6 +61,7 @@ $('.date-range').daterangepicker({
     locale: {cancelLabel: 'Сбросить', applyLabel: 'Выбрать', format: 'DD.MM.YYYY'},
     showDropdowns: false,
     autoUpdateInput: false,
+    ranges: false,
 });
 
 $('.date-range').on('show.daterangepicker', function() {
@@ -97,11 +97,6 @@ $(document).ready(function () {
     }
 })
 
-//fixed social
-$('.show-social-nav').click(function (){
-    $(this).closest('.fixed-social-nav').toggleClass('show');
-    $(this).prev('.social-nav-list').slideToggle(300);
-})
 
 
 
