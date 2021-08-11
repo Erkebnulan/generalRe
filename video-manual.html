@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- 
+
 <div class="wrapper">
-    <header>
+    <header class="dark authorized cabinet-sticky-header">
         <div class="header-top padding-x">
             <a class="main-logo" href="index.html">
                 <img src="img/main/logo.png">
@@ -265,35 +265,247 @@
                 </div>
             </div>
         </div>
-        <section class="authorize">
-            <div class="authorize-content mt">
-                <div class="authorize-form">
-                    <div class="authorize-form-title">
-                        <h6>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 19L8 12L14 5" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Новый пароль сохранен
-                        </h6>
-                        <p>Отлично! Новый пароль сохранен!</p>
-                    </div>
-                    <div class="authorize-form-bottom">
-                        <a href="#">
-                            <button class="btn-plain btn-main btn-56">Войти в личный кабинет</button>
-                        </a>
+        <div class="cabinet-header padding-x">
+            <div class="cabinet-header-xs">
+                <p>Мои полисы</p>
+                <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L8 7L15 1" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="cabinet-header-box">
+                <div class="cabinet-header-content">
+                    <ul class="cabinet-nav">
+                        <li>
+                            <a href="#" class="active">Мои полисы</a>
+                        </li>
+                        <li>
+                            <a href="#">История оплаты</a>
+                        </li>
+                        <li>
+                            <a href="#">Спец. предложения</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Заявки
+                                <span class="notice-number">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Обучения</a>
+                        </li>
+                        <li>
+                            <a href="#">Настройки</a>
+                        </li>
+                    </ul>
+                    <div class="cabinet-btn">
+                        <button class="btn-plain btn-red">Заявить о страховом случае</button>
+                        <button class="btn-plain btn-border">Оформить полис</button>
                     </div>
                 </div>
-                <div class="authorize-copyright">
-                    <div class="left-side">
-                        <p>Центр Страхования "General Re" <br>© 1998 - 2021 </p>
+            </div>
+        </div>
+        <section class="cabinet-body padding-x">
+            <ul class="breadcrumb">
+                <li>Главная</li>
+                <li>Личный кабинет</li>
+                <li>Настройки</li>
+            </ul>
+            <div class="cabinet-title">
+                <h1 class="title-md">Обучения</h1>
+            </div>
+            <div class="video-card-wrapper">
+                <div class="video-card">
+                    <div class="video-card-img">
+                        <img src="img/content/kaspi.png">
+                        <button class="btn-plain call-video-modal">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.00411V17.9961C0 19.6441 2.054 20.5861 3.492 19.5961L15.126 11.6001C16.292 10.8001 16.292 9.20011 15.126 8.40011L3.492 0.404115C2.054 -0.585885 0 0.356115 0 2.00411Z" fill="white"/>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="right-side">
-                        <p>Есть вопросы? Позвоните <br> <a href="tel:+77272254040">+ 7 727 225 40-40</a></p>
+                    <div class="video-card-caption">
+                        <h6>Полис на год в рассрочку через kaspi.kz</h6>
+                        <p>14 января 2020</p>
+                        <button class="btn-plain btn-border">Подробнее</button>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-card-img">
+                        <img src="img/content/kaspi.png">
+                        <button class="btn-plain call-video-modal">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.00411V17.9961C0 19.6441 2.054 20.5861 3.492 19.5961L15.126 11.6001C16.292 10.8001 16.292 9.20011 15.126 8.40011L3.492 0.404115C2.054 -0.585885 0 0.356115 0 2.00411Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="video-card-caption">
+                        <h6>Полис на год в рассрочку через kaspi.kz</h6>
+                        <p>14 января 2020</p>
+                        <button class="btn-plain btn-border">Подробнее</button>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-card-img">
+                        <img src="img/content/kaspi.png">
+                        <button class="btn-plain call-video-modal">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.00411V17.9961C0 19.6441 2.054 20.5861 3.492 19.5961L15.126 11.6001C16.292 10.8001 16.292 9.20011 15.126 8.40011L3.492 0.404115C2.054 -0.585885 0 0.356115 0 2.00411Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="video-card-caption">
+                        <h6>Полис на год в рассрочку через kaspi.kz</h6>
+                        <p>14 января 2020</p>
+                        <button class="btn-plain btn-border">Подробнее</button>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-card-img">
+                        <img src="img/content/kaspi.png">
+                        <button class="btn-plain call-video-modal">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.00411V17.9961C0 19.6441 2.054 20.5861 3.492 19.5961L15.126 11.6001C16.292 10.8001 16.292 9.20011 15.126 8.40011L3.492 0.404115C2.054 -0.585885 0 0.356115 0 2.00411Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="video-card-caption">
+                        <h6>Полис на год в рассрочку через kaspi.kz</h6>
+                        <p>14 января 2020</p>
+                        <button class="btn-plain btn-border">Подробнее</button>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-card-img">
+                        <img src="img/content/kaspi.png">
+                        <button class="btn-plain call-video-modal">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.00411V17.9961C0 19.6441 2.054 20.5861 3.492 19.5961L15.126 11.6001C16.292 10.8001 16.292 9.20011 15.126 8.40011L3.492 0.404115C2.054 -0.585885 0 0.356115 0 2.00411Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="video-card-caption">
+                        <h6>Полис на год в рассрочку через kaspi.kz</h6>
+                        <p>14 января 2020</p>
+                        <button class="btn-plain btn-border">Подробнее</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="padding-x white-bg">
+        <div class="footer-top">
+            <div class="footer-social">
+                <a class="footer-social-phone" href="tel+:77272254040">+ 7 727 225 40-40</a>
+                <a class="footer-social-mail" href="mailto:info@generalre.kz">info@generalre.kz</a>
+                <ul class="footer-social-nav">
+                    <li>
+                        <a href="#">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="46" height="46" rx="7" fill="#F5F5F7" stroke="#E0E0E0" stroke-width="2"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0415 33.8549H24.0374C22.3822 33.8544 20.7559 33.4391 19.3114 32.6512L14.0688 34.0264L15.4718 28.9018C14.6064 27.402 14.151 25.7007 14.1518 23.9577C14.1539 18.505 18.5904 14.0688 24.0414 14.0688C26.6869 14.07 29.17 15.0999 31.0371 16.9692C32.9042 18.8385 33.932 21.3231 33.9309 23.9655C33.9287 29.417 29.4941 33.8527 24.0415 33.8549ZM19.5544 30.8612L19.8545 31.0393C21.1165 31.7882 22.5632 32.1845 24.0382 32.185H24.0415C28.572 32.185 32.2593 28.4976 32.2611 23.9652C32.262 21.7689 31.4078 19.7037 29.8559 18.15C28.304 16.5963 26.2402 15.7403 24.0447 15.7395C19.5107 15.7395 15.8233 19.4266 15.8215 23.9586C15.8209 25.5117 16.2555 27.0243 17.0783 28.333L17.2737 28.644L16.4433 31.6772L19.5544 30.8612ZM28.6855 26.0949C28.8578 26.1782 28.9742 26.2345 29.0239 26.3174C29.0856 26.4204 29.0856 26.9152 28.8798 27.4925C28.6738 28.0697 27.6866 28.5965 27.2118 28.6674C26.7861 28.7311 26.2474 28.7576 25.6555 28.5695C25.2966 28.4556 24.8363 28.3036 24.2468 28.049C21.9302 27.0487 20.3647 24.8034 20.0688 24.3791C20.0481 24.3494 20.0336 24.3286 20.0255 24.3178L20.0235 24.3151C19.8927 24.1407 19.0165 22.9715 19.0165 21.7616C19.0165 20.6233 19.5756 20.0267 19.833 19.7521C19.8506 19.7333 19.8668 19.716 19.8814 19.7001C20.1078 19.4527 20.3756 19.3909 20.5403 19.3909C20.705 19.3909 20.8699 19.3924 21.0139 19.3996C21.0317 19.4005 21.0501 19.4004 21.0692 19.4003C21.2132 19.3995 21.3928 19.3984 21.5699 19.8238C21.638 19.9875 21.7377 20.2303 21.8428 20.4862C22.0555 21.0039 22.2904 21.5758 22.3317 21.6586C22.3935 21.7823 22.4347 21.9266 22.3523 22.0915C22.34 22.1163 22.3285 22.1396 22.3176 22.1619C22.2558 22.2882 22.2102 22.3811 22.1052 22.5037C22.064 22.5519 22.0213 22.6039 21.9786 22.6559C21.8936 22.7594 21.8086 22.8629 21.7346 22.9367C21.6109 23.0599 21.4821 23.1936 21.6262 23.441C21.7704 23.6884 22.2663 24.4975 23.0009 25.1528C23.7906 25.8571 24.4769 26.1548 24.8248 26.3057C24.8927 26.3352 24.9477 26.359 24.9881 26.3793C25.2351 26.503 25.3793 26.4823 25.5234 26.3174C25.6676 26.1525 26.1411 25.5958 26.3058 25.3485C26.4705 25.1012 26.6353 25.1424 26.8618 25.2248C27.0883 25.3074 28.3032 25.9051 28.5503 26.0288C28.5986 26.0529 28.6437 26.0747 28.6855 26.0949Z" fill="#282828"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="46" height="46" rx="7" fill="#F5F5F7" stroke="#E0E0E0" stroke-width="2"/>
+                                <path d="M13.3021 24.7048C15.3481 23.5778 17.6321 22.6371 19.7661 21.6917C23.4374 20.1431 27.1233 18.6214 30.8464 17.2047C31.5708 16.9634 32.8724 16.7273 33 17.8008C32.9301 19.3203 32.6426 20.8309 32.4454 22.3416C31.945 25.6636 31.3665 28.9742 30.8024 32.2853C30.608 33.3882 29.2264 33.9591 28.3424 33.2533C26.2178 31.8183 24.077 30.3972 21.9796 28.9288C21.2925 28.2307 21.9296 27.2282 22.5432 26.7296C24.2931 25.0052 26.1488 23.5401 27.8072 21.7265C28.2545 20.6463 26.9327 21.5566 26.4968 21.8356C24.1012 23.4864 21.7643 25.238 19.2387 26.6888C17.9486 27.399 16.445 26.7921 15.1555 26.3958C13.9993 25.9171 12.305 25.4348 13.302 24.7049L13.3021 24.7048Z" fill="#282828"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="46" height="46" rx="7" fill="#F5F5F7" stroke="#E0E0E0" stroke-width="2"/>
+                                <path d="M14 20.4753L22.4764 24.3881C23.4436 24.8335 24.5564 24.8335 25.5236 24.3881L34 20.4753" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.1818 32.3636H15.8182C14.8145 32.3636 14 31.5491 14 30.5455V17.8182C14 16.8145 14.8145 16 15.8182 16H32.1818C33.1855 16 34 16.8145 34 17.8182V30.5455C34 31.5491 33.1855 32.3636 32.1818 32.3636Z" stroke="#282828" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav-wrapper">
+                <ul class="footer-nav">
+                    <li>
+                        <a href="#">Авто</a>
+                    </li>
+                    <li>
+                        <a href="#">Туристам</a>
+                    </li>
+                    <li>
+                        <a href="#">Имущество</a>
+                    </li>
+                    <li>
+                        <a href="#">Здоровье</a>
+                    </li>
+                    <li>
+                        <a href="#">Калькулятор</a>
+                    </li>
+                </ul>
+                <ul class="footer-nav">
+                    <li>
+                        <a href="#">Для физических лиц</a>
+                    </li>
+                    <li>
+                        <a href="#">Для юридических лиц</a>
+                    </li>
+                    <li>
+                        <a href="#">Для Страховых компаний</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="footer-nav">
+                    <li>
+                        <a href="#">General.Re</a>
+                    </li>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#">Полезное</a>
+                    </li>
+                    <li>
+                        <a href="#">Законы</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-app">
+                <p>Ваш личный кабинет и страховой полис у вас под рукой</p>
+                <div class="app-icon-wrapper">
+                    <a class="footer-app-icon" href="#">
+                        <img src="img/icon/app-store-black.png">
+                    </a>
+                    <a class="footer-app-icon" href="#">
+                        <img src="img/icon/google-play-black.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="left-side">
+                <p>© 1998 - 2021 Центр Страхования "General Re" г. Алматы пр. Сейфуллина 498 оф. 202</p>
+            </div>
+            <div class="right-side">
+                <p>Офисы Центра Страхования General Re находятся во всех наиболее важных экономических регионах Казахстана.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="modal video-modal" id="videoManual">
+        <div class="modal-content">
+            <button class="btn-plain close-modal">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 25L25 5M5 5L25 25" stroke="#ffffff"/>
+                </svg>
+            </button>
+            <iframe id="videoIframe" width="100%" height="100%" src="https://www.youtube.com/embed/L7S_nyXKaQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
 
 <script src="js/libs.min.js"></script>
@@ -304,14 +516,45 @@
 <script src="js/daterangepicker.js"></script>
 <script src="js/main.js"></script>
 <script>
-    //loading top
-    $(document).ready(function (){
-        let loadingDistTop = document.querySelector('header').offsetHeight;
-        let windowHeight = window.innerHeight;
-        document.querySelector('.authorize').style.top = loadingDistTop + 'px';
-        document.querySelector('.authorize').style.height = windowHeight - loadingDistTop + 'px';
+    //video modal
+    $(document).ready(function () {
+        if($(window).width() > 500) {
+            function calcHeight() {
+                let modal = $('#videoManual').find('.modal-content');
+                let modalHeight = modal.height();
+                let modalWidth = modalHeight * 1.78;
+                modal.css('width', modalWidth);
+            }
+        }
+        $('.call-video-modal').click(function () {
+            $('#videoManual').modal('show');
+            calcHeight();
+        });
+
+        let videoSrc = $("#videoManual iframe").attr("src");
+
+        $('#videoManual').on('show.bs.modal', function () {
+            $("#videoManual iframe").attr("src", videoSrc+"?autoplay=1");
+        });
+
+        $("#videoManual").on('hidden.bs.modal', function (e) {
+            $("#videoManual iframe").attr("src", null);
+        });
     })
 
+    //sticky header
+    $(document).ready(function (){
+        let headerStickyTop = $('.header-top').outerHeight();
+        let tabStickyTop = $('.header-bottom').outerHeight();
+        $('header').css('top', '-'+headerStickyTop + 'px');
+        $('.cabinet-header').css('top', ''+tabStickyTop + 'px');
+    });
+
+    //open cabinet header on mobile
+    $('.cabinet-header-xs').click(function (){
+        $(this).toggleClass('show');
+        $(this).next('.cabinet-header-box').slideToggle(400);
+    })
 </script>
 </body>
 </html>

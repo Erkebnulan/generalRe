@@ -97,6 +97,16 @@ $(document).ready(function () {
     }
 })
 
+//close modal
+$('.close-modal').click(function (){
+    $(this).closest('.modal').modal('hide');
+})
 
-
+//auto height of "main"
+$(document).ready(function (){
+    let headerHeight = $('header').outerHeight();
+    let footerHeight = $('footer').outerHeight();
+    let offHeight = headerHeight + footerHeight;
+    $('main').css('min-height', offHeight + 'px')
+})
 
