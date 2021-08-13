@@ -276,10 +276,13 @@
                 <div class="cabinet-header-content">
                     <ul class="cabinet-nav">
                         <li>
-                            <a href="#" class="active">Мои полисы</a>
+                            <a href="#" class="active">Мои тендеры</a>
                         </li>
                         <li>
-                            <a href="#">История оплаты</a>
+                            <a href="#">Мои полисы</a>
+                        </li>
+                        <li>
+                            <a href="#">Страховые компании</a>
                         </li>
                         <li>
                             <a href="#">Спец. предложения</a>
@@ -298,8 +301,8 @@
                         </li>
                     </ul>
                     <div class="cabinet-btn">
-                        <button class="btn-plain btn-red">Заявить о страховом случае</button>
-                        <button class="btn-plain btn-border">Оформить полис</button>
+                        <button class="btn-plain btn-red">Объявить тендер</button>
+                        <button class="btn-plain btn-border">Застраховать</button>
                     </div>
                 </div>
             </div>
@@ -308,76 +311,86 @@
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Личный кабинет</li>
-                <li>Специальные предложения</li>
+                <li>Мои тендеры</li>
             </ul>
             <div class="cabinet-title">
-                <h1 class="title-md">Специальные предложения</h1>
+                <h1 class="title-md">Объявить тендер</h1>
             </div>
-            <div class="individ-offer-wrapper">
-                <ul class="top-filter-nav">
-                    <li>
-                        <a href="#" class="active">Промоакций</a>
-                    </li>
-                    <li>
-                        <a href="#">Накопительная скидка</a>
-                    </li>
-                    <li>
-                        <a href="#">Предложения от партнеров</a>
-                    </li>
-                    <li>
-                        <a href="#">Промокоды</a>
-                    </li>
-                </ul>
-                <div class="offerCard-wrapper four-column">
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
+            <div class="new-tender">
+                <div class="create-tender">
+                    <div class="create-tender-header xs">
+                        <a class="close-create-tender" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L20 20" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Объявить тендер</span>
+                        </a>
+                    </div>
+                    <div class="create-tender-body">
+                        <div class="form-label-wrapper">
+                            <div class="left-side">
+                                <label class="form-label select-label">
+                                    <span class="form-label-title">Выберите вид страхование</span>
+                                    <select class="select-custom">
+                                        <option></option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                        <option>option</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="right-side">
+                                <label class="form-label select-label multiple">
+                                    <span class="form-label-title">Выберите страховую компанию</span>
+                                    <select class="select-custom" multiple="multiple">
+                                        <option></option>
+                                        <option>Aaaaa</option>
+                                        <option>Bbbbb</option>
+                                        <option>Cccccc</option>
+                                    </select>
+                                </label>
+                                <div class="selected-result"></div>
+                            </div>
                         </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+                        <div class="choose-spec">
+                            <div class="spec-type">
+                                <img src="img/icon/pdf1.png">
+                                <button class="btn-plain btn-delete">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.4391 10.4987C6.43916 10.4988 6.43922 10.4989 6.43928 10.4989L6.4391 10.4987ZM6.4391 10.4987L6.43821 10.4978C6.43851 10.4981 6.4388 10.4984 6.4391 10.4987ZM8.29011 9.80163L7.02019 11.0813L6.91842 10.9793L8.19839 9.711L8.91475 9.0012L8.19894 8.29084L6.91866 7.02032L7.02154 6.91744L8.28904 8.19858L8.99883 8.91602L9.70973 8.19967L10.9802 6.91939L11.0831 7.02227L9.80199 8.28977L9.08454 8.99956L9.8009 9.71046L11.0806 10.9804L10.9785 11.0822L9.71027 9.80218L9.00046 9.08582L8.29011 9.80163ZM11.5643 7.50346C11.5642 7.5033 11.564 7.50314 11.5638 7.50297L11.5643 7.50346ZM10.4971 11.5624C10.4974 11.5621 10.4977 11.5618 10.498 11.5615L10.4971 11.5624ZM8.99992 1.33398C4.76484 1.33398 1.33325 4.76557 1.33325 9.00065C1.33325 13.2357 4.76484 16.6673 8.99992 16.6673C13.235 16.6673 16.6666 13.2357 16.6666 9.00065C16.6666 4.76557 13.235 1.33398 8.99992 1.33398Z" fill="#6F7893" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="spec-type">
+                                <img src="img/icon/word1.png">
+                                <button class="btn-plain btn-delete">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.4391 10.4987C6.43916 10.4988 6.43922 10.4989 6.43928 10.4989L6.4391 10.4987ZM6.4391 10.4987L6.43821 10.4978C6.43851 10.4981 6.4388 10.4984 6.4391 10.4987ZM8.29011 9.80163L7.02019 11.0813L6.91842 10.9793L8.19839 9.711L8.91475 9.0012L8.19894 8.29084L6.91866 7.02032L7.02154 6.91744L8.28904 8.19858L8.99883 8.91602L9.70973 8.19967L10.9802 6.91939L11.0831 7.02227L9.80199 8.28977L9.08454 8.99956L9.8009 9.71046L11.0806 10.9804L10.9785 11.0822L9.71027 9.80218L9.00046 9.08582L8.29011 9.80163ZM11.5643 7.50346C11.5642 7.5033 11.564 7.50314 11.5638 7.50297L11.5643 7.50346ZM10.4971 11.5624C10.4974 11.5621 10.4977 11.5618 10.498 11.5615L10.4971 11.5624ZM8.99992 1.33398C4.76484 1.33398 1.33325 4.76557 1.33325 9.00065C1.33325 13.2357 4.76484 16.6673 8.99992 16.6673C13.235 16.6673 16.6666 13.2357 16.6666 9.00065C16.6666 4.76557 13.235 1.33398 8.99992 1.33398Z" fill="#6F7893" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="spec-type">
+                                <img src="img/icon/excel1.png">
+                                <button class="btn-plain btn-delete">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.4391 10.4987C6.43916 10.4988 6.43922 10.4989 6.43928 10.4989L6.4391 10.4987ZM6.4391 10.4987L6.43821 10.4978C6.43851 10.4981 6.4388 10.4984 6.4391 10.4987ZM8.29011 9.80163L7.02019 11.0813L6.91842 10.9793L8.19839 9.711L8.91475 9.0012L8.19894 8.29084L6.91866 7.02032L7.02154 6.91744L8.28904 8.19858L8.99883 8.91602L9.70973 8.19967L10.9802 6.91939L11.0831 7.02227L9.80199 8.28977L9.08454 8.99956L9.8009 9.71046L11.0806 10.9804L10.9785 11.0822L9.71027 9.80218L9.00046 9.08582L8.29011 9.80163ZM11.5643 7.50346C11.5642 7.5033 11.564 7.50314 11.5638 7.50297L11.5643 7.50346ZM10.4971 11.5624C10.4974 11.5621 10.4977 11.5618 10.498 11.5615L10.4971 11.5624ZM8.99992 1.33398C4.76484 1.33398 1.33325 4.76557 1.33325 9.00065C1.33325 13.2357 4.76484 16.6673 8.99992 16.6673C13.235 16.6673 16.6666 13.2357 16.6666 9.00065C16.6666 4.76557 13.235 1.33398 8.99992 1.33398Z" fill="#6F7893" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="btn-plain btn-add">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4V20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 12H20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Добавить тех спецификацию</span>
+                            </button>
                         </div>
                     </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
+                    <div class="create-tender-bottom">
+                        <button class="btn-plain btn-main">Объявить тендер</button>
                     </div>
                 </div>
             </div>
@@ -497,12 +510,6 @@
 <script src="js/daterangepicker.js"></script>
 <script src="js/main.js"></script>
 <script>
-    //top filter nav
-    $('.top-filter-nav a').click(function (){
-        $('.top-filter-nav a').removeClass('active');
-        $(this).addClass('active');
-    });
-
     //sticky header
     $(document).ready(function (){
         let headerStickyTop = $('.header-top').outerHeight();
@@ -516,6 +523,13 @@
         $(this).toggleClass('show');
         $(this).next('.cabinet-header-box').slideToggle(400);
     })
+
+    //
+    $('.select-custom').on('select2:select', function (e) {
+        $('.select-label.multiple .select2-selection__rendered').appendTo('.selected-result');
+        $('.select-custom').select2();
+    });
+
 </script>
 </body>
 </html>

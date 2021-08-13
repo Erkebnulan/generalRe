@@ -7,6 +7,10 @@ body {
   font-weight: 400;
 }
 
+main {
+  background: #F5F5F7;
+}
+
 .scroll-locked {
   position: fixed;
   left: 0;
@@ -594,6 +598,11 @@ footer {
   min-height: 480px;
   display: flex;
   background-size: 590px 370px!important;
+  position: relative;
+}
+
+.insurance-slider {
+  background: #fff;
 }
 
 .re-bg {
@@ -794,8 +803,9 @@ footer {
 }
 
 .partners {
-  margin-top: 80px;
+  padding-top: 80px;
   padding-bottom: 80px;
+  background: #fff;
 }
 
 .title-md {
@@ -1081,6 +1091,11 @@ footer {
 
 .advantage {
   padding-bottom: 80px;
+  background: #fff;
+}
+
+.utility {
+  background: #fff;
 }
 
 .advantage .title-md {
@@ -1190,8 +1205,9 @@ footer {
 }
 
 .faq {
-  margin-top: 80px;
+  padding-top: 80px;
   padding-bottom: 80px;
+  background: #fff;
 }
 
 .faq .title-md {
@@ -1688,6 +1704,7 @@ header.red {
 .contact {
   padding-top: 24px;
   padding-bottom: 80px;
+  background: #fff;
 }
 
 .breadcrumb {
@@ -1859,6 +1876,7 @@ header.red {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
 }
 
 .main-modal .close-modal svg {
@@ -2618,14 +2636,13 @@ margin-top: 12px;
 }
 
 .insurance-advantage {
-  margin-top: 80px;
+  padding-top: 80px;
   background: #fff;
 }
 
 .insurance-advantage-inner {
   max-width: 1090px;
   margin: 0 auto;
-  padding-top: 80px;
 }
 
 .insurance-advantage-content {
@@ -2654,8 +2671,9 @@ margin-top: 12px;
 }
 
 .useful {
-  margin-top: 80px;
+  padding-top: 80px;
   padding-bottom: 80px;
+  background: #fff;
 }
 
 .useful .title-sm {
@@ -3179,12 +3197,12 @@ margin-top: 12px;
 }
 
 .star-rating span {
-  font-size: 18px;
-  line-height: 24px;
-  color: #282828;
-  margin-right: 5px;
-  display: block;
-  width: fit-content;
+  font-size: 18px!important;
+  line-height: 24px!important;
+  color: #282828!important;
+  margin-right: 5px!important;
+  display: block!important;
+  width: fit-content!important;
 }
 
 .detail-box-caption .star-rate {
@@ -4841,10 +4859,17 @@ button.download-policy {
 .top-filter-nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .top-filter-nav li + li {
-  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.top-filter-nav li:first-child {
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .top-filter-nav a {
@@ -5316,7 +5341,7 @@ button.download-policy {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(120, 120, 128, 0.32);
+  background: #EEEFF2;
   transition: .4s;
   border-radius: 24px;
 }
@@ -5328,7 +5353,7 @@ button.download-policy {
   width: 18px;
   left: 1px;
   bottom: 1px;
-  background: #fff;
+  background: #6F7893;
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 50%;
@@ -5699,6 +5724,965 @@ button.download-policy {
 .chat-box .backlink-box-xs {
   display: none;
 }
+
+.authorize-form .half-form {
+  .form-label.md {
+    width: 55%;
+  }
+  .form-label.sm {
+    width: 22.5%;
+    margin-top: 8px!important;
+  }
+}
+
+.authorize-form .add-btn {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.authorize-form .add-btn span {
+  margin-left: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #EF533F;
+  display: block;
+}
+
+.tender-list {
+  display: flex;
+  margin-top: 24px;
+}
+
+.tender-list .left-side {
+  width: 75%;
+}
+
+.tender-list .tab-content {
+  margin-top: 16px;
+}
+
+.tender-box {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.tender-box-top {
+  display: flex;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tender-box-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #282828;
+  max-width: 78%;
+  display: block;
+  width: fit-content;
+  transition: 0.2s ease;
+}
+
+.tender-box-title:hover {
+  text-decoration-line: underline;
+  color: #282828;
+}
+
+.tender-edit-link {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: fit-content;
+}
+
+.tender-edit-link span {
+  margin-left: 8px;
+  display: block;
+  width: fit-content;
+  font-size: 18px;
+  line-height: 24px;
+  color: #EF533F;
+}
+
+.tender-box-body {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tender-box-detail span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.tender-box-detail p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.tender-box-detail.tender-name {
+  display: flex;
+}
+
+.tender-box-detail .tender-name-img {
+  border: 1px solid #F5F5F7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.tender-box-detail .tender-name-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tender-box-detail .tender-name-caption {
+  margin-left: 12px;
+}
+
+.tender-status {
+  text-align: right;
+}
+
+.tender-status.success p {
+  color: #43D38B;
+}
+
+.tender-box-body .tender-box-detail + .tender-box-detail {
+  margin-left: 24px;
+}
+
+.tender-box-detail.tender-winner {
+  display: flex;
+}
+
+.tender-box-detail .tender-winner-img {
+  border: 1px solid #F5F5F7;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 60px;
+  height: 40px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.tender-box-detail .tender-winner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tender-box-detail .tender-winner-caption {
+  margin-left: 12px;
+}
+
+.tender-status.danger p {
+  color: #EF533F;
+}
+
+.tender-box-wrapper .tender-box + .tender-box {
+  margin-top: 16px;
+}
+
+.tender-list .right-side {
+  width: calc(25% - 24px);
+  margin-left: 24px;
+}
+
+.help-box {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.help-box-phone  {
+  display: flex;
+  align-items: center;
+}
+
+.help-box-phone span {
+  display: block;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.help-box-body p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+  margin-top: 12px;
+}
+
+.help-box-body {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.help-box-bottom {
+  padding-top: 16px;
+}
+
+.profile-sm {
+  display: flex;
+}
+
+.profile-sm-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-sm-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-sm-caption {
+  margin-left: 16px;
+}
+
+.profile-sm-caption p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.profile-sm-caption span {
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+  display: block;
+  margin-top: 3px;
+}
+
+.pay-history-filter.xs {
+  display: none;
+}
+
+.new-tender {
+  margin-top: 16px;
+}
+
+.create-tender {
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 24px;
+  width: 60%;
+}
+
+.create-tender-header.xs {
+  display: none;
+}
+
+.create-tender {
+  .form-label-wrapper {
+    display: flex;
+    min-height: 160px;
+  }
+  .form-label-wrapper .left-side {
+    width: 50%;
+    margin-right: 8px;
+  }
+  .form-label-wrapper .right-side {
+    width: 50%;
+    margin-left: 8px;
+  }
+  .selected-result {
+    margin-top: 16px;
+  }
+}
+
+.choose-spec {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spec-type {
+  width: 42px;
+  height: 42px;
+  margin-right: 14px;
+  position: relative;
+}
+
+.spec-type img {
+  width: 100%;
+  height: 100%;
+}
+
+.spec-type .btn-delete {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.choose-spec .btn-add {
+  display: flex;
+  align-items: center;
+}
+
+.choose-spec .btn-add span {
+  margin-left: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #EF533F;
+  display: block;
+}
+
+.create-tender-body {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.create-tender-bottom {
+  padding-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cabinet-backlink {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.cabinet-backlink span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+  margin-left: 16px;
+  display: block;
+  width: fit-content;
+}
+
+.auction-wrapper {
+  margin-top: 22px;
+  display: flex;
+}
+
+.auction-wrapper .left-side {
+  width: 75%;
+}
+
+.auction-box {
+  padding: 24px;
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.auction-box-top {
+  display: flex;
+}
+
+.auction-box-top h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  color: #282828;
+}
+
+.auction-box-top svg {
+  display: none;
+}
+
+.auction-box-body {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auction-box-body .auction-detail-item + .auction-detail-item {
+  margin-left: 24px;
+}
+
+.auction-detail-item span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.auction-detail-item p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.auction-detail-item.name {
+  display: flex;
+}
+
+.auction-detail-item.name .img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #F5F5F7;
+  border-radius: 4px;
+}
+
+.auction-detail-item.name .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.auction-detail-item.name .caption {
+  margin-left: 12px;
+}
+
+.auction-detail-item .download-btn {
+  display: flex;
+  align-items: center;
+}
+
+.auction-detail-item .download-btn p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #EF533F;
+  margin-left: 5px;
+}
+
+.auction-detail-item.status.success p {
+  color: #43D38B;
+}
+
+.auction-detail-item.status.danger p {
+  color:  #EF533F;
+}
+
+.auction-wrapper .right-side {
+  width: calc(25% - 24px);
+  margin-left: 24px;
+}
+
+.auction-time {
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.auction-time h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.auction-time-item {
+  margin-top: 16px;
+}
+
+.auction-time-item span {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+  display: block;
+}
+
+.auction-time-item p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #2C405A;
+  margin-top: 3px;
+}
+
+.auction-time .btn-main {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.auction-time.xs {
+  display: none;
+}
+
+.auction-company-list {
+  margin-top: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.auction-company-heading {
+  padding: 23px 16px 15px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.auction-company-heading .th {
+  display: flex;
+}
+
+.auction-company-heading {
+  .td-1 {
+    width: 30%;
+  }
+  .td-2 {
+    width: 18%;
+    padding-left: 24px;
+  }
+  .td-3 {
+    width: 16%;
+    padding-left: 24px;
+  }
+  .td-4 {
+    width: 10%;
+    padding-left: 24px;
+  }
+  .td-5 {
+    width: 12%;
+    padding-left: 24px;
+  }
+  .td-6 {
+    width: 14%;
+    padding-left: 24px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #6F7893;
+  }
+}
+
+.auction-company-box {
+  padding: 0 16px;
+  min-height: 72px;
+}
+
+.auction-company-box .tr {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.auction-company-box {
+  .td-1 {
+    width: 30%;
+  }
+  .td-2 {
+    width: 18%;
+    padding-left: 24px;
+  }
+  .td-3 {
+    width: 16%;
+    padding-left: 24px;
+  }
+  .td-4 {
+    width: 10%;
+    padding-left: 24px;
+  }
+  .td-5 {
+    width: 12%;
+    padding-left: 24px;
+  }
+  .td-6 {
+    width: 14%;
+    padding-left: 24px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #282828;
+  }
+  span {
+    display: none;
+  }
+  .star-rating span {
+    display: block!important;
+  }
+  .cost p {
+    font-weight: 600;
+  }
+  .btn-border {
+    border: 2px solid #F5F5F7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 6px 13px;
+    min-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #EF533F;
+  }
+}
+
+.auction-company-box .name {
+  display: flex;
+  align-items: center;
+}
+
+.auction-company-box .name .img {
+  width: 72px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.auction-company-box .name .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.auction-company-box .caption {
+  margin-left: 23px;
+}
+
+.auction-company-box .caption .star-rating {
+  display: none;
+}
+
+.company-box-td {
+  display: flex;
+  align-items: center;
+}
+
+.company-list-wrapper {
+  margin-top: 16px;
+  display: flex;
+}
+
+.company-list-wrapper .left-side {
+  width: 75%;
+}
+
+.company-list .company-info-card + .company-info-card {
+  margin-top: 8px;
+}
+
+.company-info-card {
+  padding: 12px 16px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.company-info-card {
+  .td-1 {
+    width: 31%;
+  }
+  .td-2 {
+    width: 17%;
+    padding-left: 24px;
+  }
+  .td-3 {
+    width: 16%;
+    padding-left: 24px;
+  }
+  .td-4 {
+    width: 16%;
+    padding-left: 24px;
+  }
+  .td-5 {
+    width: 20%;
+    padding-left: 24px;
+  }
+}
+
+.company-info-item span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.company-info-item p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.company-info-item.name {
+  display: flex;
+}
+
+.company-info-item.name .img {
+  width: 71px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.company-info-item.name .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.company-info-item.name .caption {
+  margin-left: 24px;
+}
+
+.company-list-wrapper .right-side {
+  width: calc(25% - 24px);
+  margin-left: 24px;
+}
+
+.company-detail-link {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.company-detail-link p {
+  color: #6F7893;
+  margin-right: 8px;
+}
+
+.company-list-filter .title {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+}
+
+.company-list-filter .checkbox-form-wrapper {
+  margin-top: 16px;
+}
+
+.company-list-filter .checkbox-form + .checkbox-form {
+  margin-top: 18px;
+}
+
+.company-list-wrapper .help-box {
+  margin-top: 40px;
+}
+
+.company-detail {
+  margin-top: 12px;
+}
+
+.insurance-detail-box .select-mini {
+  margin: 24px auto 0 auto;
+  width: fit-content;
+  display: flex;
+}
+
+.select-mini {
+  display: flex;
+  align-items: center;
+}
+
+.select-mini p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F7893;
+  margin-right: 16px;
+}
+
+.select-mini .dropdown-toggle {
+  background: #FFFFFF;
+  border: 2px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 12px;
+  min-height: 32px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #282828;
+  display: flex;
+  align-items: center;
+}
+
+.select-mini .dropdown-toggle::after {
+  border: none;
+  content: url("../img/icon/arrow-down-20.svg");
+  width: 20px;
+  height: 20px;
+  margin-left: 24px;
+}
+
+.show-detail-analysis {
+  margin: 24px auto 0 auto;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+
+.show-detail-analysis span {
+  display: block;
+  margin-left: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #282828;
+}
+
+.company-detail .insurance-detail-box {
+  padding-bottom: 24px;
+}
+
+.company-detail .btn-box {
+  .btn-main {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .btn-white {
+    background: #fff;
+    border-radius: 4px;
+    border: 2px solid #E0E0E0;
+    padding: 10px 24px;
+    min-height: 48px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #282828;
+    text-align: center;
+    height: fit-content;
+    white-space: nowrap;
+    margin-top: 16px;
+    width: 100%;
+  }
+}
+
+#unblockModal .modal-body p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #282828;
+}
+
+
+#reviewModal .modal-header h6 {
+  flex: 1;
+  text-align: center;
+}
+
+.review-star {
+  justify-content: center;
+}
+
+.review-star .star-rate img {
+  width: 35px;
+  height: 35px;
+}
+
+.textarea-form {
+  padding: 24px 12px;
+  height: fit-content;
+}
+
+.textarea-form .form-label-title {
+  top: 24px;
+}
+
+.textarea-form textarea {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  border: none;
+}
+
+.textarea-form textarea:focus {
+  outline: none;
+}
+
+#reviewModal .form-label {
+  margin-top: 24px;
+}
+
+#reviewModal .modal-content {
+  width: 640px;
+}
+
+.juridical-offer-wrapper {
+  margin-top: 24px;
+  .offerCard-wrapper {
+    margin-top: -12px;
+  }
+}
+
+.offerCard-wrapper.three-column .offerCard {
+  width: calc(33.3% - 24px);
+}
+
+.form-label svg {
+  flex-shrink: 0;
+}
+
+.juridical-profile-set .form-label.sm {
+  width: calc(25% - 16px);
+}
+
+.half-form-text .checkbox-form-wrapper {
+  width: calc(50% - 16px);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.half-form-text {
+  display: flex;
+  margin-top: 16px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.half-form-text .form-label {
+  width: calc(50% - 16px);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.half-form-text .checkbox-form-wrapper {
+  display: flex;
+}
+
+.half-form-text .checkbox-form-wrapper .caption {
+  width: calc(100% - 50px);
+  margin-right: 10px;
+  h6 {
+    font-size: 18px;
+    line-height: 24px;
+    color: #282828;
+  }
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #6F7893;
+    margin-top: 4px;
+  }
+}
+
+.set-box-body .btn-add {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  span {
+    margin-left: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #EF533F;
+    display: block;
+  }
+}
+
+.juridical-profile-set .upload-box-item {
+  min-height: 56px;
+}
+
+.write-company-xs {
+  display: none;
+}
+
 
 
 @import "media";

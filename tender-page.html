@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -265,7 +266,7 @@
                 </div>
             </div>
         </div>
-        <div class="cabinet-header padding-x">
+        <div class="cabinet-header d-none d-sm-block padding-x">
             <div class="cabinet-header-xs">
                 <p>Мои полисы</p>
                 <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,10 +277,13 @@
                 <div class="cabinet-header-content">
                     <ul class="cabinet-nav">
                         <li>
-                            <a href="#" class="active">Мои полисы</a>
+                            <a href="#" class="active">Мои тендеры</a>
                         </li>
                         <li>
-                            <a href="#">История оплаты</a>
+                            <a href="#">Мои полисы</a>
+                        </li>
+                        <li>
+                            <a href="#">Страховые компании</a>
                         </li>
                         <li>
                             <a href="#">Спец. предложения</a>
@@ -298,86 +302,303 @@
                         </li>
                     </ul>
                     <div class="cabinet-btn">
-                        <button class="btn-plain btn-red">Заявить о страховом случае</button>
-                        <button class="btn-plain btn-border">Оформить полис</button>
+                        <button class="btn-plain btn-red">Объявить тендер</button>
+                        <button class="btn-plain btn-border">Застраховать</button>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="cabinet-body padding-x">
+        <section class="cabinet-body auction-page padding-x">
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Личный кабинет</li>
-                <li>Специальные предложения</li>
+                <li>Мои тендеры</li>
+                <li>Тендер №231</li>
             </ul>
-            <div class="cabinet-title">
-                <h1 class="title-md">Специальные предложения</h1>
+            <div class="cabinet-title d-none">
+                <h1 class="title-md">Объявить тендер</h1>
             </div>
-            <div class="individ-offer-wrapper">
-                <ul class="top-filter-nav">
-                    <li>
-                        <a href="#" class="active">Промоакций</a>
-                    </li>
-                    <li>
-                        <a href="#">Накопительная скидка</a>
-                    </li>
-                    <li>
-                        <a href="#">Предложения от партнеров</a>
-                    </li>
-                    <li>
-                        <a href="#">Промокоды</a>
-                    </li>
-                </ul>
-                <div class="offerCard-wrapper four-column">
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
+            <a class="cabinet-backlink" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 23.75L10 15L17.5 6.25" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Тендер №231</span>
+            </a>
+            <div class="auction-wrapper">
+                <div class="left-side">
+                    <div class="auction-box">
+                        <div class="auction-box-top">
+                            <h1>Корпоративное годовое медицинское страхование на 300 сотрудников </h1>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21V3" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 13L12 21L19 13" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+                        <div class="auction-box-body">
+                            <div class="auction-detail-item name">
+                                <div class="img">
+                                    <img src="img/content/halyk.png">
+                                </div>
+                                <div class="caption">
+                                    <span>Организация</span>
+                                    <p>BI Group</p>
+                                </div>
+                            </div>
+                            <div class="auction-detail-item date">
+                                <span>Дата окончание</span>
+                                <p>15.05.2021</p>
+                            </div>
+                            <div class="auction-detail-item status success">
+                                <span>Статус</span>
+                                <p>Идут торги</p>
+                            </div>
+                            <div class="auction-detail-item download">
+                                <button class="btn-plain download-btn" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 21V3" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5 13L12 21L19 13" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p>Скачать тех. спец.</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="auction-time xs">
+                            <h6>Осталось времени</h6>
+                            <div class="auction-time-item">
+                                <span>Общее время</span>
+                                <p>43 дня</p>
+                            </div>
+                            <div class="auction-time-item">
+                                <span>Детализация</span>
+                                <p>43 дня : 21 ч. : 43 м.</p>
+                            </div>
+                            <button class="btn-plain btn-main">Закрыть лот</button>
                         </div>
                     </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
+                    <div class="auction-company-list">
+                        <div class="auction-company-heading">
+                            <div class="th">
+                                <div class="td-1">
+                                    <p>Страховые компании</p>
+                                </div>
+                                <div class="td-2">
+                                    <p>Рейтинг</p>
+                                </div>
+                                <div class="td-3">
+                                    <p>Страховые премии</p>
+                                </div>
+                                <div class="td-4">
+                                    <p>На рынке</p>
+                                </div>
+                                <div class="td-5">
+                                    <p>Предложение</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+                        <div class="auction-company-box">
+                            <div class="tr">
+                                <div class="company-box-td td-1 name">
+                                    <div class="img">
+                                        <img src="img/content/viktor.png">
+                                    </div>
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <div class="star-rating xs">
+                                            <span>4.5</span>
+                                            <div class="star-rate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-2 rating">
+                                    <span>Рейтинг</span>
+                                    <div class="star-rating">
+                                        <span>4.5</span>
+                                        <div class="star-rate"></div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-3">
+                                    <span>Страховые премии</span>
+                                    <p>2 000 000 ₸</p>
+                                </div>
+                                <div class="company-box-td td-4">
+                                    <span>На рынке</span>
+                                    <p>22 года</p>
+                                </div>
+                                <div class="company-box-td td-5 cost">
+                                    <span>Предложение</span>
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="company-box-td td-6">
+                                    <button class="btn-plain btn-border">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auction-company-box">
+                            <div class="tr">
+                                <div class="company-box-td td-1 name">
+                                    <div class="img">
+                                        <img src="img/content/viktor.png">
+                                    </div>
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <div class="star-rating xs">
+                                            <span>4.5</span>
+                                            <div class="star-rate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-2 rating">
+                                    <span>Рейтинг</span>
+                                    <div class="star-rating">
+                                        <span>4.5</span>
+                                        <div class="star-rate"></div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-3">
+                                    <span>Страховые премии</span>
+                                    <p>2 000 000 ₸</p>
+                                </div>
+                                <div class="company-box-td td-4">
+                                    <span>На рынке</span>
+                                    <p>22 года</p>
+                                </div>
+                                <div class="company-box-td td-5 cost">
+                                    <span>Предложение</span>
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="company-box-td td-6">
+                                    <button class="btn-plain btn-border">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auction-company-box">
+                            <div class="tr">
+                                <div class="company-box-td td-1 name">
+                                    <div class="img">
+                                        <img src="img/content/viktor.png">
+                                    </div>
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <div class="star-rating xs">
+                                            <span>4.5</span>
+                                            <div class="star-rate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-2 rating">
+                                    <span>Рейтинг</span>
+                                    <div class="star-rating">
+                                        <span>4.5</span>
+                                        <div class="star-rate"></div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-3">
+                                    <span>Страховые премии</span>
+                                    <p>2 000 000 ₸</p>
+                                </div>
+                                <div class="company-box-td td-4">
+                                    <span>На рынке</span>
+                                    <p>22 года</p>
+                                </div>
+                                <div class="company-box-td td-5 cost">
+                                    <span>Предложение</span>
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="company-box-td td-6">
+                                    <button class="btn-plain btn-border">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auction-company-box">
+                            <div class="tr">
+                                <div class="company-box-td td-1 name">
+                                    <div class="img">
+                                        <img src="img/content/viktor.png">
+                                    </div>
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <div class="star-rating xs">
+                                            <span>4.5</span>
+                                            <div class="star-rate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-2 rating">
+                                    <span>Рейтинг</span>
+                                    <div class="star-rating">
+                                        <span>4.5</span>
+                                        <div class="star-rate"></div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-3">
+                                    <span>Страховые премии</span>
+                                    <p>2 000 000 ₸</p>
+                                </div>
+                                <div class="company-box-td td-4">
+                                    <span>На рынке</span>
+                                    <p>22 года</p>
+                                </div>
+                                <div class="company-box-td td-5 cost">
+                                    <span>Предложение</span>
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="company-box-td td-6">
+                                    <button class="btn-plain btn-border">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auction-company-box">
+                            <div class="tr">
+                                <div class="company-box-td td-1 name">
+                                    <div class="img">
+                                        <img src="img/content/viktor.png">
+                                    </div>
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <div class="star-rating xs">
+                                            <span>4.5</span>
+                                            <div class="star-rate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-2 rating">
+                                    <span>Рейтинг</span>
+                                    <div class="star-rating">
+                                        <span>4.5</span>
+                                        <div class="star-rate"></div>
+                                    </div>
+                                </div>
+                                <div class="company-box-td td-3">
+                                    <span>Страховые премии</span>
+                                    <p>2 000 000 ₸</p>
+                                </div>
+                                <div class="company-box-td td-4">
+                                    <span>На рынке</span>
+                                    <p>22 года</p>
+                                </div>
+                                <div class="company-box-td td-5 cost">
+                                    <span>Предложение</span>
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="company-box-td td-6">
+                                    <button class="btn-plain btn-border">Выбрать</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
+                </div>
+                <div class="right-side">
+                    <div class="auction-time">
+                        <h6>Осталось времени</h6>
+                        <div class="auction-time-item">
+                            <span>Общее время</span>
+                            <p>43 дня</p>
                         </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+                        <div class="auction-time-item">
+                            <span>Детализация</span>
+                            <p>43 дня : 21 ч. : 43 м.</p>
                         </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
+                        <button class="btn-plain btn-main">Закрыть лот</button>
                     </div>
                 </div>
             </div>
@@ -495,14 +716,9 @@
 <script src="js/select2.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.js"></script>
+<script src="js/jquery.raty.js"></script>
 <script src="js/main.js"></script>
 <script>
-    //top filter nav
-    $('.top-filter-nav a').click(function (){
-        $('.top-filter-nav a').removeClass('active');
-        $(this).addClass('active');
-    });
-
     //sticky header
     $(document).ready(function (){
         let headerStickyTop = $('.header-top').outerHeight();
@@ -516,6 +732,19 @@
         $(this).toggleClass('show');
         $(this).next('.cabinet-header-box').slideToggle(400);
     })
+
+    //star rating
+    $('.star-rate').raty({
+        half: true,
+        score: 4.5,
+        readOnly: 'true',
+        halfShow: true,
+        path: 'img/icon',
+        starHalf: 'star-half.png',
+        starOff: 'star-off.png',
+        starOn: 'star-on.png',
+    });
+
 </script>
 </body>
 </html>

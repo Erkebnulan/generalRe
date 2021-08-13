@@ -276,10 +276,13 @@
                 <div class="cabinet-header-content">
                     <ul class="cabinet-nav">
                         <li>
-                            <a href="#" class="active">Мои полисы</a>
+                            <a href="#" class="active">Мои тендеры</a>
                         </li>
                         <li>
-                            <a href="#">История оплаты</a>
+                            <a href="#">Мои полисы</a>
+                        </li>
+                        <li>
+                            <a href="#">Страховые компании</a>
                         </li>
                         <li>
                             <a href="#">Спец. предложения</a>
@@ -298,8 +301,8 @@
                         </li>
                     </ul>
                     <div class="cabinet-btn">
-                        <button class="btn-plain btn-red">Заявить о страховом случае</button>
-                        <button class="btn-plain btn-border">Оформить полис</button>
+                        <button class="btn-plain btn-red">Объявить тендер</button>
+                        <button class="btn-plain btn-border">Застраховать</button>
                     </div>
                 </div>
             </div>
@@ -308,75 +311,131 @@
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Личный кабинет</li>
-                <li>Специальные предложения</li>
+                <li>Мои тендеры</li>
             </ul>
             <div class="cabinet-title">
-                <h1 class="title-md">Специальные предложения</h1>
+                <h1 class="title-md">Мои тендеры</h1>
             </div>
-            <div class="individ-offer-wrapper">
-                <ul class="top-filter-nav">
-                    <li>
-                        <a href="#" class="active">Промоакций</a>
-                    </li>
-                    <li>
-                        <a href="#">Накопительная скидка</a>
-                    </li>
-                    <li>
-                        <a href="#">Предложения от партнеров</a>
-                    </li>
-                    <li>
-                        <a href="#">Промокоды</a>
-                    </li>
-                </ul>
-                <div class="offerCard-wrapper four-column">
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
+            <div class="tender-list">
+                <div class="left-side">
+                    <ul class="nav top-filter-nav">
+                        <li>
+                            <a data-toggle="tab" href="#activeTender" class="active">Активные</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#closedTender">История тендеров</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="activeTender">
+                            <div class="tender-box-wrapper">
+                                <div class="tender-box">
+                                    <div class="tender-box-top">
+                                        <a class="tender-box-title" href="#">Корпоративное годовое медицинское страхование на 300 сотрудников</a>
+                                        <a class="tender-edit-link" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.302 6.97656L17.023 10.6976" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.508 4.77025L5.462 14.8173L4 19.9993L9.182 18.5382L19.229 8.49125C20.257 7.46325 20.257 5.79825 19.229 4.77025C18.201 3.74325 16.536 3.74325 15.508 4.77025Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Редактировать</span>
+                                        </a>
+                                    </div>
+                                    <div class="tender-box-body">
+                                        <div class="tender-box-detail tender-name">
+                                            <div class="tender-name-img">
+                                                <img src="img/content/nomad.png">
+                                            </div>
+                                            <div class="tender-name-caption">
+                                                <span>Организация</span>
+                                                <p>BI Group</p>
+                                            </div>
+                                        </div>
+                                        <div class="tender-box-detail tender-date">
+                                            <span>Дата окончание</span>
+                                            <p>15.05.2021</p>
+                                        </div>
+                                        <div class="tender-box-detail tender-offer">
+                                            <span>Предложения</span>
+                                            <p>134 предложений</p>
+                                        </div>
+                                        <div class="tender-box-detail tender-status success">
+                                            <span>Статус</span>
+                                            <p>Идут торги</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+                        <div class="tab-pane" id="closedTender">
+                            <div class="tender-box-wrapper">
+                                <div class="tender-box">
+                                    <div class="tender-box-top">
+                                        <a class="tender-box-title" href="#">Автострахование 1200 единиц на год</a>
+                                        <a class="tender-edit-link" href="#">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.302 6.97656L17.023 10.6976" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.508 4.77025L5.462 14.8173L4 19.9993L9.182 18.5382L19.229 8.49125C20.257 7.46325 20.257 5.79825 19.229 4.77025C18.201 3.74325 16.536 3.74325 15.508 4.77025Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Редактировать</span>
+                                        </a>
+                                    </div>
+                                    <div class="tender-box-body">
+                                        <div class="tender-box-detail tender-name">
+                                            <div class="tender-name-img">
+                                                <img src="img/content/nomad.png">
+                                            </div>
+                                            <div class="tender-name-caption">
+                                                <span>Организация</span>
+                                                <p>BI Group</p>
+                                            </div>
+                                        </div>
+                                        <div class="tender-box-detail tender-offer">
+                                            <span>Предложения</span>
+                                            <p>134 предложений</p>
+                                        </div>
+                                        <div class="tender-box-detail tender-winner">
+                                            <div class="tender-winner-img">
+                                                <img src="img/content/eur.png">
+                                            </div>
+                                            <div class="tender-winner-caption">
+                                                <span>Победитель</span>
+                                                <p>Евразия Insurance</p>
+                                            </div>
+                                        </div>
+                                        <div class="tender-box-detail tender-status danger">
+                                            <span>Статус</span>
+                                            <p>Торги закрыты</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
+                </div>
+                <div class="right-side">
+                    <div class="help-box">
+                        <div class="help-box-body">
+                            <a class="help-box-phone" href="tel:+77894322121">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 17V17C8.104 17 9 16.104 9 15V11C9 9.896 8.104 9 7 9C5.896 9 5 9.896 5 11V15C5 16.104 5.896 17 7 17Z" stroke="#EF533F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V17C18.104 17 19 16.104 19 15V11C19 9.896 18.104 9 17 9C15.896 9 15 9.896 15 11V15C15 16.104 15.896 17 17 17Z" stroke="#EF533F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 13V12C1 5.925 5.925 1 12 1C18.075 1 23 5.925 23 12V17C23 19.209 21.209 21 19 21H14" stroke="#EF533F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 21C14 22.104 13.104 23 12 23C10.896 23 10 22.104 10 21C10 19.896 10.896 19 12 19C13.104 19 14 19.896 14 21Z" stroke="#EF533F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>+7 789 432 21-21</span>
+                            </a>
+                            <p>Есть вопросы? Звоните. Мы ответим на все ваши вопросы и подскажем что нужно сделать.</p>
                         </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+                        <div class="help-box-bottom">
+                            <div class="profile-sm">
+                                <div class="profile-sm-img">
+                                    <img src="img/content/author.png">
+                                </div>
+                                <div class="profile-sm-caption">
+                                    <p>Нургуль</p>
+                                    <span>Ваш личный помощник</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -497,12 +556,6 @@
 <script src="js/daterangepicker.js"></script>
 <script src="js/main.js"></script>
 <script>
-    //top filter nav
-    $('.top-filter-nav a').click(function (){
-        $('.top-filter-nav a').removeClass('active');
-        $(this).addClass('active');
-    });
-
     //sticky header
     $(document).ready(function (){
         let headerStickyTop = $('.header-top').outerHeight();
@@ -516,6 +569,13 @@
         $(this).toggleClass('show');
         $(this).next('.cabinet-header-box').slideToggle(400);
     })
+
+    //help-box margin top
+    $(document).ready(function (){
+        let boxHeight = $('.top-filter-nav').outerHeight();
+        $('.help-box').css('marginTop', boxHeight + 16 + 'px')
+    })
+
 </script>
 </body>
 </html>

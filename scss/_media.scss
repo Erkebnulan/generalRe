@@ -83,8 +83,51 @@
     width: calc(100% - 40px);
     margin-right: 20px;
   }
+  .auction-wrapper {
+    flex-direction: column;
+  }
+  .auction-wrapper .left-side {
+    width: 100%;
+    order: 2;
+    margin-top: 24px;
+  }
+  .auction-wrapper .right-side {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .auction-time {
+    width: 320px;
+  }
+  .detail-box-caption {
+    display: block;
+  }
+  .detail-box-caption .right-side {
+    margin-top: 12px;
+  }
+  .detail-box-caption .right-side p {
+    text-align: left;
+  }
+  .juridical-offer-wrapper .row-box {
+    flex-direction: column;
+  }
+  .juridical-offer-wrapper .row-box-left {
+    width: 100%;
+  }
+  .juridical-offer-wrapper .help-box {
+    display: none;
+  }
+  .top-filter-nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+  .top-filter-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .profile-set .right-side {
+    width: calc(75% - 24px);
+  }
 }
-
 
 @media (min-width: 768px) and (max-width: 991px) {
   .main-nav {
@@ -200,7 +243,7 @@
     height: 240px;
   }
   .partners {
-    margin-top: 40px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .tender {
@@ -234,7 +277,7 @@
     line-height: 120%;
   }
   .faq {
-    margin-top: 40px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .faq-wrapper {
@@ -401,7 +444,7 @@
     padding: 7px 8px;
   }
   .insurance-advantage {
-    margin-top: 40px;
+    padding-top: 40px;
   }
   .insurance-advantage-content .item svg {
     min-width: 30px;
@@ -415,14 +458,14 @@
     line-height: 120%;
   }
   .useful {
-    margin-top: 40px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .useful-item {
     padding: 15px;
   }
   .useful-item p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 120%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -615,6 +658,8 @@
   }
   .offerCard-wrapper.four-column .offerCard {
     width: calc(33.3% - 24px);
+  }
+  .offerCard-wrapper .offerCard {
     min-height: 340px;
   }
   .offerCard-img {
@@ -665,8 +710,135 @@
     margin-left: 0;
     margin-top: 15px;
   }
+  .tender-list {
+    flex-direction: column;
+    margin-top: 16px;
+    .left-side {
+      width: 100%;
+      order: 2;
+      margin-top: 24px;
+    }
+    .right-side {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 0;
+      order: 1;
+    }
+    .help-box {
+      margin-top: 0!important;
+      width: 310px;
+    }
+  }
+  .create-tender {
+    width: 100%;
+  }
+  .auction-wrapper {
+    flex-direction: column;
+  }
+  .auction-wrapper .left-side {
+    width: 100%;
+    order: 2;
+    margin-top: 24px;
+  }
+  .auction-wrapper .right-side {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .auction-time {
+    width: 320px;
+  }
+  .auction-company-box .caption {
+    margin-left: 10px;
+  }
+  .auction-company-list {
+    .td-2 {
+      padding-left: 15px;
+    }
+    .td-3 {
+      padding-left: 15px;
+    }
+    .td-4 {
+      padding-left: 15px;
+    }
+    .td-5 {
+      padding-left: 15px;
+    }
+    .td-6 {
+      padding-left: 15px;
+    }
+  }
+  .auction-company-box .name .img {
+    width: 60px;
+    height: 40px;
+  }
+  .auction-company-box p {
+    font-size: 16px;
+  }
+  .auction-company-box .star-rating span {
+    font-size: 12px!important;
+    display: block;
+    line-height: 100%!important;
+  }
+  .auction-company-box .star-rate img {
+    width: 12px;
+    height: 12px;
+  }
+  .auction-company-list .td-1 {
+    width: 28%;
+  }
+  .auction-company-list .td-6 {
+    width: 16%;
+  }
+  .company-list-wrapper {
+    flex-direction: column;
+  }
+  .company-list-wrapper .left-side {
+    width: 100%;
+    order: 2;
+    margin-top: 16px;
+  }
+  .company-list-wrapper .right-side {
+    margin-left: 0;
+    width: 100%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .company-list-wrapper .help-box {
+    margin-top: 0;
+    width: 310px;
+    order: 1;
+  }
+  .company-list-filter {
+    order: 2;
+    margin-top: 16px;
+  }
+  .company-list-filter .checkbox-form-wrapper {
+    display: flex;
+  }
+  .company-list-filter .checkbox-form + .checkbox-form {
+    margin-top: 0;
+    margin-left: 24px;
+  }
+  .detail-box-caption {
+    display: block;
+  }
+  .detail-box-caption .right-side {
+    margin-top: 12px;
+  }
+  .detail-box-caption .right-side p {
+    text-align: left;
+  }
+  .top-filter-nav {
+    overflow-x: auto;
+    margin-right: -30px;
+    flex-wrap: nowrap;
+  }
+  .top-filter-nav::-webkit-scrollbar {
+    display: none;
+  }
 }
-
 
 @media (min-width: 320px) and (max-width: 767px) {
   .header-top {
@@ -935,7 +1107,7 @@
     line-height: 32px;
   }
   .partners {
-    margin-top: 64px;
+    padding-top: 64px;
     padding-bottom: 64px;
   }
   .partner-slider {
@@ -1071,7 +1243,7 @@
     line-height: 16px;
   }
   .faq {
-    margin-top: 64px;
+    padding-top: 64px;
     padding-bottom: 64px;
   }
   .faq-wrapper {
@@ -1490,7 +1662,7 @@
     height: 5px;
   }
   .insurance-advantage {
-    margin-top: 64px;
+    padding-top: 64px;
   }
   .insurance-advantage-content {
     margin: 8px -8px 0 -8px;
@@ -1511,7 +1683,7 @@
     line-height: 18px;
   }
   .useful {
-    margin-top: 64px;
+    padding-top: 64px;
     padding-bottom: 64px;
   }
   .useful-box {
@@ -2489,6 +2661,7 @@
     margin-top: 2px;
   }
   .pay-history-filter.xs {
+    display: block;
     margin-top: 0!important;
     width: fit-content;
   }
@@ -2530,12 +2703,13 @@
   .top-filter-nav {
     overflow-x: auto;
     margin-right: -16px;
+    flex-wrap: nowrap;
   }
   .top-filter-nav::-webkit-scrollbar {
     display: none;
   }
-  .offerCard-wrapper.four-column .offerCard {
-    width: 100%;
+  .offerCard-wrapper .offerCard {
+    width: 100%!important;
     max-width: 100%;
     padding: 12px;
     min-height: 342px;
@@ -2739,9 +2913,388 @@
     line-height: 18px;
     margin-left: 4px;
   }
+  .authorize-form .half-form .form-label.sm {
+    width: calc(50% - 8px);
+  }
+  .authorize-form .half-form {
+    flex-wrap: wrap;
+  }
+  .authorize-form .half-form .form-label.md {
+    width: 100%;
+  }
+  .tender-list {
+    margin-top: 0;
+    flex-direction: column;
+    .left-side {
+      width: 100%;
+    }
+    .right-side {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .tender-box {
+    margin: 0 -16px;
+    border-radius: 0;
+  }
+  .tender-box-title {
+    font-size: 18px;
+    line-height: 24px;
+    flex: 1;
+    max-width: initial;
+  }
+  .tender-edit-link {
+    margin-left: 16px;
+  }
+  .tender-edit-link span {
+    display: none;
+  }
+  .tender-edit-link svg {
+    flex-shrink: 0;
+  }
+  .tender-box-body {
+    flex-wrap: wrap;
+  }
+  .tender-box-detail {
+    width: 100%;
+    margin-left: 0;
+  }
+  .tender-box-body .tender-box-detail + .tender-box-detail {
+    margin-left: 0;
+  }
+  .tender-box-detail.tender-name {
+    order: 1;
+    width: 50%;
+  }
+  .tender-box-detail.tender-status {
+    order: 2;
+    width: 50%;
+  }
+  .tender-box-detail.tender-date {
+    order: 3;
+    margin-top: 16px;
+  }
+  .tender-box-detail.tender-offer {
+    order: 4;
+    margin-top: 16px;
+  }
+  .tender-box-detail.tender-winner {
+    order: 5;
+    margin-top: 16px;
+  }
+  .tender-list .help-box {
+    margin-top: 16px!important;
+  }
+  .new-tender {
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+  }
+  .create-tender {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .create-tender-header.xs {
+    display: block;
+    padding: 16px;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  .close-create-tender {
+    display: flex;
+    align-items: center;
+  }
+  .close-create-tender span {
+    font-size: 18px;
+    line-height: 24px;
+    color: #282828;
+    margin-left: 8px;
+  }
+  .create-tender-body {
+    padding: 16px;
+    border-bottom: none;
+  }
+  .create-tender .form-label-wrapper {
+    display: block;
+    min-height: initial;
+  }
+  .create-tender .form-label-wrapper .left-side {
+    width: 100%;
+  }
+  .create-tender .form-label-wrapper .right-side {
+    margin-left: 0;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .choose-spec {
+    margin-top: 24px;
+  }
+  .choose-spec .btn-add {
+    margin-top: 24px;
+  }
+  .create-tender-bottom {
+    margin-top: auto;
+  }
+  .create-tender-bottom .btn-main {
+    width: 100%;
+    min-height: 56px;
+    border-radius: 0;
+  }
+  .auction-wrapper {
+    flex-direction: column;
+  }
+  .auction-wrapper .left-side {
+    width: 100%;
+  }
+  .auction-wrapper .right-side {
+    width: 100%;
+  }
+  .auction-box {
+    margin: 0 -16px;
+    padding: 16px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .auction-box-top h1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .auction-box-top svg {
+    display: block;
+    flex-shrink: 0;
+    margin-left: 16px;
+  }
+  .auction-box-top {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .auction-box-body {
+    margin-top: 16px;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .auction-box-body .auction-detail-item.download {
+    display: none;
+  }
+  .auction-detail-item.name {
+    order: 1;
+  }
+  .auction-detail-item.status {
+    order: 2;
+    text-align: right;
+  }
+  .auction-detail-item.date {
+    order: 3;
+    width: 100%;
+    margin-top: 16px;
+  }
+  .auction-box-body .auction-detail-item + .auction-detail-item {
+    margin-left: 0;
+  }
+  .cabinet-backlink {
+    margin: -16px -16px 0 -16px;
+    background: #fff;
+    padding: 16px;
+    position: sticky;
+    top: 56px;
+  }
+  .cabinet-backlink svg {
+    width: 24px;
+    height: 24px;
+  }
+  .cabinet-backlink span {
+    margin-left: 8px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .auction-time.xs {
+    display: block;
+    margin-top: 16px;
+    box-shadow: none;
+    padding: 0;
+  }
+  .auction-time-item {
+    margin-top: 12px;
+  }
+  .auction-time .btn-main {
+    margin-top: 16px;
+    min-height: 40px;
+    padding: 8px 24px;
+  }
+  .auction-company-list {
+    margin-left: -16px;
+    margin-right: -16px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .auction-company-heading {
+    display: none;
+  }
+  .auction-company-box .tr {
+    flex-wrap: wrap;
+  }
+  .auction-company-box {
+    .td-1 {
+      width: 100%;
+    }
+    .td-2 {
+      display: none;
+      padding-left: 0;
+    }
+    .td-3 {
+      width: 50%;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+    .td-4 {
+      width: 50%;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+    .td-5 {
+      width: 50%;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+    .td-6 {
+      width: 50%;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+    .star-rating.xs {
+      display: flex;
+    }
+  }
+  .company-box-td {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .company-box-td.name {
+    flex-direction: row;
+  }
+  .company-box-td span {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6F7893;
+  }
+  .auction-company-box .caption {
+    margin-left: 8px;
+  }
+  .auction-company-box .btn-border {
+    margin-left: auto;
+  }
+  .auction-time {
+    display: none;
+  }
+  .company-list-wrapper {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .company-list-wrapper .left-side {
+    width: 100%;
+  }
+  .company-list {
+    margin-top: 16px;
+  }
+  .company-list-wrapper .right-side {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .company-info-card {
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
+    flex-wrap: wrap;
+  }
+  .company-info-card {
+    .td-1 {
+      width: 100%;
+    }
+    .td-2 {
+      width: 50%;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+    .td-3 {
+      width: 50%;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+    .td-4 {
+      width: 50%;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+    .td-5 {
+      width: 50%;
+      padding-left: 0;
+      margin-top: 16px;
+    }
+  }
+  .company-list-filter {
+    display: none;
+  }
+  .company-list-wrapper .help-box {
+    margin-top: 0;
+  }
+  .insurance-detail-box .select-mini {
+    display: none;
+  }
+  .company-detail .insurance-review-box {
+    margin-top: 16px;
+  }
+  .show-detail-analysis {
+    display: none;
+  }
+  .company-detail .insurance-detail-box {
+    padding-bottom: 0;
+  }
+  .company-detail .btn-box {
+    display: none;
+  }
+  .write-company-xs {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    padding: 8px 24px;
+  }
+  .company-detail .insurance-tender-box {
+    padding-bottom: 16px;
+  }
+  .juridical-offer-wrapper {
+    margin-top: 0;
+  }
+  .juridical-offer-wrapper .offerCard-wrapper {
+    margin-top: 8px;
+  }
+  .juridical-offer-wrapper .help-box {
+    display: none;
+  }
+  .half-form-text {
+    flex-direction: column;
+  }
+  .half-form-text .form-label {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .half-form-text .checkbox-form-wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 9px;
+    padding-bottom: 16px;
+  }
 }
-
-
 
 @media (max-width: 320px) {
 

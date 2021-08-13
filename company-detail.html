@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -265,7 +266,7 @@
                 </div>
             </div>
         </div>
-        <div class="cabinet-header padding-x">
+        <div class="cabinet-header d-none d-sm-block padding-x">
             <div class="cabinet-header-xs">
                 <p>Мои полисы</p>
                 <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,10 +277,13 @@
                 <div class="cabinet-header-content">
                     <ul class="cabinet-nav">
                         <li>
-                            <a href="#" class="active">Мои полисы</a>
+                            <a href="#" class="active">Мои тендеры</a>
                         </li>
                         <li>
-                            <a href="#">История оплаты</a>
+                            <a href="#">Мои полисы</a>
+                        </li>
+                        <li>
+                            <a href="#">Страховые компании</a>
                         </li>
                         <li>
                             <a href="#">Спец. предложения</a>
@@ -298,8 +302,8 @@
                         </li>
                     </ul>
                     <div class="cabinet-btn">
-                        <button class="btn-plain btn-red">Заявить о страховом случае</button>
-                        <button class="btn-plain btn-border">Оформить полис</button>
+                        <button class="btn-plain btn-red">Объявить тендер</button>
+                        <button class="btn-plain btn-border">Застраховать</button>
                     </div>
                 </div>
             </div>
@@ -308,75 +312,174 @@
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Личный кабинет</li>
-                <li>Специальные предложения</li>
+                <li>Мои тендеры</li>
             </ul>
-            <div class="cabinet-title">
-                <h1 class="title-md">Специальные предложения</h1>
+            <div class="cabinet-title d-none">
+                <h1 class="title-md">Страховые компании</h1>
             </div>
-            <div class="individ-offer-wrapper">
-                <ul class="top-filter-nav">
-                    <li>
-                        <a href="#" class="active">Промоакций</a>
-                    </li>
-                    <li>
-                        <a href="#">Накопительная скидка</a>
-                    </li>
-                    <li>
-                        <a href="#">Предложения от партнеров</a>
-                    </li>
-                    <li>
-                        <a href="#">Промокоды</a>
-                    </li>
-                </ul>
-                <div class="offerCard-wrapper four-column">
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+            <a class="cabinet-backlink" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 23.75L10 15L17.5 6.25" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Halyk Insurance</span>
+            </a>
+            <div class="company-detail">
+                <div class="row-box">
+                    <div class="row-box-left">
+                        <div class="insurance-detail-box">
+                            <div class="detail-box-top">
+                                <div class="detail-box-img">
+                                    <img src="img/content/halyk-lg.png">
+                                </div>
+                                <div class="detail-box-caption">
+                                    <div class="detail-box-title">
+                                        <h1>Страховая компания Халык БанкHalyk Insurance</h1>
+                                        <p>На рынке с 1996 года, 25 лет</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <p>Рейтинг</p>
+                                        <div class="star-rating">
+                                            <span>4.5</span>
+                                            <div class="star-rate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select-mini">
+                                <p>Выберите период</p>
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" data-toggle="dropdown">
+                                        за 2020 год
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">за 2019 год</a>
+                                        <a class="dropdown-item" href="#">за 2018 год</a>
+                                        <a class="dropdown-item" href="#">за 2017 год</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-box-body">
+                                <div class="detail-item">
+                                    <div class="left-side">
+                                        <p>Финансовые показатели на 2020 год:</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="detail-indicators-box">
+                                            <div class="detail-indicators-item">
+                                                <span>Активы</span>
+                                                <p>22,4 млн. ₸</p>
+                                            </div>
+                                            <div class="detail-indicators-item">
+                                                <span>Резервы</span>
+                                                <p>16 млн. ₸</p>
+                                            </div>
+                                            <div class="detail-indicators-item">
+                                                <span>Выплаты</span>
+                                                <p>34,2 млн. ₸</p>
+                                            </div>
+                                            <div class="detail-indicators-item">
+                                                <span>Выплаты</span>
+                                                <p>12 млн. ₸</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="left-side">
+                                        <p>Жалобы:</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <p>Отсуствует</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="left-side">
+                                        <p>Аккредитация:</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <p>Лицензия на право осуществления страховой (перестраховочной) деятельности по отрасли «общее страхование» № 2.1.71 от 18 февраля 2020 года</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <div class="left-side">
+                                        <p>Приостановления лицензии:</p>
+                                    </div>
+                                    <div class="right-side">
+                                        <p>Отсуствует</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="show-detail-analysis" href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 16C14 17.104 13.104 18 12 18C10.896 18 10 17.104 10 16C10 14.896 10.896 14 12 14C13.104 14 14 14.896 14 16Z" stroke="#282828" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19 16C19 19.866 15.866 23 12 23C8.134 23 5 19.866 5 16C5 12.134 8.134 9 12 9C15.866 9 19 12.134 19 16Z" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 11V6C17 3.238 14.762 1 12 1C9.238 1 7 3.238 7 6V11" stroke="#EF533F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Посмотреть детальный анализ</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
+                    <div class="row-box-right">
+                        <div class="insurance-tender-box">
+                            <h6>Выигранные тендеры</h6>
+                            <div class="insurance-tender-inner">
+                                <div class="insurance-tender-item">
+                                    <span>В общем участвовал</span>
+                                    <p>123 тендерах</p>
+                                </div>
+                                <div class="insurance-tender-item">
+                                    <span>Выиграл</span>
+                                    <p>80 тендеров</p>
+                                </div>
+                                <div class="insurance-tender-item">
+                                    <span>Выплатил более</span>
+                                    <p>4.3 млн тенге</p>
+                                </div>
+                                <div class="insurance-tender-item">
+                                    <span>Средняя оценка</span>
+                                    <p>4.8</p>
+                                </div>
+                            </div>
+                            <button class="btn-plain btn-main write-company-xs">Написать компании</button>
                         </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+                        <div class="btn-box">
+                            <button class="btn-plain btn-main">Сравнить с другими</button>
+                            <button class="btn-plain btn-white add-review">Добавить отзыв</button>
                         </div>
                     </div>
-                    <div class="offerCard">
-                        <div class="offerCard-img">
-                            <img src="img/content/kaspi.png">
-                        </div>
-                        <div class="offerCard-caption">
-                            <h6>Полис на год в рассрочку через kaspi.kz</h6>
-                            <p>14 января 2020</p>
-                            <button class="btn-plain btn-border">Подробнее</button>
+                </div>
+                <div class="row-box">
+                    <div class="row-box-left">
+                        <div class="insurance-review-box">
+                            <div class="review-box-top">
+                                <h6>Отзывы</h6>
+                            </div>
+                            <div class="review-box-body">
+                                <div class="review-box-item">
+                                    <div class="left-side">
+                                        <p>Арман Жунисов</p>
+                                        <div class="star-rating">
+                                            <span>4.5</span>
+                                            <div class="star-rate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <p>Очень большая компания, с широким выбором продуктов. Которые покрывает все случаи страховок. Рекмоендую всем!!! Плюс еще очень простые и удобные условия оформления без банков и офисов.</p>
+                                    </div>
+                                </div>
+                                <div class="review-box-item">
+                                    <div class="left-side">
+                                        <p>Бексултан Абдразак</p>
+                                        <div class="star-rating">
+                                            <span>4.5</span>
+                                            <div class="star-rate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="right-side">
+                                        <p>Чет не очень банк! Слишком много бумаг и подписей. И ещее долго ждать. И не понятно как смотреть полис, всегда приходится распечатывать что неудобно.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -487,6 +590,53 @@
             </div>
         </div>
     </footer>
+    <div class="modal main-modal" id="unblockModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn-plain close-modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+               <p>Разблокируйте дополнительные данные о компаниях, о руководстве, меры дисциплинарного воздействия, сильные страховые продукты, доля компании в общей доле рынка и т.д.</p>
+            </div>
+            <div class="modal-bottom">
+                <button class="btn-plain btn-main btn-56">Разблокировать всего за 9 990₸</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal main-modal" id="reviewModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6>Оставтье отзыв</h6>
+                <button class="btn-plain close-modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="star-rating review-star">
+                    <div class="star-rate"></div>
+                </div>
+                <label class="form-label textarea-form">
+                    <span class="form-label-title">Ваш комментарий</span>
+                    <textarea rows="5"></textarea>
+                </label>
+            </div>
+            <div class="modal-bottom">
+                <button class="btn-plain btn-main btn-56">Оставить комментарий</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="js/libs.min.js"></script>
@@ -495,14 +645,9 @@
 <script src="js/select2.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.js"></script>
+<script src="js/jquery.raty.js"></script>
 <script src="js/main.js"></script>
 <script>
-    //top filter nav
-    $('.top-filter-nav a').click(function (){
-        $('.top-filter-nav a').removeClass('active');
-        $(this).addClass('active');
-    });
-
     //sticky header
     $(document).ready(function (){
         let headerStickyTop = $('.header-top').outerHeight();
@@ -515,6 +660,42 @@
     $('.cabinet-header-xs').click(function (){
         $(this).toggleClass('show');
         $(this).next('.cabinet-header-box').slideToggle(400);
+    })
+
+    //star rating
+    $('.star-rate').raty({
+        half: true,
+        score: 4.5,
+        readOnly: 'true',
+        halfShow: true,
+        path: 'img/icon',
+        starHalf: 'star-half.svg',
+        starOff: 'star-off.svg',
+        starOn: 'star-on.svg',
+    });
+
+    //modal
+    $('.show-detail-analysis').click(function (){
+        $('#unblockModal').modal('show');
+    })
+
+    $('.add-review').click(function (){
+        $('#reviewModal').modal('show');
+    })
+
+    //form-label
+    $(document).ready(function (){
+        $('.form-label textarea').focus(function () {
+            $(this).closest('.form-label').addClass('form-label-focus');
+        });
+        $('.form-label textarea').blur(function () {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').addClass('form-label-done');
+            if ($(this).val().length === 0) {
+                $(this).closest('.form-label').removeClass('form-label-focus');
+                $(this).closest('.form-label').removeClass('form-label-done');
+            }
+        });
     })
 </script>
 </body>
