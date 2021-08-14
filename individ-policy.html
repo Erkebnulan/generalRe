@@ -748,7 +748,7 @@
                     </svg>
                 </label>
                 <label class="form-label">
-                    <span class="form-label-title">Ф.И.О</span>
+                    <span class="form-label-title">E-mail</span>
                     <input type="email">
                 </label>
                 <label class="form-label">
@@ -782,13 +782,13 @@
         $(this).toggleClass('active');
     });
 
-    //
+    //margin top of 'policy-add-box'
     $(document).ready(function (){
         let boxHeight = $('.policy-heading').outerHeight();
         $('.policy-add-box').css('marginTop', boxHeight)
     })
 
-    //
+    //modal
     $('#callPolicyModal').click(function (){
         $('#newPolicyModal').modal('show');
     })

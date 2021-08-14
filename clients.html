@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="slick-slider/slick/slick-theme.css">
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -304,291 +305,207 @@
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Личный кабинет</li>
-                <li>Мои тендеры</li>
+                <li>Мои полисы</li>
             </ul>
             <div class="cabinet-title">
-                <h1 class="title-md">Аналитика</h1>
+                <h1 class="title-md">Клиенты</h1>
             </div>
-            <ul class="nav top-filter-nav mt-24">
-                <li>
-                    <a data-toggle="tab" href="#myProduct" class="active">Мои продукты</a>
-                </li>
-                <li>
-                    <a data-toggle="tab" href="#client">Клиенты</a>
-                </li>
-            </ul>
-            <div class="analytics-wrapper">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="myProduct">
-                        <div class="analytics-product">
-                            <div class="left-side">
-                                <div class="analytics-product-list">
-                                    <div class="analytics-product-item">
-                                        <div class="product-item-body">
-                                            <h6>Медицинское страхование для физических лиц</h6>
-                                            <ul class="analytics-product-price">
-                                                <li class="red">8 500₸</li>
-                                                <li>на полис в год</li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-item-bottom">
-                                            <div class="analytics-chart-xs">
-                                                <h6>График продаж</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="analytics-product-item">
-                                        <div class="product-item-body">
-                                            <h6>Медицинское страхование для физических лиц</h6>
-                                            <ul class="analytics-product-price">
-                                                <li class="red">8 500₸</li>
-                                                <li>на полис в год</li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-item-bottom">
-                                            <div class="analytics-chart-xs">
-                                                <h6>График продаж</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="analytics-product-item">
-                                        <div class="product-item-body">
-                                            <h6>Медицинское страхование для физических лиц</h6>
-                                            <ul class="analytics-product-price">
-                                                <li class="red">8 500₸</li>
-                                                <li>на полис в год</li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-item-bottom">
-                                            <div class="analytics-chart-xs">
-                                                <h6>График продаж</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="analytics-product-item">
-                                        <div class="product-item-body">
-                                            <h6>Медицинское страхование для физических лиц</h6>
-                                            <ul class="analytics-product-price">
-                                                <li class="red">8 500₸</li>
-                                                <li>на полис в год</li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-item-bottom">
-                                            <div class="analytics-chart-xs">
-                                                <h6>График продаж</h6>
-                                            </div>
-                                        </div>
+            <div class="client-wrapper">
+                <div class="client-heading">
+                    <div class="th">
+                        <div class="client-heading-td td-1">
+                            <p>Дата регистрации</p>
+                        </div>
+                        <div class="client-heading-td td-2">
+                            <p>Ф.И.О клиента</p>
+                        </div>
+                        <div class="client-heading-td td-3">
+                            <button class="btn-plain btn-sort">
+                                <p>Лицо</p>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14V2" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.33334 8.66699L8.00001 14.0003L12.6667 8.66699" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="client-heading-td td-4">
+                            <button class="btn-plain btn-sort">
+                                <p>Общая сумма</p>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14V2" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.33334 8.66699L8.00001 14.0003L12.6667 8.66699" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="client-heading-td td-5"></div>
+                    </div>
+                </div>
+                <div class="client-box">
+                    <div class="client-info">
+                        <div class="tr">
+                            <div class="client-info-td td-1">
+                                <span>Дата регистрации</span>
+                                <p class="gray">22.01.2021</p>
+                            </div>
+                            <div class="client-info-td td-2">
+                                <span>Ф.И.О клиента</span>
+                                <p>Guy Hawkins</p>
+                            </div>
+                            <div class="client-info-td td-3">
+                                <span>Лицо</span>
+                                <p class="gray">Физ.лицо</p>
+                            </div>
+                            <div class="client-info-td td-4">
+                                <span>Общая сумма</span>
+                                <p> 181 200 ₸</p>
+                            </div>
+                            <div class="client-info-td td-5">
+                                <button class="btn-plain show-detail">
+                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L8 7L15 1" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-policy">
+                        <h6>Купленные полисы</h6>
+                        <div class="policy-box">
+                            <div class="tr">
+                                <div class="policy-box-td td-1 policy-box-name">
+                                    <img src="img/content/halyk-sm.png">
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <span>Действительно до 22.03.2021</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="middle-side">
-                                <div class="analytics-chart">
-                                    <h6 class="analytics-chart-title">График продаж</h6>
+                                <div class="policy-box-td td-2">
+                                    <span>Тип страхования </span>
+                                    <p>Обязательное Автострахование</p>
+                                </div>
+                                <div class="policy-box-td td-3">
+                                    <span>Выплата</span>
+                                    <p>до 2 250 200 ₸</p>
+                                </div>
+                                <div class="policy-box-td td-4 policy-box-cost">
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="policy-box-td td-5">
+                                    <button class="btn-plain download-policy">
+                                        <i class="icon pdf-icon"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="right-side">
-                                <div class="analytics-detail">
-                                    <h6 class="analytics-detail-title">Общая аналитика:</h6>
-                                    <div class="analytics-detail-content">
-                                        <div class="analytics-detail-item">
-                                            <span>Объем продаж</span>
-                                            <p>1 145 231 ₸</p>
-                                        </div>
-                                        <div class="analytics-detail-item">
-                                            <span>Количество клиентов</span>
-                                            <p>156</p>
-                                        </div>
-                                        <div class="analytics-detail-item">
-                                            <span>Ваш доход</span>
-                                            <p>245 231 ₸</p>
-                                        </div>
-                                        <div class="analytics-detail-item">
-                                            <span>Средний чек</span>
-                                            <p>8 000 ₸</p>
-                                        </div>
-                                        <div class="analytics-detail-item">
-                                            <span>Количество проданных полисов</span>
-                                            <p>1 324 шт.</p>
-                                        </div>
+                        </div>
+                        <div class="policy-box">
+                            <div class="tr">
+                                <div class="policy-box-td td-1 policy-box-name">
+                                    <img src="img/content/halyk-sm.png">
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <span>Действительно до 22.03.2021</span>
                                     </div>
+                                </div>
+                                <div class="policy-box-td td-2">
+                                    <span>Тип страхования </span>
+                                    <p>Обязательное Автострахование</p>
+                                </div>
+                                <div class="policy-box-td td-3">
+                                    <span>Выплата</span>
+                                    <p>до 2 250 200 ₸</p>
+                                </div>
+                                <div class="policy-box-td td-4 policy-box-cost">
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="policy-box-td td-5">
+                                    <button class="btn-plain download-policy">
+                                        <i class="icon pdf-icon"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="client">
-                        <div class="pay-history-filter xs dropdown">
-                            <button class="btn-plain dropdown-btn dropdown-toggle" data-toggle="dropdown">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.99836 14.1755V3.00019C6.99836 2.73508 6.89305 2.48084 6.70559 2.29338C6.51813 2.10592 6.26389 2.00061 5.99878 2.00061C5.73368 2.00061 5.47943 2.10592 5.29197 2.29338C5.10452 2.48084 4.9992 2.73508 4.9992 3.00019V14.1755C4.4203 14.3856 3.92012 14.7689 3.56665 15.2732C3.21318 15.7775 3.02356 16.3784 3.02356 16.9943C3.02356 17.6102 3.21318 18.2111 3.56665 18.7154C3.92012 19.2197 4.4203 19.603 4.9992 19.8131V20.9926C4.9992 21.2577 5.10452 21.512 5.29197 21.6994C5.47943 21.8869 5.73368 21.9922 5.99878 21.9922C6.26389 21.9922 6.51813 21.8869 6.70559 21.6994C6.89305 21.512 6.99836 21.2577 6.99836 20.9926V19.8131C7.57727 19.603 8.07745 19.2197 8.43092 18.7154C8.78439 18.2111 8.97401 17.6102 8.97401 16.9943C8.97401 16.3784 8.78439 15.7775 8.43092 15.2732C8.07745 14.7689 7.57727 14.3856 6.99836 14.1755ZM5.99878 17.9939C5.80108 17.9939 5.60783 17.9352 5.44345 17.8254C5.27907 17.7156 5.15095 17.5595 5.07529 17.3768C4.99964 17.1942 4.97984 16.9932 5.01841 16.7993C5.05698 16.6054 5.15218 16.4273 5.29197 16.2875C5.43177 16.1477 5.60988 16.0525 5.80378 16.0139C5.99767 15.9754 6.19866 15.9951 6.38131 16.0708C6.56395 16.1465 6.72007 16.2746 6.8299 16.439C6.93974 16.6033 6.99836 16.7966 6.99836 16.9943C6.99836 17.2594 6.89305 17.5136 6.70559 17.7011C6.51813 17.8886 6.26389 17.9939 5.99878 17.9939ZM20.9925 12.996C20.9907 12.3773 20.7977 11.7743 20.4398 11.2696C20.0819 10.765 19.5766 10.3834 18.9933 10.1772V3.00019C18.9933 2.73508 18.888 2.48084 18.7005 2.29338C18.5131 2.10592 18.2588 2.00061 17.9937 2.00061C17.7286 2.00061 17.4744 2.10592 17.2869 2.29338C17.0995 2.48084 16.9942 2.73508 16.9942 3.00019V10.1772C16.4152 10.3873 15.9151 10.7705 15.5616 11.2749C15.2081 11.7792 15.0185 12.3801 15.0185 12.996C15.0185 13.6118 15.2081 14.2128 15.5616 14.7171C15.9151 15.2214 16.4152 15.6047 16.9942 15.8148V20.9926C16.9942 21.2577 17.0995 21.512 17.2869 21.6994C17.4744 21.8869 17.7286 21.9922 17.9937 21.9922C18.2588 21.9922 18.5131 21.8869 18.7005 21.6994C18.888 21.512 18.9933 21.2577 18.9933 20.9926V15.8148C19.5766 15.6086 20.0819 15.227 20.4398 14.7223C20.7977 14.2177 20.9907 13.6147 20.9925 12.996ZM17.9937 13.9956C17.796 13.9956 17.6028 13.9369 17.4384 13.8271C17.274 13.7173 17.1459 13.5611 17.0702 13.3785C16.9946 13.1958 16.9748 12.9949 17.0134 12.801C17.0519 12.6071 17.1471 12.429 17.2869 12.2892C17.4267 12.1494 17.6048 12.0542 17.7987 12.0156C17.9926 11.977 18.1936 11.9968 18.3763 12.0725C18.5589 12.1481 18.715 12.2763 18.8249 12.4406C18.9347 12.605 18.9933 12.7983 18.9933 12.996C18.9933 13.2611 18.888 13.5153 18.7005 13.7028C18.5131 13.8902 18.2588 13.9956 17.9937 13.9956ZM14.995 4.99934C14.9965 4.44923 14.8467 3.90928 14.562 3.4386C14.2772 2.96793 13.8684 2.58466 13.3804 2.33074C12.8924 2.07682 12.3439 1.96203 11.795 1.99895C11.2462 2.03586 10.718 2.22305 10.2684 2.54004C9.81877 2.85702 9.46501 3.29157 9.24583 3.79614C9.02665 4.30071 8.95048 4.85586 9.02568 5.40081C9.10087 5.94577 9.32453 6.45955 9.67216 6.88591C10.0198 7.31227 10.478 7.63478 10.9967 7.81816V20.9926C10.9967 21.2577 11.102 21.512 11.2894 21.6994C11.4769 21.8869 11.7312 21.9922 11.9963 21.9922C12.2614 21.9922 12.5156 21.8869 12.7031 21.6994C12.8905 21.512 12.9958 21.2577 12.9958 20.9926V7.81816C13.5791 7.61193 14.0844 7.23033 14.4423 6.72568C14.8002 6.22103 14.9933 5.61803 14.995 4.99934ZM11.9963 5.99892C11.7986 5.99892 11.6053 5.9403 11.4409 5.83046C11.2765 5.72063 11.1484 5.56452 11.0728 5.38187C10.9971 5.19922 10.9773 4.99824 11.0159 4.80434C11.0545 4.61044 11.1497 4.43233 11.2894 4.29254C11.4292 4.15274 11.6074 4.05754 11.8012 4.01897C11.9951 3.9804 12.1961 4.0002 12.3788 4.07585C12.5614 4.15151 12.7175 4.27963 12.8274 4.44401C12.9372 4.60839 12.9958 4.80165 12.9958 4.99934C12.9958 5.26445 12.8905 5.5187 12.7031 5.70615C12.5156 5.89361 12.2614 5.99892 11.9963 5.99892Z" fill="#6F7893"/>
-                                </svg>
-                                <p>Сортировать по: <span>Рейтингу</span></p>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Наименованию</a>
-                                <a class="dropdown-item" href="#">Отзывам</a>
-                                <a class="dropdown-item" href="#">Финансам</a>
+                </div>
+                <div class="client-box">
+                    <div class="client-info">
+                        <div class="tr">
+                            <div class="client-info-td td-1">
+                                <span>Дата регистрации</span>
+                                <p class="gray">22.01.2021</p>
+                            </div>
+                            <div class="client-info-td td-2">
+                                <span>Ф.И.О клиента</span>
+                                <p>Guy Hawkins</p>
+                            </div>
+                            <div class="client-info-td td-3">
+                                <span>Лицо</span>
+                                <p class="gray">Физ.лицо</p>
+                            </div>
+                            <div class="client-info-td td-4">
+                                <span>Общая сумма</span>
+                                <p> 181 200 ₸</p>
+                            </div>
+                            <div class="client-info-td td-5">
+                                <button class="btn-plain show-detail">
+                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L8 7L15 1" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="analytics-client">
-                            <div class="left-side">
-                                <div class="product-list-heading">
-                                    <div class ="th">
-                                        <div class="product-heading-td td-1">
-                                            <p>Дата оформления</p>
-                                        </div>
-                                        <div class="product-heading-td td-2">
-                                            <p>Ф.И.О клиента</p>
-                                        </div>
-                                        <div class="product-heading-td td-3">
-                                            <button class="btn-plain btn-sort">
-                                                <p>Лицо</p>
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8 14V2" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M3.33334 8.66699L8.00001 14.0003L12.6667 8.66699" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="product-heading-td td-4">
-                                            <p>Купленный продукт</p>
-                                        </div>
-                                        <div class="product-heading-td td-5">
-                                            <button class="btn-plain btn-sort">
-                                                <p>Сумма</p>
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8 14V2" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M3.33334 8.66699L8.00001 14.0003L12.6667 8.66699" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                        </div>
+                    </div>
+                    <div class="client-policy">
+                        <h6>Купленные полисы</h6>
+                        <div class="policy-box">
+                            <div class="tr">
+                                <div class="policy-box-td td-1 policy-box-name">
+                                    <img src="img/content/halyk-sm.png">
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <span>Действительно до 22.03.2021</span>
                                     </div>
                                 </div>
-                                <div class="product-list">
-                                    <div class="product-list-item">
-                                        <div class="tr">
-                                            <div class="product-item-td td-1">
-                                                <span>Дата</span>
-                                                <p>22.01.2021 в 15:01</p>
-                                            </div>
-                                            <div class="product-item-td td-2">
-                                                <span>Ф.И.О клиента</span>
-                                                <p class="black">Guy Hawkins</p>
-                                            </div>
-                                            <div class="product-item-td td-3">
-                                                <span>Лицо</span>
-                                                <p>Физ.лицо</p>
-                                            </div>
-                                            <div class="product-item-td td-4">
-                                                <span>Купленный продукт</span>
-                                                <p class="underline">Мед. страховка</p>
-                                            </div>
-                                            <div class="product-item-td td-5">
-                                                <span>Сумма</span>
-                                                <p class="black">18 200 ₸</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-list-item">
-                                        <div class="tr">
-                                            <div class="product-item-td td-1">
-                                                <span>Дата</span>
-                                                <p>22.01.2021 в 15:01</p>
-                                            </div>
-                                            <div class="product-item-td td-2">
-                                                <span>Ф.И.О клиента</span>
-                                                <p class="black">Guy Hawkins</p>
-                                            </div>
-                                            <div class="product-item-td td-3">
-                                                <span>Лицо</span>
-                                                <p>Физ.лицо</p>
-                                            </div>
-                                            <div class="product-item-td td-4">
-                                                <span>Купленный продукт</span>
-                                                <p class="underline">Мед. страховка</p>
-                                            </div>
-                                            <div class="product-item-td td-5">
-                                                <span>Сумма</span>
-                                                <p class="black">18 200 ₸</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-list-item">
-                                        <div class="tr">
-                                            <div class="product-item-td td-1">
-                                                <span>Дата</span>
-                                                <p>22.01.2021 в 15:01</p>
-                                            </div>
-                                            <div class="product-item-td td-2">
-                                                <span>Ф.И.О клиента</span>
-                                                <p class="black">Guy Hawkins</p>
-                                            </div>
-                                            <div class="product-item-td td-3">
-                                                <span>Лицо</span>
-                                                <p>Физ.лицо</p>
-                                            </div>
-                                            <div class="product-item-td td-4">
-                                                <span>Купленный продукт</span>
-                                                <p class="underline">Мед. страховка</p>
-                                            </div>
-                                            <div class="product-item-td td-5">
-                                                <span>Сумма</span>
-                                                <p class="black">18 200 ₸</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-list-item">
-                                        <div class="tr">
-                                            <div class="product-item-td td-1">
-                                                <span>Дата</span>
-                                                <p>22.01.2021 в 15:01</p>
-                                            </div>
-                                            <div class="product-item-td td-2">
-                                                <span>Ф.И.О клиента</span>
-                                                <p class="black">Guy Hawkins</p>
-                                            </div>
-                                            <div class="product-item-td td-3">
-                                                <span>Лицо</span>
-                                                <p>Физ.лицо</p>
-                                            </div>
-                                            <div class="product-item-td td-4">
-                                                <span>Купленный продукт</span>
-                                                <p class="underline">Мед. страховка</p>
-                                            </div>
-                                            <div class="product-item-td td-5">
-                                                <span>Сумма</span>
-                                                <p class="black">18 200 ₸</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="policy-box-td td-2">
+                                    <span>Тип страхования </span>
+                                    <p>Обязательное Автострахование</p>
+                                </div>
+                                <div class="policy-box-td td-3">
+                                    <span>Выплата</span>
+                                    <p>до 2 250 200 ₸</p>
+                                </div>
+                                <div class="policy-box-td td-4 policy-box-cost">
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="policy-box-td td-5">
+                                    <button class="btn-plain download-policy">
+                                        <i class="icon pdf-icon"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="right-side">
-                                <div class="pay-history-filter">
-                                    <p class="title">Сортировать по:</p>
-                                    <div class="checkbox-form-wrapper">
-                                        <label class="checkbox-form">
-                                            За все время
-                                            <input type="radio" name="pay-filter">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="checkbox-form">
-                                            За неделю
-                                            <input type="radio" name="pay-filter">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="checkbox-form">
-                                            За месяц
-                                            <input type="radio" name="pay-filter">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="checkbox-form">
-                                            За год
-                                            <input type="radio" name="pay-filter">
-                                            <span class="checkmark"></span>
-                                        </label>
+                        </div>
+                        <div class="policy-box">
+                            <div class="tr">
+                                <div class="policy-box-td td-1 policy-box-name">
+                                    <img src="img/content/halyk-sm.png">
+                                    <div class="caption">
+                                        <p>Halyk Insurance</p>
+                                        <span>Действительно до 22.03.2021</span>
                                     </div>
-                                    <button class="btn-plain submit-btn">
+                                </div>
+                                <div class="policy-box-td td-2">
+                                    <span>Тип страхования </span>
+                                    <p>Обязательное Автострахование</p>
+                                </div>
+                                <div class="policy-box-td td-3">
+                                    <span>Выплата</span>
+                                    <p>до 2 250 200 ₸</p>
+                                </div>
+                                <div class="policy-box-td td-4 policy-box-cost">
+                                    <p>18 200 ₸</p>
+                                </div>
+                                <div class="policy-box-td td-5">
+                                    <button class="btn-plain download-policy">
                                         <i class="icon pdf-icon"></i>
-                                        <p>Отправить выписку на почту</p>
                                     </button>
                                 </div>
                             </div>
@@ -710,6 +627,7 @@
 <script src="js/select2.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.js"></script>
+<script src="js/jquery.raty.js"></script>
 <script src="js/main.js"></script>
 <script>
     //sticky header
@@ -726,21 +644,11 @@
         $(this).next('.cabinet-header-box').slideToggle(400);
     });
 
-    //'analytics-product-item' toggle class 'active'
-    $(document).ready(function (){
-        if($(window).width() > 500) {
-            $('.product-item-body').click(function (){
-                $('.product-item-body').removeClass('active');
-                $(this).addClass('active');
-            });
-        } else {
-            $('.product-item-body').click(function (){
-                $(this).toggleClass('active');
-                $(this).next('.product-item-bottom').slideToggle(400);
-            });
-        }
+    //show policy
+    $('.client-info .show-detail').click(function (){
+        $(this).toggleClass('active');
+        $(this).closest('.client-box').find('.client-policy').slideToggle(400);
     });
-
 
     //sort btn
     $('.btn-sort').click(function (){
