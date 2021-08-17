@@ -17,7 +17,7 @@
 <body>
 
 <div class="wrapper">
-    <header class="dark authorized cabinet-sticky-header">
+    <header class="authorized cabinet-sticky-header">
         <div class="header-top padding-x">
             <a class="main-logo" href="index.html">
                 <img src="img/main/logo.png">
@@ -265,7 +265,7 @@
                 </div>
             </div>
         </div>
-        <div class="cabinet-header padding-x">
+        <div class="cabinet-header d-none d-sm-block padding-x">
             <div class="cabinet-header-xs">
                 <p>Мои полисы</p>
                 <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,10 +276,10 @@
                 <div class="cabinet-header-content">
                     <ul class="cabinet-nav">
                         <li>
-                            <a href="#" class="active">Мои полисы</a>
+                            <a href="#" class="active">Аналитика</a>
                         </li>
                         <li>
-                            <a href="#">История оплаты</a>
+                            <a href="#">Лента тендеров</a>
                         </li>
                         <li>
                             <a href="#">Спец. предложения</a>
@@ -297,10 +297,6 @@
                             <a href="#">Настройки</a>
                         </li>
                     </ul>
-                    <div class="cabinet-btn">
-                        <button class="btn-plain btn-red">Заявить о страховом случае</button>
-                        <button class="btn-plain btn-border">Оформить полис</button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -308,68 +304,129 @@
             <ul class="breadcrumb">
                 <li>Главная</li>
                 <li>Личный кабинет</li>
-                <li>Мои полисы</li>
+                <li>Мои тендеры</li>
             </ul>
-            <div class="cabinet-title">
-                <h1 class="title-md">Мои полисы</h1>
+            <div class="cabinet-title d-none">
+                <h1 class="title-md">Аналитика</h1>
             </div>
-            <div class="bordero-main">
+            <a class="cabinet-backlink" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 23.75L10 15L17.5 6.25" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Договор №231</span>
+            </a>
+            <div class="signature-wrapper">
                 <div class="left-side">
-                    <button class="btn-plain btn-border add-policy-btn xs">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 4V20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M4 12H20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Добавить полис</span>
-                    </button>
-                    <div class="policy-buy-box">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M67.8784 30.9104H43.636V6.66797" stroke="#6F7893" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M33.5359 54.1404L39.5965 58.1798L47.6753 46.0586" stroke="#6F7893" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.8181 73.3346H19.3939C16.0484 73.3346 13.3333 70.6195 13.3333 67.274V12.7286C13.3333 9.38312 16.0484 6.66797 19.3939 6.66797H43.6363L67.8787 30.9104V67.274C67.8787 70.6195 65.1636 73.3346 61.8181 73.3346Z" stroke="#6F7893" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <h6>У вас еще нет полисов</h6>
-                        <p>Вы можете добавить свой полис. <br>Или купить полис на все случаи жизни</p>
-                        <a class="btn-main" href="#">Купить полис</a>
+                    <div class="signature-info">
+                        <div class="signature-info-top">
+                            <h3>Страхование имущества</h3>
+                        </div>
+                        <div class="signature-info-body">
+                            <div class="name">
+                                <div class="img">
+                                    <img src="img/content/eur.png">
+                                </div>
+                                <div class="caption">
+                                    <span>Организация</span>
+                                    <p>Евразия Иншуранс</p>
+                                </div>
+                            </div>
+                            <!--Классы "danger" и "success" меняют цвет кружочка-->
+                            <div class="status warning">
+                                <span>Статус</span>
+                                <p>Ожидает рассмотрении</p>
+                            </div>
+                        </div>
+                        <div class="signature-info-bottom">
+                            <div class="signature-info-detail">
+                                <span>Период страхование:</span>
+                                <p>08.03.2020 - 07.03.2021</p>
+                            </div>
+                            <div class="signature-info-detail">
+                                <span>Клиент:</span>
+                                <p>ТОО General RE</p>
+                            </div>
+                            <div class="signature-info-detail">
+                                <span>Страховая сумма:</span>
+                                <p>2 500 000 ₸</p>
+                            </div>
+                            <div class="signature-info-detail">
+                                <span>Контакты:</span>
+                                <p>+7 727 128 42-21</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signature-upload-box">
+                        <h6>Загрузите документы</h6>
+                        <div class="signature-upload">
+                            <p>Онлайн договор</p>
+                            <!--класс "inserted" скрывает текст кнопки "загрузить документ"-->
+                            <div class="insert-file inserted">
+                                <div class="insertion">
+                                    <img src="img/icon/excel1.png">
+                                    <button class="btn-plain insertion-delete">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.4391 10.4987C6.43916 10.4988 6.43922 10.4989 6.43928 10.4989L6.4391 10.4987ZM6.4391 10.4987L6.43821 10.4978C6.43851 10.4981 6.4388 10.4984 6.4391 10.4987ZM8.29011 9.80163L7.02019 11.0813L6.91842 10.9793L8.19839 9.711L8.91475 9.0012L8.19894 8.29084L6.91866 7.02032L7.02154 6.91744L8.28904 8.19858L8.99883 8.91602L9.70973 8.19967L10.9802 6.91939L11.0831 7.02227L9.80199 8.28977L9.08454 8.99956L9.8009 9.71046L11.0806 10.9804L10.9785 11.0822L9.71027 9.80218L9.00046 9.08582L8.29011 9.80163ZM11.5643 7.50346C11.5642 7.5033 11.564 7.50314 11.5638 7.50297L11.5643 7.50346ZM10.4971 11.5624C10.4974 11.5621 10.4977 11.5618 10.498 11.5615L10.4971 11.5624ZM8.99992 1.33398C4.76484 1.33398 1.33325 4.76557 1.33325 9.00065C1.33325 13.2357 4.76484 16.6673 8.99992 16.6673C13.235 16.6673 16.6666 13.2357 16.6666 9.00065C16.6666 4.76557 13.235 1.33398 8.99992 1.33398Z" fill="#6F7893" stroke="white" stroke-width="2"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="btn-plain insert-file-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 12H20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Загрузить документы</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="right-side">
-                    <button class="btn-plain btn-border add-policy-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 4V20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M4 12H20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Добавить полис</span>
-                    </button>
-                    <div class="help-box">
-                        <div class="help-box-body">
-                            <a class="help-box-phone" href="tel:+77894322121">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 17V17C8.104 17 9 16.104 9 15V11C9 9.896 8.104 9 7 9C5.896 9 5 9.896 5 11V15C5 16.104 5.896 17 7 17Z" stroke="#EF533F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V17C18.104 17 19 16.104 19 15V11C19 9.896 18.104 9 17 9C15.896 9 15 9.896 15 11V15C15 16.104 15.896 17 17 17Z" stroke="#EF533F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M1 13V12C1 5.925 5.925 1 12 1C18.075 1 23 5.925 23 12V17C23 19.209 21.209 21 19 21H14" stroke="#EF533F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 21C14 22.104 13.104 23 12 23C10.896 23 10 22.104 10 21C10 19.896 10.896 19 12 19C13.104 19 14 19.896 14 21Z" stroke="#EF533F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>+7 789 432 21-21</span>
-                            </a>
-                            <p>Есть вопросы? Звоните. Мы ответим на все ваши вопросы и подскажем что нужно сделать.</p>
+                    <div class="signature-status-box">
+                        <div class="top">
+                            <span>Дата заявки</span>
+                            <p>8 марта в 14:23</p>
                         </div>
-                        <div class="help-box-bottom">
-                            <div class="profile-sm">
-                                <div class="profile-sm-img">
-                                    <img src="img/content/author.png">
-                                </div>
-                                <div class="profile-sm-caption">
-                                    <p>Нургуль</p>
-                                    <span>Ваш личный помощник</span>
+                        <div class="change-status">
+                            <span>Поменять статус на</span>
+                            <div class="dropdown">
+                                <!--классы "danger" и "success" меняют стиль точки перед текстом-->
+                                <button class="btn-plain dropdown-toggle warning" data-toggle="dropdown">На рассмотрении</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Ожидает подпись от клиента</a>
+                                    <a class="dropdown-item" href="#">Готово</a>
                                 </div>
                             </div>
                         </div>
+                        <button class="btn-plain btn-border">Поменять статус</button>
+                    </div>
+                    <div class="signature-box">
+                        <button class="btn-plain btn-main disabled" disabled>Подписать online ЭЦП</button>
+                        <p>Прежде чем подписывать, не  забудьте прикрепить электронный вариант договора</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <div class="modal main-modal" id="signatureModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6>Подписать</h6>
+                <button class="btn-plain close-modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="key-item">
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="padding-x white-bg">
         <div class="footer-top">
             <div class="footer-social">
@@ -474,138 +531,6 @@
             </div>
         </div>
     </footer>
-    <div class="modal main-modal" id="borderoPolicyModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h6>Добавить новый полис</h6>
-                <button class="btn-plain close-modal">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <label class="form-label select-label">
-                    <span class="form-label-title">Страховая компания</span>
-                    <select class="select-custom">
-                        <option></option>
-                        <option>Amanat</option>
-                        <option>Freedom</option>
-                        <option>Kasko</option>
-                    </select>
-                </label>
-                <label class="form-label select-label">
-                    <span class="form-label-title">Вид страхования</span>
-                    <select class="select-custom">
-                        <option></option>
-                        <option>Авто</option>
-                        <option>Здоровье</option>
-                        <option>Жилище</option>
-                        <option>Путешествие</option>
-                    </select>
-                </label>
-                <label class="select-date">
-                    <span class="form-label-title">Период страхование</span>
-                    <input type="text" class="date-range" name="daterange" value="">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </label>
-                <label class="form-label select-label">
-                    <span class="form-label-title">Характер груза</span>
-                    <select class="select-custom">
-                        <option></option>
-                        <option>Авто</option>
-                        <option>Здоровье</option>
-                        <option>Жилище</option>
-                        <option>Путешествие</option>
-                    </select>
-                </label>
-                <div class="half-form">
-                    <label class="form-label">
-                        <span class="form-label-title">Количество стран</span>
-                        <input type="numner">
-                    </label>
-                    <label class="form-label">
-                        <span class="form-label-title">Количество перегрузок</span>
-                        <input type="number">
-                    </label>
-                </div>
-                <div class="half-form">
-                    <label class="form-label">
-                        <span class="form-label-title">Вид транспорта</span>
-                        <input type="text">
-                    </label>
-                    <label class="form-label">
-                        <span class="form-label-title">Вид транспорта</span>
-                        <input type="number">
-                    </label>
-                </div>
-            </div>
-            <div class="modal-bottom">
-                <button class="btn-plain btn-main btn-56">Создать полис</button>
-            </div>
-        </div>
-    </div>
-    <div class="modal main-modal" id="borderoNewPolicy">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h6>Застраховать</h6>
-                <button class="btn-plain close-modal">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4 4L20 20" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4 20L20 4" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <label class="form-label select-label">
-                    <span class="form-label-title">Страховая компания</span>
-                    <select class="select-custom">
-                        <option></option>
-                        <option>Amanat</option>
-                        <option>Freedom</option>
-                        <option>Kasko</option>
-                    </select>
-                </label>
-                <label class="form-label select-label">
-                    <span class="form-label-title">Вид страхования</span>
-                    <select class="select-custom">
-                        <option></option>
-                        <option>Авто</option>
-                        <option>Здоровье</option>
-                        <option>Жилище</option>
-                        <option>Путешествие</option>
-                    </select>
-                </label>
-                <label class="select-date">
-                    <span class="form-label-title">Период страхование</span>
-                    <input type="text" class="date-range" name="daterange" value="">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.66667 8.48486H18.3333" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8182 18.3333H3.18182C2.34546 18.3333 1.66667 17.6545 1.66667 16.8182V4.69696C1.66667 3.8606 2.34546 3.18181 3.18182 3.18181H16.8182C17.6545 3.18181 18.3333 3.8606 18.3333 4.69696V16.8182C18.3333 17.6545 17.6545 18.3333 16.8182 18.3333Z" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5.45456 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M14.5454 1.66667V5.45455" stroke="#6F7893" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </label>
-                <label class="form-label">
-                    <span class="form-label-title">Страховая сумма</span>
-                    <input type="number">
-                </label>
-            </div>
-            <div class="modal-bottom">
-                <button class="btn-plain btn-main btn-56">Оформить страховку online</button>
-            </div>
-        </div>
-    </div>
 </div>
 
 <script src="js/libs.min.js"></script>
@@ -630,14 +555,7 @@
         $(this).next('.cabinet-header-box').slideToggle(400);
     });
 
-    //modal
-    $('.add-policy-btn').click(function (){
-        $('#borderoPolicyModal').modal('show');
-    });
-    $('#borderoPolicyModal .btn-main').click(function (){
-        $('#borderoPolicyModal').modal('hide');
-        $('#borderoNewPolicy').modal('show');
-    });
+
 </script>
 </body>
 </html>

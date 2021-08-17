@@ -3774,6 +3774,7 @@
     top: -65px;
   }
   .bordero-policy-wrapper {
+    margin-top: 0;
     flex-direction: column;
     .left-side {
       width: 100%;
@@ -3912,6 +3913,10 @@
   #successModal .link-border {
     font-size: 14px;
     line-height: 18px;
+  }
+  .insurance-form.property .form-label-wrapper .form-label {
+    width: 100%;
+    margin-top: 16px;
   }
 }
 

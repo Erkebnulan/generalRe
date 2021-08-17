@@ -1117,7 +1117,6 @@ footer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  white-space: nowrap;
 }
 
 .tender-btn .btn-border {
@@ -3125,7 +3124,7 @@ footer.white-bg {
 
 .insurance-advantage-inner {
   max-width: 1090px;
-  margin: 0 auto;
+  margin: 80px auto 0 auto;
 }
 
 .insurance-advantage-content {
@@ -4419,12 +4418,12 @@ footer.white-bg {
 }
 
 .insurance-result-container.six-column .td-5 {
-  width: 13%;
+  width: 11%;
   padding-left: 20px;
 }
 
 .insurance-result-container.six-column .td-6 {
-  width: 13%;
+  width: 15%;
   padding-left: 20px;
 }
 
@@ -8596,6 +8595,11 @@ button.download-policy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 24px;
+}
+
+.bordero-policy-wrapper .tab-content {
+  margin-top: 8px;
 }
 
 .bordero-policy-wrapper .left-side {
@@ -8938,6 +8942,467 @@ button.download-policy {
 
 .bordero-box-td span {
   display: none;
+}
+
+.insurance-condition-box .btn-main {
+  padding: 12px;
+}
+
+.application-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  position: relative;
+  padding-left: 16px;
+}
+
+.application-status:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+.application-status p {
+  color: #6F7893;
+  margin-right: 8px;
+}
+
+.application-status.info:before {
+  background: #6F7893;
+}
+
+.application-status.warning:before {
+  background: #FFD037;
+}
+
+.application-status.success:before {
+  background: #43D38B;
+}
+
+.application-box {
+  background: #FFFFFF;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 0 16px;
+  width: 75%;
+}
+
+.application-box-top {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.application-box-top h6 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #282828;
+}
+
+.application-box-top .application-status {
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.application-box-body {
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.application-box-item {
+  margin-right: 90px;
+}
+
+.application-box-item span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+}
+
+.application-box-item p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.application-box-item.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.application-box-item.name .img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #F5F5F7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.application-box-item.name .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.application-box-item.name .caption {
+  margin-left: 12px;
+}
+
+.insert-file.inserted .insert-file-btn span {
+  display: none;
+}
+
+.signature-wrapper {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signature-wrapper .left-side {
+  width: 75%;
+}
+
+.signature-wrapper .right-side {
+  width: calc(25% - 24px);
+  margin-left: 24px;
+}
+
+.signature-info {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+
+.signature-info-top {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.signature-info-top h3 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  color: #282828;
+}
+
+.signature-info-body {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signature-info-body .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.signature-info-body .name .img {
+  border: 1px solid #F5F5F7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.signature-info-body .name .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.signature-info-body .caption span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.signature-info-body .caption p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.signature-info-body .status {
+  padding-right: 45px;
+}
+
+.signature-info-body .status span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.signature-info-body .status p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  position: relative;
+  padding-left: 16px;
+}
+
+.signature-info-body .status p:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+.signature-info-body .status.warning p:before {
+  background: #FFD037;
+}
+
+.signature-info-body .status.success p:before {
+  background: #43D38B;
+}
+
+.signature-info-body .status.danger p:before {
+  background: #EF533F;
+}
+
+.signature-info-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 16px 0;
+}
+
+.signature-info-bottom .signature-info-detail + .signature-info-detail {
+  margin-right: 111px;
+  margin-bottom: 16px;
+}
+
+.signature-info-bottom .signature-info-detail:first-child {
+  margin-right: 111px;
+  margin-bottom: 16px;
+}
+
+.signature-info-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+}
+
+.signature-info-detail span {
+  width: 50%;
+  font-size: 14px;
+  line-height: 18px;
+  color: #EF533F;
+  display: block;
+  white-space: nowrap;
+}
+
+.signature-info-detail p {
+  width: 50%;
+  margin-left: 24%;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  white-space: nowrap;
+}
+
+.signature-upload-box {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin-top: 16px;
+  padding: 24px;
+}
+
+.signature-upload-box h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.signature-upload {
+  margin-top: 16px;
+  padding: 11px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signature-upload p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.signature-upload .insertion {
+  margin-right: 24px;
+}
+
+.signature-status-box {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 17px 16px 24px 16px;
+}
+
+.signature-status-box .top {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.signature-status-box .top span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.signature-status-box .top p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  margin-top: 2px;
+}
+
+.change-status {
+  margin-top: 15px;
+}
+
+.change-status span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  display: block;
+}
+
+.change-status .dropdown .dropdown-toggle {
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.change-status .dropdown .dropdown-toggle {
+  width: 100%;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.change-status .dropdown .dropdown-toggle:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.change-status .dropdown .dropdown-toggle.warning:before {
+  background: #FFD037;
+}
+
+.change-status .dropdown .dropdown-toggle::after {
+  content: '';
+  background: url("../img/icon/arrow-down-20.svg") no-repeat center/contain;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.signature-status-box .btn-border {
+  border: 2px solid #E0E0E0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #EF533F;
+  margin-top: 16px;
+  min-height: 40px;
+  width: 100%;
+}
+
+.signature-box {
+  margin-top: 16px;
+}
+
+.signature-box .btn-main {
+  width: 100%;
+}
+
+.signature-box .btn-main.disabled {
+  background: #E0E0E0;
+  color: #6F7893;
+  font-weight: 400;
+}
+
+.signature-box p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6F7893;
+  margin-top: 12px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -13144,6 +13609,7 @@ button.download-policy {
     top: -65px;
   }
   .bordero-policy-wrapper {
+    margin-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -13295,5 +13761,9 @@ button.download-policy {
   #successModal .link-border {
     font-size: 14px;
     line-height: 18px;
+  }
+  .insurance-form.property .form-label-wrapper .form-label {
+    width: 100%;
+    margin-top: 16px;
   }
 }
