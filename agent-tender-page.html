@@ -373,13 +373,14 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <button class="btn-plain insert-file-btn">
+                                <div class="btn-plain insert-file-btn">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 4V20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M4 12H20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     <span>Прикрепить ком. предложения</span>
-                                </button>
+                                    <input type="file">
+                                </div>
                             </div>
                             <div class="form-label-wrapper">
                                 <label class="form-label select-label">
@@ -425,7 +426,7 @@
                                         <p>Halyk Insurance</p>
                                         <div class="star-rating xs">
                                             <span>4.5</span>
-                                            <div class="star-rate"></div>
+                                            <div class="star-rate" data-score="2.5"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -433,7 +434,7 @@
                                     <span>Рейтинг</span>
                                     <div class="star-rating">
                                         <span>4.5</span>
-                                        <div class="star-rate"></div>
+                                        <div class="star-rate" data-score="2.5"></div>
                                     </div>
                                 </div>
                                 <div class="company-box-td td-3">
@@ -463,7 +464,7 @@
                                         <p>Halyk Insurance</p>
                                         <div class="star-rating xs">
                                             <span>4.5</span>
-                                            <div class="star-rate"></div>
+                                            <div class="star-rate" data-score="2.5"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -471,7 +472,7 @@
                                     <span>Рейтинг</span>
                                     <div class="star-rating">
                                         <span>4.5</span>
-                                        <div class="star-rate"></div>
+                                        <div class="star-rate" data-score="2.5"></div>
                                     </div>
                                 </div>
                                 <div class="company-box-td td-3">
@@ -501,7 +502,7 @@
                                         <p>Halyk Insurance</p>
                                         <div class="star-rating xs">
                                             <span>4.5</span>
-                                            <div class="star-rate"></div>
+                                            <div class="star-rate" data-score="2.5"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -509,7 +510,7 @@
                                     <span>Рейтинг</span>
                                     <div class="star-rating">
                                         <span>4.5</span>
-                                        <div class="star-rate"></div>
+                                        <div class="star-rate" data-score="2.5"></div>
                                     </div>
                                 </div>
                                 <div class="company-box-td td-3">
@@ -539,7 +540,7 @@
                                         <p>Halyk Insurance</p>
                                         <div class="star-rating xs">
                                             <span>4.5</span>
-                                            <div class="star-rate"></div>
+                                            <div class="star-rate" data-score="2.5"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -547,7 +548,7 @@
                                     <span>Рейтинг</span>
                                     <div class="star-rating">
                                         <span>4.5</span>
-                                        <div class="star-rate"></div>
+                                        <div class="star-rate" data-score="2.5"></div>
                                     </div>
                                 </div>
                                 <div class="company-box-td td-3">
@@ -577,7 +578,7 @@
                                         <p>Halyk Insurance</p>
                                         <div class="star-rating xs">
                                             <span>4.5</span>
-                                            <div class="star-rate"></div>
+                                            <div class="star-rate" data-score="2.5"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -585,7 +586,7 @@
                                     <span>Рейтинг</span>
                                     <div class="star-rating">
                                         <span>4.5</span>
-                                        <div class="star-rate"></div>
+                                        <div class="star-rate" data-score="2.5"></div>
                                     </div>
                                 </div>
                                 <div class="company-box-td td-3">
@@ -627,13 +628,14 @@
                                     </svg>
                                 </button>
                             </div>
-                            <button class="btn-plain insert-file-btn">
+                            <div class="btn-plain insert-file-btn">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 4V20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M4 12H20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <span>Прикрепить ком. предложения</span>
-                            </button>
+                                <input type="file">
+                            </div>
                         </div>
                         <div class="form-label-wrapper">
                             <label class="form-label select-label">
@@ -784,7 +786,6 @@
     //star rating
     $('.star-rate').raty({
         half: true,
-        score: 4.5,
         readOnly: 'true',
         halfShow: true,
         path: 'img/icon',

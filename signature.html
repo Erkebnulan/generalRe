@@ -360,8 +360,7 @@
                         <h6>Загрузите документы</h6>
                         <div class="signature-upload">
                             <p>Онлайн договор</p>
-                            <!--класс "inserted" скрывает текст кнопки "загрузить документ"-->
-                            <div class="insert-file inserted">
+                            <div class="insert-file">
                                 <div class="insertion">
                                     <img src="img/icon/excel1.png">
                                     <button class="btn-plain insertion-delete">
@@ -370,13 +369,15 @@
                                         </svg>
                                     </button>
                                 </div>
-                                <button class="btn-plain insert-file-btn">
+                                <!--класс "inserted" скрывает текст кнопки "загрузить документ"-->
+                                <div class="btn-plain insert-file-btn inserted">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 4V20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M4 12H20" stroke="#EF533F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     <span>Загрузить документы</span>
-                                </button>
+                                    <input type="file">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -401,6 +402,7 @@
                         <button class="btn-plain btn-border">Поменять статус</button>
                     </div>
                     <div class="signature-box">
+                        <!--Класс "disabled" меняет стиль кнопи-->
                         <button class="btn-plain btn-main disabled" disabled>Подписать online ЭЦП</button>
                         <p>Прежде чем подписывать, не  забудьте прикрепить электронный вариант договора</p>
                     </div>

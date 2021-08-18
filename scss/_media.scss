@@ -201,6 +201,9 @@
     width: 270px;
     background-size: 270px 99px;
   }
+  .application-box {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1098,6 +1101,36 @@
     }
     .help-box {
       width: 310px;
+    }
+  }
+  .application-status p {
+    white-space: normal;
+  }
+  .application-box {
+    width: 100%;
+  }
+  .application-box .application-status p {
+    white-space: nowrap;
+  }
+  .signature-wrapper {
+    flex-direction: column;
+    .left-side {
+      width: 100%;
+    }
+    .right-side {
+      margin-left: 0;
+      margin-top: 24px;
+      width: 100%;
+    }
+    .signature-box {
+      text-align: right;
+    }
+    .signature-box .btn-main {
+      width: fit-content;
+    }
+    .signature-status-box .dropdown-toggle {
+      width: fit-content;
+      min-width: 250px;
     }
   }
 }
@@ -3255,6 +3288,7 @@
     width: 100%;
     height: 100%;
     z-index: 101;
+    overflow-y: auto;
   }
   .create-tender {
     width: 100%;
@@ -3918,6 +3952,93 @@
     width: 100%;
     margin-top: 16px;
   }
+  .application-status {
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 8px;
+    align-items: center;
+    width: fit-content;
+  }
+  .application-box {
+    width: initial;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+    padding: 0;
+  }
+  .application-box-top {
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  .application-box-top svg {
+    display: none;
+  }
+  .application-box-top h6 {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .application-box-top .application-status {
+    margin-left: 0;
+    svg {
+      display: block;
+    }
+  }
+  .application-box-body {
+    padding: 10px;
+    display: block;
+  }
+  .application-box-body .application-box-item + .application-box-item {
+    margin-top: 8px;
+  }
+  .signature-wrapper {
+    flex-direction: column;
+    .left-side {
+      width: 100%;
+    }
+    .right-side {
+      width: 100%;
+      margin-top: 16px;
+      margin-left: 0;
+    }
+  }
+  .signature-info-bottom {
+    flex-direction: column;
+    margin: -8px 0;
+  }
+  .signature-info-detail {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    span {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .signature-info-top h3 {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .signature-info-body {
+    display: block;
+  }
+  .signature-info-body .status {
+    padding-right: 0;
+    margin-top: 8px;
+  }
+  .change-status .dropdown .dropdown-toggle:after {
+    content: '';
+    display: block;
+  }
+  .signature-upload-box {
+    padding: 15px;
+  }
+
 }
 
 @media (max-width: 320px) {

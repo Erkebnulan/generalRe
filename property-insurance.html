@@ -315,7 +315,8 @@
                                 </label>
                                 <label class="form-label">
                                     <span class="form-label-title">Рыночная стоимость имущества</span>
-                                    <input type="number">
+                                    <input class="input-value min-value" type="number">
+                                    <input class="input-value max-value" type="number">
                                 </label>
                             </div>
                             <button class="btn-plain btn-main">Расчитать</button>
@@ -513,6 +514,32 @@
         document.querySelector('.insurance-advantage').style.marginTop = - halfHeight + 'px';
         document.querySelector('.insurance-advantage').style.paddingTop = halfHeight + 'px';
     })
+
+    //form-label
+    $(document).ready(function (){
+        $('.form-label input').focus(function () {
+            $(this).closest('.form-label').addClass('form-label-focus');
+            $('.min-value').attr('placeholder', 'от');
+            $('.max-value').attr('placeholder', 'до');
+        });
+
+        $('.form-label input').blur(function () {
+            $(this).closest('.form-label').removeClass('form-label-focus');
+            $(this).closest('.form-label').addClass('form-label-done');
+            var check_empty_all = 1;
+            $(this).closest('.form-label').find('input').each(function (index,val){
+                if ($(this).val() != '') {
+                    check_empty_all = 0;
+                }
+            });
+            if(check_empty_all == 1){
+                $('.min-value').attr('placeholder', '');
+                $('.max-value').attr('placeholder', '');
+                $(this).closest('.form-label').removeClass('form-label-focus');
+                $(this).closest('.form-label').removeClass('form-label-done');
+            }
+        });
+    });
 
 </script>
 </body>

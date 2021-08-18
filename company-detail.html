@@ -340,7 +340,7 @@
                                         <p>Рейтинг</p>
                                         <div class="star-rating">
                                             <span>4.5</span>
-                                            <div class="star-rate"></div>
+                                            <div class="star-rate" data-score="4.5"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -460,7 +460,7 @@
                                         <p>Арман Жунисов</p>
                                         <div class="star-rating">
                                             <span>4.5</span>
-                                            <div class="star-rate"></div>
+                                            <div class="star-rate" data-score="4.5"></div>
                                         </div>
                                     </div>
                                     <div class="right-side">
@@ -472,7 +472,7 @@
                                         <p>Бексултан Абдразак</p>
                                         <div class="star-rating">
                                             <span>4.5</span>
-                                            <div class="star-rate"></div>
+                                            <div class="star-rate" data-score="2.5"></div>
                                         </div>
                                     </div>
                                     <div class="right-side">
@@ -625,7 +625,7 @@
             </div>
             <div class="modal-body">
                 <div class="star-rating review-star">
-                    <div class="star-rate"></div>
+                    <div class="star-rate-write"></div>
                 </div>
                 <label class="form-label textarea-form">
                     <span class="form-label-title">Ваш комментарий</span>
@@ -665,8 +665,16 @@
     //star rating
     $('.star-rate').raty({
         half: true,
-        score: 4.5,
         readOnly: 'true',
+        halfShow: true,
+        path: 'img/icon',
+        starHalf: 'star-half.svg',
+        starOff: 'star-off.svg',
+        starOn: 'star-on.svg',
+    });
+
+    $('.star-rate-write').raty({
+        half: true,
         halfShow: true,
         path: 'img/icon',
         starHalf: 'star-half.svg',
