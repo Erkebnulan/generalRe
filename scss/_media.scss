@@ -4038,7 +4038,16 @@
   .signature-upload-box {
     padding: 15px;
   }
-
+  .chart-calendar p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .chart-calendar {
+    padding: 0 16px;
+  }
+  .chart-box {
+    height: 380px;
+  }
 }
 
 @media (max-width: 320px) {
