@@ -88,6 +88,41 @@ $('.date-range').on('cancel.daterangepicker', function(ev, picker) {
 });
 
 
+$('.date-single').daterangepicker({
+    opens: 'right',
+    maxSpan: 365,
+    singleDatePicker: true,
+    linkedCalendars: false,
+    locale: {cancelLabel: 'Сбросить', applyLabel: 'Выбрать', format: 'DD.MM.YYYY'},
+    showDropdowns: false,
+    autoUpdateInput: false,
+    ranges: false,
+});
+
+$('.date-single').on('show.daterangepicker', function() {
+    $(this).closest('.select-date').addClass('form-label-focus');
+});
+
+$('.date-single').on('hide.daterangepicker', function() {
+    $(this).closest('.select-date').removeClass('form-label-focus');
+});
+
+$('.date-single').on('apply.daterangepicker', function(ev, picker) {
+    $(this).val(picker.startDate.format('DD.MM.YYYY'));
+    $(this).closest('.select-date').removeClass('form-label-focus');
+    $(this).closest('.select-date').addClass('form-label-done');
+    if ($(this).val().length === 0) {
+        $(this).closest('.select-date').removeClass('form-label-focus');
+        $(this).closest('.select-date').removeClass('form-label-done');
+    }
+});
+
+$('.date-single').on('cancel.daterangepicker', function(ev, picker) {
+    $('.date-range').val('');
+    $(this).closest('.select-date').removeClass('form-label-done');
+});
+
+
 //search xs
 $(document).ready(function () {
     if($(window).width() < 576) {
@@ -109,4 +144,9 @@ $(document).ready(function (){
     let offHeight = headerHeight + footerHeight;
     $('main').css('min-height', offHeight + 'px')
 })
+
+
+
+
+
 
