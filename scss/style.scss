@@ -1905,8 +1905,12 @@ header.red {
   padding-bottom: 120px;
 }
 
-.calc-aside {
+.select-calc-tab {
   width: 25%;
+  min-width: 310px;
+}
+
+.calc-aside {
   min-width: 310px;
   background: #fff;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
@@ -1946,7 +1950,7 @@ header.red {
   display: flex;
 }
 
-.calc-content .tab-content {
+.calc-content .right-side {
   margin-left: 24px;
   width: 58%;
   position: relative;
@@ -8046,7 +8050,16 @@ svg.calendar {
   margin-right: 16px;
 }
 
+.select-calc-tab .dropdown-toggle {
+  display: none;
+}
 
+.select-calc-tab .dropdown-menu {
+  position: static;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 
 
 

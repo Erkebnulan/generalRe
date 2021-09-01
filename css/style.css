@@ -2300,8 +2300,12 @@ header.red .link-personal-account span {
   padding-bottom: 120px;
 }
 
-.calc-aside {
+.select-calc-tab {
   width: 25%;
+  min-width: 310px;
+}
+
+.calc-aside {
   min-width: 310px;
   background: #fff;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
@@ -2351,7 +2355,7 @@ header.red .link-personal-account span {
   display: flex;
 }
 
-.calc-content .tab-content {
+.calc-content .right-side {
   margin-left: 24px;
   width: 58%;
   position: relative;
@@ -9475,6 +9479,17 @@ svg.calendar {
   margin-right: 16px;
 }
 
+.select-calc-tab .dropdown-toggle {
+  display: none;
+}
+
+.select-calc-tab .dropdown-menu {
+  position: static;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .main-nav {
     margin-left: 40px;
@@ -13994,5 +14009,55 @@ svg.calendar {
   }
   .chart-box {
     height: 380px;
+  }
+  .select-calc-tab {
+    width: 100%;
+  }
+  .calc-content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+  .select-calc-tab .dropdown-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #FFFFFF;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+    padding: 16px;
+    min-height: 56px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 18px;
+    line-height: 24px;
+    color: #282828;
+    position: relative;
+  }
+  .select-calc-tab .dropdown-toggle:after {
+    content: '';
+    background: url("../img/icon/arrow-down-black.svg");
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 20px;
+    display: block;
+    border: none;
+  }
+  .select-calc-tab .dropdown-menu {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: none;
+    left: 10px !important;
+    border-radius: 0 0 4px 4px;
+  }
+  .select-calc-tab .dropdown-menu.show {
+    display: block !important;
   }
 }
