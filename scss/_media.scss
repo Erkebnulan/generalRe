@@ -57,12 +57,11 @@
   .app-section {
     overflow: hidden;
   }
-  .calc-aside {
+  .calc-content .select-calc-tab {
     width: 20%;
-    min-width: initial;
   }
-  .calc-content .tab-content {
-    width: 75%;
+  .calc-content .calc-content-right {
+    width: 80%;
   }
   .useful-item {
     padding: 20px;
@@ -203,6 +202,22 @@
   }
   .application-box {
     width: 100%;
+  }
+  .faq-content {
+    padding-top: 30px;
+  }
+  .faq-collapse {
+    margin-top: 15px;
+  }
+  .faq-collapse .card-link p {
+    font-size: 26px;
+  }
+  .faq-collapse .card-body p {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .faq-collapse .card {
+    padding: 12px 0;
   }
 }
 
@@ -453,10 +468,18 @@
   .calc-content {
     display: block;
   }
+  .select-calc-tab .dropdown-menu {
+    position: static;
+    float: initial;
+  }
   .calc-content .tab-content {
     margin-left: 0;
     margin-top: 24px;
     width: 100%;
+  }
+  .calc-content .calc-content-right {
+    width: 100%;
+    margin-left: 0;
   }
   .calc {
     padding-bottom: 60px;
@@ -1132,6 +1155,33 @@
       width: fit-content;
       min-width: 250px;
     }
+  }
+  .faq-content {
+    padding-top: 20px;
+  }
+  .faq-collapse {
+    margin-top: 10px;
+  }
+  .faq-collapse .card-link p {
+    font-size: 24px;
+  }
+  .faq-collapse .card-body p {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .faq-collapse .card {
+    padding: 10px 0;
+  }
+  .callback {
+    display: block;
+  }
+  .callback-left {
+    width: 80%;
+  }
+  .callback-right {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
@@ -2007,7 +2057,7 @@
     width: 100%;
   }
   .callback-right {
-    margin-top: 24px;
+    margin-top: 15px;
     margin-left: 0;
     width: 100%;
     display: block;
@@ -4055,6 +4105,28 @@
     width: 100%;
     margin-left: 0;
   }
+  .calc-box-bottom.show {
+    flex-direction: column;
+  }
+  .calc-box-bottom.show {
+    .right-side {
+      order: 1;
+    }
+    .btn-nav {
+      order: 2;
+      margin-top: 15px;
+    }
+  }
+  .calc-box-bottom .right-side {
+    width: initial;
+    margin-left: initial;
+  }
+  .calc-box-bottom .btn-main {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px;
+    min-height: 42px;
+  }
   .select-calc-tab .dropdown-toggle {
     display: flex;
     background: #FFFFFF;
@@ -4092,13 +4164,70 @@
   .select-calc-tab .dropdown-menu.show {
     display: block!important;
   }
+  .bonus-link {
+    display: none;
+  }
+  .menu-box .bonus-link {
+    display: flex;
+    order: 2;
+    padding: 0;
+    min-height: fit-content;
+    background: transparent;
+  }
+  .menu-box .bonus-link span {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  .menu-box .bonus-link svg {
+    display: none;
+  }
+  .promo-slider.slick-initialized .slick-slide {
+    display: block;
+  }
+  .faq-content {
+    padding-top: 15px;
+  }
+  .faq-collapse .card-link {
+    align-items: flex-start;
+  }
+  .faq-collapse {
+    margin-top: 10px;
+  }
+  .faq-collapse .card-link svg {
+    margin-top: 5px;
+  }
+  .faq-collapse .card-link p {
+    font-size: 20px;
+    line-height: 120%;
+    width: 80%;
+  }
+  .faq-collapse .card-body p {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .faq-collapse .card {
+    padding: 7px 0;
+  }
+  .callback-right .half-form {
+    flex-direction: column;
+  }
+  .callback-right .half-form .form-label {
+    width: calc(100% - 16px);
+    margin-bottom: 10px;
+  }
+  .callback-right .half-form + .half-form {
+    margin-top: 0;
+  }
+  .callback-right .half-form .btn-main {
+    width: calc(100% - 16px);
+  }
+
+
 }
 
 @media (max-width: 320px) {
 
 }
-
-
 
 
 

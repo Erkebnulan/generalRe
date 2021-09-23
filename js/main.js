@@ -13,13 +13,19 @@ let menuBoxTop = $('.header-top').height() + 30;
 
 //form-label
 $(document).ready(function (){
+    $('.form-label').each(function (){
+        if($(this).find('input').val() != '') {
+            $(this).closest('.form-label').addClass('form-label-done');
+            $(this).closest('.select-label').removeClass('form-label-done');
+        }
+    });
     $('.form-label input').focus(function () {
         $(this).closest('.form-label').addClass('form-label-focus');
     });
     $('.form-label input').blur(function () {
         $(this).closest('.form-label').removeClass('form-label-focus');
         $(this).closest('.form-label').addClass('form-label-done');
-        if ($(this).val().length === 0) {
+        if ($(this).val() == '') {
             $(this).closest('.form-label').removeClass('form-label-focus');
             $(this).closest('.form-label').removeClass('form-label-done');
         }
@@ -37,6 +43,7 @@ $(document).ready(function () {
 $(document).ready(function() {
     $('.select-custom').select2({
         dropdownCssClass: 'select-option-menu',
+        placeholder: '',
     });
 
     $('.select-custom').on('select2:open', function (e) {
@@ -46,8 +53,7 @@ $(document).ready(function() {
     $('.select-custom').on('select2:close', function (e) {
         $(this).closest('.form-label').removeClass('form-label-focus');
         $(this).closest('.form-label').addClass('form-label-done');
-        if ($(this).val().length === 0) {
-            $(this).closest('.form-label').removeClass('form-label-focus');
+        if ($(this).val() == '') {
             $(this).closest('.form-label').removeClass('form-label-done');
         }
     });
@@ -141,7 +147,8 @@ $('.close-modal').click(function (){
 $(document).ready(function (){
     let headerHeight = $('header').outerHeight();
     let footerHeight = $('footer').outerHeight();
-    let offHeight = headerHeight + footerHeight;
+    let pageHeight = $(window).innerHeight();
+    let offHeight = pageHeight - (headerHeight + footerHeight);
     $('main').css('min-height', offHeight + 'px')
 })
 

@@ -997,10 +997,20 @@
                 <h1 class="title-md">Есть вопросы? Мы готовы ответить</h1>
             </div>
             <div class="callback-right">
-                <div class="callback-form">
+                <div class="half-form">
                     <label class="form-label phone">
                         <span class="form-label-title">Номер телефона</span>
                         <input type="text" class="phone-mask">
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label-title">Ф.И.О.</span>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="half-form">
+                    <label class="form-label">
+                        <span class="form-label-title">E-mail </span>
+                        <input type="email">
                     </label>
                     <button class="btn-plain btn-main">Перезвоните мне</button>
                 </div>
@@ -1134,9 +1144,6 @@
         $(this).prev('.tariff-compare-content').slideToggle(400);
         $(this).toggleClass('active');
     })
-
-
-
 
 </script>
 </body>
