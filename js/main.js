@@ -152,7 +152,16 @@ $(document).ready(function (){
     $('main').css('min-height', offHeight + 'px')
 })
 
-
+//tooltip
+$(document).ready(function (){
+    $('.tooltip-content').each(function (){
+        let altTop = $(this).closest('.tooltip-box').outerHeight();
+        let altRight = $(this).closest('.tooltip-box').outerWidth() / 2;
+        console.log(altTop, altRight)
+        $(this).css('top', altTop + 4 + 'px');
+        $(this).css('left', altRight + 'px');
+    });
+})
 
 
 

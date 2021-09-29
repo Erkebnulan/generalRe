@@ -9751,6 +9751,31 @@ svg.calendar {
   border-top: 1px solid #E0E0E0;
 }
 
+.tooltip-box {
+  position: relative;
+}
+
+.tooltip-content {
+  background: #ffffff !important;
+  -webkit-box-shadow: 0 2px 40px rgba(0, 0, 0, 0.08) !important;
+          box-shadow: 0 2px 40px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #282828 !important;
+  position: absolute !important;
+  display: none !important;
+  max-width: 280px !important;
+  z-index: 8;
+  margin-right: 0;
+}
+
+.tooltip-box:hover .tooltip-content {
+  display: block !important;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .main-nav {
     margin-left: 40px;
